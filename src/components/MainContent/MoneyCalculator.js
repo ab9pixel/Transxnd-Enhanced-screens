@@ -189,7 +189,7 @@ const MoneyCalculator = ({setSendMoneyNow}) => {
             )}
             <GreenFullButton
               currenctConvert={!convertedCurr ? currenctConvert : sendMoneyNow}
-              style={{ marginTop: convertedCurr ? "25px" : "114px" }}
+              style={{ marginTop: convertedCurr ? "25px" : "134px" }}
             >
               {convertedCurr ? "Send Money Now" : "Calculator"}
             </GreenFullButton>

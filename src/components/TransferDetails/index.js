@@ -56,7 +56,7 @@ const TransferDetails = () => {
           </div>
         </div>
         <div className="transaction-right">
-          <div className="transactionAmountWrap">
+          <div className="transactionAmountWrap transaction-amount">
             <h3>Transaction Amount</h3>
             <div className="transactionAmount">
               <input

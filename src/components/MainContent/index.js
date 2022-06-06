@@ -6,7 +6,6 @@ import Col from 'react-bootstrap/Col'
 import MainContentHeader from './MainContentHeader'
 import MainContentBody from './MainContentBody'
 import {useSelector} from 'react-redux'
-import SupportMessage from '../SupportMessage'
 
 const MainContent = () => {
   const darkMode = useSelector(state=>state.themeActions.darkMode)
