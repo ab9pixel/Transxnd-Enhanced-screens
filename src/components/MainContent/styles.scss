@@ -1,0 +1,238 @@
+.MainContent{
+    padding-bottom: 42px;
+}
+.MainContentWrap{
+    max-width: 1652px;
+    margin: 0px 23px 0px 34px;
+    font-family: 'Poppins';
+}
+.ContentHeaderWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+.RateButton button{
+    background-color: #27BDAD;
+    border: #27BDAD;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 33px;
+    min-width: 150px;
+    /* box-shadow: 0px 0px 3px 6px #707070; */
+}
+.RateButton img{
+    margin-right: 9px;
+}
+.ContentHeaderWrap h3{
+    font-size: 25px;
+    font-weight: 600;
+    display: inline;
+    margin-bottom: 15px;
+}
+.ContentHeaderWrap p{
+    font-size: 16px;
+}
+.ContentHeaderText{
+    display: flex;
+}
+.ContentHeaderText span{
+    margin-right: 20px;
+    font-size: 30px;
+    display:flex;
+    padding-top: 6px;
+    font-weight: 500;
+}
+.MainContentBody{
+    /* background-color: #E9F8F7; */
+    font-family: 'Poppins';
+    padding-bottom: 16px;
+    border-radius: 5px;
+}
+.MoneyCalculator{
+    background-color: #E9F8F7;
+    padding-bottom: 61px;
+}
+.sendMoneyPageOneLeft{
+    display: flex;
+    flex-direction: column;
+    padding: 127px 38px 0px 72px ;
+}
+.sendMoneyPageOneRight{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 38px 0px 0px ;
+}
+.contentBodyHeading{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.contentBodyHeading span{
+    color: #27BDAD;
+}
+.contentBodyPara{
+    margin-bottom: 68px;
+}
+.contentBodyPara p{
+    font-size: 18px;
+}
+.howToLink{
+    display: flex;
+}
+.playText{
+    display: flex;
+    align-items: center;
+}
+.playIcon img{
+    width: 46px;
+    height: 46px;
+    margin-right: 17px;
+}
+.playText{
+    text-decoration: underline;
+    font-size: 18px;
+}
+.SmallInput{
+    display: inline-block;
+}
+.SmallInputWrap:hover{
+    border:1px solid #27BDAD;
+}
+.SmallInputWrap{
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    font-size: 16px;
+    background-color: white;
+    width: 265px;
+    margin: 12px 14px 0px 0px;
+    height: 59px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 2px rgb(201, 201, 201);
+}
+input:focus{
+    outline: none;
+}
+.SmallInputWrap:hover{
+    -webkit-box-shadow:0px 0px 0px 0.2px rgb(201 201 201);
+}
+.SmallInputWrap input{
+    margin-right: 12px;
+}
+.SmallInputWrap p{
+    margin: 0px;
+}
+.transactionAmount{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.transactionAmount input{
+    font-size: 22px;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin-right: 6px;
+    -webkit-box-shadow:0px 0px 0px 0.2px rgb(201 201 201);
+    background: white;
+    border-radius: 5px;
+}
+.transactionAmount select{
+    border: none;
+    border-color: #27BDAD;
+    border: none;
+    outline: none;
+}
+.transactionAmount input, .transactionAmount input::placeholder{
+    padding: 18px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.transactionAmount select{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px;
+    color: green;
+}
+.lineDiv span{
+    height: 45px;
+    width: 0px;
+    border: 1px solid #27BDAD;
+    margin-left: 24px;
+}
+.verticalLine{
+    height: 16px;
+    width: 0px;
+    border: 1px solid #27BDAD;
+    margin-left: 24px;
+}
+.currencyWrap{
+    background-color: white;
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 0.2px rgb(201 201 201);
+}
+.currencyWrap img{
+    width: 30px;
+    height: 18px;
+}
+.transactionAmountWrap h3{
+    margin: 57px 0px 21px 0px;
+}
+.upDownArrows{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #27BDAD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+.cirlce img{
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+}
+.infoNote{
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 26px;
+}
+.feeCharges{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.feeCharges p{
+    margin: 0px 0px 0px 15px;
+}
+
+/* Send Money Wrap start */
+.SendMoneyWrap{
+    display: flex;
+    // justify-content: space-between;
+}
+.SendMoneyWrap > .accordion{
+    max-width: 30% !important;
+}
+.SendMoneyWrap >div {
+    border-radius: 5px;
+}
+.InnerSidebar{
+    margin-right:12px; 
+}
+
+/* Send Money Wrap End */

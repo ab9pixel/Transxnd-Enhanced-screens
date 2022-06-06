@@ -1,0 +1,11 @@
+.GreenFullButton button{
+    background-color: #2ED06E;
+    width: 100%;
+    padding: 16px 0px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}

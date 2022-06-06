@@ -1,0 +1,69 @@
+.name-location{
+    display: flex;
+    flex-direction: column;
+}
+.accordion .short-name, .short-name{
+    width: max-content;
+    padding: 10px 15px;
+    color: #27BDAD;
+    border: 1px solid #27BDAD !important;
+    background: #fff !important;
+    border-radius: 7px;
+    height: fit-content;
+    margin-right: 16px;
+}
+.accordion{
+    background: #E9F8F7;
+    margin-right: 12px;
+}
+
+.bank-card-wrap{
+    display: flex;
+    margin-top: 16px;
+    place-content: space-between;
+    .card-number{
+        font-size: 15px;
+    }
+    .card-wrap{
+        display: flex;
+        align-items: center;
+        h5{
+            font-size: 12px;
+        }
+        img{
+            max-width: 24px;
+        }
+        .card-img-wrap{
+            display: flex;
+            margin-left: 9px;
+        }
+    }
+}
+
+.name-location-wrap{
+    display: flex;
+    h1{
+        margin: 0;
+        font-size: 23px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .location{
+        display: flex;
+        align-items: baseline;
+        h3{
+            font-size: 12px;
+            margin-left: 7px;
+        }
+    }
+    .flag{
+        width: 24px;
+        img{
+            max-width: 100%;
+        }
+    }
+        h5{
+            font-size: 12px;
+        }
+}
