@@ -16,17 +16,17 @@ const InnerContent = ({setAddedBenData}) => {
   return (
     <div className="inner-content">
       {/***************** test code start */}
-        {/* <CollectionPoint/> */}
+        <CollectionPoint/>
       {/* <TransferDetails/> */}
 
       {/*****************  test code end */}
-      {!addBen?
+      {/* {!addBen?
       <AddBeneficiary setAddBen = {(val)=>{setAddBen(val)}}/>
     :!ben?
       <BeneficiaryForm setBen = {(val)=>{setBen(val)}} />
       :
       <AddBeneficiary data={data} addBenData = {addBenData} setAddBenData = {(val)=>{setAddBenData(val)}} />
-      }
+      } */}
     </div>
   )
 }
