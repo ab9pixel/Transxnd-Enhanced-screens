@@ -1,0 +1,73 @@
+.payment-method{
+    background-color: #D3F2EF;
+}
+.payment-body{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+}
+.payment-body-left{
+    width: 40%;
+}
+.payment-body-right{
+    width: 57%;
+    padding: 33px 27px 31px 18px;
+    border: 1px solid #27BDAD;
+    background-color: #E8F9F7;
+    // text-align: center;
+}
+.payment-body-right h5{
+    font-size: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.payment-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 35px 38px 18px;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    background-color: white;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+.payment-option:hover{
+    border: 1px solid #27BDAD;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.payment-method{
+    padding: 26px 23px 44px 33px;
+}
+.checkbox-wrap img{
+    width: 18px;
+    height: 18px;
+    margin-right: 18px;
+}
+.card-details-wrap{
+    max-width: 100%;
+    background-color: #DCFAF6;
+    border: 1px solid #27BDAD;
+    border-radius: 5px;
+    padding: 13px 18px 8px 22px;
+}
+.card-details-wrap, .card-name-icon{
+    display: flex;
+    align-items: center;
+}
+.card-name-icon{
+    justify-content: space-between;
+}
+.card-details{
+    width: 100%;
+}
+.card-details span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-details p{
+    margin: 0;
+}

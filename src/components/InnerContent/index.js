@@ -5,6 +5,7 @@ import './styles.scss'
 import data from './data.json';
 import TransferDetails from '../TransferDetails';
 import CollectionPoint from '../CollectionPoint';
+import PaymentMethod from '../PaymentMethod';
 const InnerContent = ({setAddedBenData}) => {
   const [addBen, setAddBen] = useState(false)
   const [ben, setBen] = useState(false)
@@ -16,7 +17,8 @@ const InnerContent = ({setAddedBenData}) => {
   return (
     <div className="inner-content">
       {/***************** test code start */}
-        <CollectionPoint/>
+        <PaymentMethod/>
+        {/* <CollectionPoint/> */}
       {/* <TransferDetails/> */}
 
       {/*****************  test code end */}
