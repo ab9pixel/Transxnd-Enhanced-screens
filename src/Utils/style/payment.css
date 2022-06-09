@@ -1,0 +1,83 @@
+.paymen_div{
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    /* height: 85vh; */
+    position: relative;
+    width: 90%;
+    margin-left: 20px;
+}
+.paymen_div>h4{
+    margin-top: 30px;
+}
+.paymen_div>p{
+    margin-top: 10px;
+    font-size: .9rem;
+}
+.amount_div{
+    margin-top: 30px;
+    width: 350px;
+    border: 1px solid #27BDAD;
+    padding: 20px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+.amount_div>h4{
+    margin-top: 5px;
+}
+.payment_btns{
+    margin-top: 230px;
+    /* position: absolute; */
+    /* bottom: 20px; */
+    /* margin: 0px auto; */
+    /* left: 280px; */
+    text-align: center;
+}
+.proced{
+    width: auto;
+    padding: 5px 20px;
+    margin: 0px auto;
+}
+
+@media screen and (max-width:1125px){
+    .payment_bil{
+        width: 700px;
+    }
+}
+@media screen and (max-width:991px){
+    .payment_bil{
+        width: 95%;
+    }
+    .paymen_div{
+        background-color: transparent !important;
+    }
+    .bil_payment_main_div{
+        justify-content: center;
+    }
+    .user_card_div{
+        display: none;
+    }
+}
+@media screen and (max-width:440px){
+    .amount_div{
+        width: 300px;
+    }
+}
+@media screen and (max-width:360px){
+    .amount_div{
+        width: 250px;
+    }
+    .paymen_div{
+        padding: 20px 10px;
+    }
+}
+@media screen and (max-width:316px){
+    .payment_btns>button{
+        font-size: .8rem !important;
+        margin-top: 10px;
+    }
+    .payment_btns{
+        margin-top: 170px;
+    }
+}

@@ -1,0 +1,378 @@
+.pay_bill_main_div {
+  display: flex;
+  margin-top: 100px;
+}
+.pay_user_card_div {
+  width: 320px;
+}
+.select_bill_div {
+  width: 65%;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+.select_bill_div > h4 {
+  margin-top: 17px;
+}
+
+.select_bill_div > p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.bill_type_select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 600px;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 30px auto;
+  height: 50vh;
+  overflow-y: auto;
+}
+.bill_type_select::-webkit-scrollbar {
+  width: 5px;
+}
+.bill_type_select::-webkit-scrollbar-thumb {
+  background-color: #27bdad;
+}
+.bill_type_select::-webkit-scrollbar-track {
+  background-color: #9fe6de;
+}
+._img_bill {
+  padding: 20px 0px;
+  width: 120px !important;
+  border-radius: 8px;
+  width: fit-content;
+  /* height: 100px; */
+}
+.hover_light_bil {
+  display: none;
+}
+._img_bill:hover .hover_light_bil {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+}
+._img_bill:hover {
+  background-color: #27bdad;
+}
+
+._img_bill:hover .light_bil {
+  display: none;
+}
+.bil_type {
+  width: 130px;
+}
+.bil_type > p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.empty_box_bil {
+  background-color: #b5e8e3;
+  border-radius: 8px;
+  width: 120px;
+  /* padding: 20px; */
+  height: 110px;
+  margin-top: 10px;
+}
+.select_bill_div_D .empty_box_bil {
+  background-color: #234c48;
+}
+.back_btn,
+.con_btn {
+  padding: 5px 0px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin: 10px;
+  margin-bottom: 5px;
+  margin-top: 35px;
+  width: 120px;
+  background-color: transparent;
+}
+.con_btn {
+  padding: 6px 0px;
+  font-weight: 600;
+}
+.abslt_btn_div {
+  /* position: absolute; */
+  bottom: 20px;
+  left: 290px;
+}
+
+/* vendor detail css  */
+
+.vendor_detail_div {
+  margin-top: 30px;
+  display: flex;
+}
+.vendor_D_detail_div select,
+.vendor_D_detail_div input,
+.vendor_D_detail_div input::placeholder {
+  color: white !important;
+  /* border: 1px solid #9fe6de; */
+}
+.country_div {
+  width: 400px;
+  /* border: 2px solid red; */
+}
+.tick_sign {
+  display: flex;
+}
+.tick_sign > img {
+  object-fit: cover;
+  height: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.country_input_slct {
+  /* display: ; */
+  border: 1px solid #27bdad;
+  padding: 8px 15px;
+  width: 350px;
+  text-align: start;
+  border-radius: 20px;
+  /* height: 35px; */
+}
+.country_input_slct select {
+  width: 280px;
+  margin-left: 5px;
+  padding-left: 10px;
+  outline: none;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  color: rgb(156, 156, 156);
+  font-weight: 600;
+}
+.country_input_slct input {
+  width: 280px;
+  margin-left: 5px;
+  padding-left: 10px;
+  outline: none;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  /* color: #27bdad; */
+  color: rgb(156, 156, 156);
+
+  font-weight: 600;
+}
+input::placeholder {
+  color: #27bdad;
+  /* color: rgb(156, 156, 156); */
+
+}
+.select_vendor_box {
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 10px 5px;
+  max-height: 30vh;
+  overflow-y: auto;
+  width: 350px;
+}
+.select_vendor_box::-webkit-scrollbar {
+  width: 5px;
+}
+.select_vendor_box::-webkit-scrollbar-thumb {
+  background-color: #27bdad;
+  border-radius: 10px;
+}
+.select_vendor_box::-webkit-scrollbar-track {
+  background-color: #9fe6de;
+}
+.boxes_div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.dark_box_div > .boxempty {
+  background-color: #234c48;
+}
+.boxempty {
+  width: 55px;
+  height: 55px;
+  background-color: #9fe6de;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.bill_id_div {
+  margin-left: 30px;
+}
+.orLine_div {
+  margin-top: 10px;
+}
+.orLine_div > img {
+  width: 150px;
+}
+.qrcode_div {
+  padding: 15px;
+  width: fit-content;
+  margin: 20px auto;
+}
+.qrcode_div>img{
+  width: 160px;
+}
+.qr_para {
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+/* payment page css  */
+.bil_payment_main_div {
+  display: flex;
+  margin-top: 50px;
+}
+.user_card_div {
+  width: 330px;
+}
+.payment_bil {
+  width: 65%;
+}
+
+@media screen and (max-width: 1220px) {
+  .select_bill_div {
+    width: 700px;
+  }
+  .bill_type_select {
+    width: auto;
+  }
+  .vendor_detail_div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bill_id_div {
+    margin-left: -40px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .select_bill_div {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .select_bill_div {
+    width: 100%;
+    background: transparent !important;
+  }
+  .bill_id_div {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+  .pay_user_card_div,
+  .select_bill_div > h4 {
+    display: none;
+  }
+  .pay_bill_main_div {
+    margin: 50px 20px;
+    margin-top: 0px;
+  }
+  .bil_payment_main_div {
+    margin-top: 0px;
+  }
+  .bill_type_select {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .bill_id_div {
+    margin-left: -20px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bill_type_select {
+    width: 500px;
+    flex-wrap: wrap;
+  }
+  .bil_type {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 588px) {
+  .bill_type_select {
+    width: 400px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 465px) {
+  .bill_type_select {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+  .orLine_div > img{
+    width: 100px;
+  }
+  .bil_type,
+  ._img_bill {
+    width: 100px !important;
+  }
+  .bil_type p {
+    font-size: 0.7rem;
+  }
+  .country_input_slct {
+    width: 300px;
+  }
+  .country_input_slct select,
+  .country_input_slct input {
+    width: 220px;
+  }
+  .select_vendor_box {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .empty_box_bil{
+    width: 100px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .bill_type_select {
+    width: 300px;
+  }
+  .pay_bill_main_div {
+    margin: 50px 10px;
+    margin-top: 0px;
+  }
+  .select_bill_div {
+    padding: 10px 5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .country_input_slct {
+    width: 250px;
+  }
+  .country_input_slct select,
+  .country_input_slct input {
+    width: 180px;
+  }
+  .select_vendor_box {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .bill_type_select {
+    width: 270px;
+  }
+  .bil_type,
+  ._img_bill {
+    width: 90px !important;
+  }
+  .bil_type p {
+    font-size: 0.7rem;
+  }
+  .back_btn,
+  .con_btn {
+    margin: 5px;
+  }
+  .empty_box_bil {
+    width: 95px;
+  }
+}

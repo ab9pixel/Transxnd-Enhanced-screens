@@ -1,0 +1,41 @@
+.historic_trans_main_div{
+    display: flex;
+    /* justify-content: space-around; */
+    /* margin: 0px 100px; */
+    margin-top: 50px;
+}
+.user_historic_card{
+    margin-top: 50px;
+    width: 320px;
+    /* margin-left: 50px; */
+}
+
+@media screen and (max-width:1200px){
+    .user_historic_card{
+        margin-top: 50px;
+        width: 320px;
+        margin-left: 0px;
+    }
+    .historic_trans_main_div{
+        /* justify-content: center; */
+        margin-top: 50px;
+    }
+    .historic_trans_main_div>.transaction_table_div{
+        width: 800px;
+    }
+}
+@media screen and (max-width:991px){
+    .historic_trans_main_div{
+        margin-top: 20px;
+        margin-bottom: 2rem;
+    }
+    .user_historic_card{
+        display: none;
+
+    }
+}
+@media screen and (max-width:800px){
+    .historic_trans_main_div>.transaction_table_div{
+        width:95%;
+    }
+}

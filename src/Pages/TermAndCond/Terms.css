@@ -1,0 +1,153 @@
+.terms_and_cond_main_div {
+  margin: 50px 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms_one_box_div {
+  margin-top: 30px;
+  border-radius: 7px;
+  padding: 10px 0px;
+  width: 580px;
+  max-height: 70vh;
+  overflow-y: scroll;
+  font-size: 0.9em;
+  color: #b0b7cb;
+}
+
+.terms_box {
+  width: 100%;
+  height: 300px;
+  background-color: cadetblue;
+}
+
+.term_note_para {
+  font-weight: 600;
+  padding: 8px 0px;
+  padding-bottom: 0px !important;
+}
+
+.term_main {
+  padding: 0 10px;
+}
+
+.shade_box_l:hover {
+  background: #E9F8F7;
+  border-radius: 15px;
+}
+
+.shade_box_d:hover {
+  background: #0E2725;
+  border-radius: 15px;
+}
+
+.terms_para_div > p {
+  padding: 8px 0px;
+}
+.term_copyright_div1 {
+  padding: 8px 0px;
+}
+.terms_one_box_div::-webkit-scrollbar {
+  width: 10px;
+}
+.terms_two_div {
+  margin-top: 20px;
+}
+.terms_two_box_para_div {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1125px) {
+  .terms_and_cond_main_div {
+    margin: 50px 20px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .terms_and_cond_main_div {
+    margin: 50px 20px;
+  }
+  .terms_one_box_div {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .terms_and_cond_main_div {
+    margin: 50px 20px;
+    flex-wrap: wrap;
+  }
+  .terms_one_box_div {
+    margin: 20px auto;
+    width: 700px;
+  }
+  .tersm_head_div {
+    text-align: center;
+  }
+  .terms_two_box_para_div {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .terms_and_cond_main_div {
+    margin: 50px 20px;
+    flex-wrap: wrap;
+  }
+  .terms_one_box_div {
+    margin: 20px auto;
+    width: 100%;
+  }
+  .terms_two_box_para_div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .terms_and_cond_main_div {
+    margin: 50px 20px;
+    flex-wrap: wrap;
+  }
+  .terms_one_box_div {
+    margin: 20px auto;
+    width: 100%;
+  }
+  .terms_two_box_para_div {
+    width: 100%;
+  }
+  .term_note_para {
+    padding: 10px 5px;
+  }
+  .terms_one_box_div {
+    padding: 8px;
+  }
+  .terms_two_box_para_div,
+  .term_copyright_div1 {
+    padding: 10px;
+  }
+  .terms_para_div > p {
+    padding: 10px;
+  }
+  .terms_sub_head_div h5 {
+    font-size: 1.1rem;
+  }
+  .terms_two_box_para_div,
+  .term_copyright_div1,
+  .terms_para_div {
+    font-size: 0.8rem;
+  }
+  .term_note_para p {
+    margin-bottom: 5px;
+  }
+  .term_note_para {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .terms_and_cond_main_div {
+    margin: 50px 10px;
+    flex-wrap: wrap;
+  }
+}

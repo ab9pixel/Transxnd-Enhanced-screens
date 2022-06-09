@@ -1,0 +1,425 @@
+.swiper-pagination-bullets {
+  width: 294px !important;
+  left: 33px !important;
+  bottom: 0 !important;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  border: 1px solid #27bdad !important ;
+  opacity: 1 !important;
+  background-color: unset;
+}
+
+.swiper-pagination-bullet-active {
+  background: #27bdad !important;
+}
+
+.main_form {
+  max-width: 1500px;
+  height: 100%;
+  display: flex;
+  margin: 3rem auto;
+}
+
+.login_form {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.s_form {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.f_form {
+  width: 388px;
+}
+
+.s_text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.s_select_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.s_box {
+  width: 218px;
+  height: 40px;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 3px;
+  font-weight: 500;
+  position: relative;
+}
+
+.s_box img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.c_dot {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.s_social_btn {
+  margin: 0.8rem 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.s_social_btn button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: white;
+  margin: 0.4rem 0;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s_social_btn button img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.s_social_btn button span {
+  font-weight: 500;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.or_line {
+  width: 100%;
+}
+
+.or_line img {
+  width: 100%;
+}
+
+.inline_input {
+  display: flex;
+  height: 56px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s_form_fields {
+  width: 100%;
+}
+
+.s_form_fields input {
+  height: 40px;
+  border: 1px solid #27bdad !important;
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+  outline: none;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  background-color: transparent;
+}
+
+.p_input {
+  display: flex;
+  border-radius: 40px;
+  /* justify-content: space-around; */
+  align-items: center;
+  width: 100%;
+  border: 1px solid #27bdad;
+  height: 40px;
+  margin: 1rem 0;
+  padding: 0 16px;
+}
+
+.cus_select {
+  border: none;
+  width: 100%;
+  font-size: 0.9rem;
+  background-color: transparent;
+}
+
+.cus_select option:focus,
+.cus_select:focus {
+  border: none !important;
+  outline: none;
+}
+
+.p_input input {
+  border: none !important;
+  width: 90% !important;
+}
+
+.p_input img {
+  width: 16px;
+  object-fit: contain;
+}
+
+.s_form_fields input::placeholder {
+  color: unset;
+}
+
+.half_input {
+  width: 48%;
+}
+
+.full_input {
+  width: 100%;
+}
+
+.form_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  /* border: 2px solid red; */
+}
+
+/* .form_btn button {
+  width: 112px;
+  height: 35px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  margin: 0.5rem;
+} */
+
+.s_label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.s_label a {
+  text-decoration: none;
+}
+
+.s_label a:hover {
+  color: inherit;
+}
+
+/*  */
+
+.signup_img_content {
+  width: 40%;
+  position: relative;
+}
+
+.signup_img_content .s_bgimg {
+  width: 100%;
+}
+
+.sic_1,
+.sic_2,
+.sic_3,
+.sic_4 {
+  position: absolute;
+}
+
+.sic_1 {
+  top: 0;
+}
+
+.sic_2 {
+  top: 300px;
+}
+
+.sic_3 {
+  bottom: 100px;
+  left: 50px;
+}
+
+.sic_4 {
+  bottom: 30px;
+}
+
+/*  */
+
+.s_para {
+  width: 100%;
+}
+
+.s_para h2 {
+  font-weight: 500;
+}
+
+.s_para p {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.s_checkbox {
+  margin: 0.5rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sc_label {
+  font-size: 0.8rem;
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+.sc_label > input[type="checkbox"] {
+  display: none;
+}
+
+.sc_label > input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid #8792af;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.sc_label > input[type="checkbox"]:checked + *::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  color: white;
+  text-align: center;
+  background: #19c2a0;
+}
+
+.fp_text {
+  margin: 0 !important;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login_img_content {
+  width: 40%;
+  position: relative;
+}
+
+.login_img_content .s_bgimg {
+  width: 360px;
+}
+
+.login_img_content .s_bgimg1 {
+  margin-left: 110px;
+  overflow-x: hidden;
+  width: 80%;
+}
+
+.lgic_1,
+.lgic_2,
+.lgic_3,
+.lgic_4 {
+  position: absolute;
+}
+
+.lgic_1 {
+  bottom: 20px;
+  left: 180px;
+}
+
+.lgic_2 {
+  top: 200px;
+  left: 30px;
+}
+
+.lgic_3 {
+  bottom: 80px;
+  left: 80px;
+}
+
+.lgic_4 {
+  top: 20px;
+  left: 120px;
+}
+
+/* media queries */
+
+@media (max-width: 991px) {
+  .login_img_content {
+    display: none;
+  }
+  .login_form {
+    width: 100%;
+  }
+  .signup_img_content {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .s_form {
+    width: 330px;
+  }
+  .s_box {
+    width: 158px;
+    height: 34px;
+    font-size: 0.6rem;
+  }
+  .s_para p {
+    font-size: 0.7rem;
+  }
+  .s_box img {
+    width: 7px;
+    height: 7px;
+  }
+  .s_social_btn button img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  .s_social_btn button span {
+    font-size: 0.8rem !important;
+  }
+  .s_form_fields input {
+    font-size: 0.8rem;
+  }
+
+  .s_text h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .s_form {
+    width: 290px;
+  }
+  .s_box {
+    width: 134px;
+    height: 30px;
+  }
+}

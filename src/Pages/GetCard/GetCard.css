@@ -1,0 +1,152 @@
+.getcard_section {
+  max-width: 1500px;
+  height: max-content;
+  display: flex;
+  margin: 2rem auto;
+  padding: 0 44px;
+}
+
+.gs_left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gs_text_content {
+  width: 100%;
+  padding-left: 3.5rem;
+}
+
+.gs_text_content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.gs_text_content p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.gs_cards_content {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.gc_container {
+  height: 358px;
+  overflow-y: scroll;
+}
+
+.gc_container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.gc_card {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.gc_card img {
+  width: 65px;
+  object-fit: contain;
+}
+
+.gc_card h2 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.gc_card p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+.gc_card button {
+  margin-top: 1rem;
+}
+
+.c_height {
+  margin-top: 3rem;
+}
+
+.gs_right {
+  display: block;
+}
+
+.getcard_section .swiper-pagination-bullets {
+  left: 0 !important;
+  width: 100% !important;
+}
+.getcard_section .login_img_content .s_bgimg {
+  height: 409px;
+}
+
+@media screen and (max-width: 1030px) {
+  .gc_card h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .getcard_section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .gc_container {
+    height: max-content;
+    overflow-y: unset;
+  }
+  .gs_text_content {
+    padding-left: 0;
+    text-align: center;
+  }
+  .gs_left {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .gs_text_content p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .gs_right {
+    width: 400px;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gs_text_content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gs_right {
+    width: 90%;
+  }
+  .gs_right .s_bgimg {
+    width: 100%;
+  }
+  .getcard_section .swiper-pagination-bullets {
+    width: 100% !important;
+    left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .gs_text_content h2 {
+    font-size: 1.5rem;
+  }
+  .gs_text_content p {
+    font-size: 0.8rem;
+  }
+  .gc_card p {
+    font-size: 0.8rem;
+  }
+}

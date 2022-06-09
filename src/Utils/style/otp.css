@@ -1,0 +1,159 @@
+.confirm_opt_main_div{
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    height: 85vh;
+    /* width: 98%; */
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
+}
+.confirm_opt_main_div>p{
+    font-size: .9rem;
+    margin-top: 10px;
+}
+.get_otp_main_div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.get_otp_div{
+    width: 400px;
+}
+.email_otp_div{
+    width: 400px;
+}
+.number_div>span{
+    display: inline-block;
+    margin: 10px;
+    /* margin-top:20px ; */
+}
+.number_div>img{
+  margin-top: -5px;
+}
+.number_div_mob{
+    display: none;
+}
+.otp_get_inp_div{
+    margin-top: 20px;
+}
+.otp_get_inp_div>input{
+    width: 50px;
+    padding: 5px 10px;
+    text-align: center;
+    outline: none;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background: transparent;
+}
+.msg_img{
+    margin-top: 20px;
+    height: 80px;
+    width: auto;
+}
+.alert_msg_div{
+    margin-top: 10px;
+    color: red;
+    font-size: .9rem;
+}
+.alert_msg_div>img{
+    margin-top: -8px;
+}
+.alert_msg_div>span{
+    margin-left: 10px;
+}
+.resend_btn{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 35px;
+    font-weight: lighter;
+    font-size: .9rem;
+    margin-top: 15px;
+}
+.not_recvd{
+    font-size: .8rem;
+    margin-top: 5px;
+}
+
+/* confirm wait css  */
+.wating_animation{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+}
+
+/* thank you css  */
+
+.thankyou_main_div{
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    height: 85vh;
+    justify-content: center;
+
+}
+.thanks_img{
+    margin-top: 30px;
+}
+.thankyou_main_div>div>h5{
+    margin-top: 20px;
+}
+.thankyou_main_div>div>p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.get_otp_main_div input{
+    border: 1px solid #27BDAD;
+     color: #27BDAD;
+}
+.D_get_otp_main_div input{
+    color: #72FAEC !important;
+    border: 1px solid #72FAEC !important;
+}
+
+@media screen and (max-width:991px){
+    .number_div_mob{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .number_div_mob>img{
+        margin-left: 8px;
+    }
+    .confirm_opt_main_div,.thankyou_main_div{
+        background: transparent !important;
+    }
+    .number_div{
+        display: none;
+    }
+}
+
+@media screen and (max-width:635px){
+    .get_otp_main_div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .email_otp_div{
+        margin-top: 20px;
+    }
+    .confirm_opt_main_div{
+        height: max-content;
+    }
+}
+
+@media screen and (max-width:360px){
+    .confirm_opt_main_div{
+        padding: 20px 10px;
+    }
+    .otp_get_inp_div>input{
+        width: 40px;
+        padding: 0px;
+    }
+}

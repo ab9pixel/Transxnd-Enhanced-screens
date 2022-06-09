@@ -1,0 +1,184 @@
+/*  */
+
+.tick_img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.validation_text {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.validation_text span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.r_form {
+  width: 466px;
+}
+
+.optp_code {
+  width: 74%;
+  margin: 1.5rem auto;
+}
+
+.optp_code > div {
+  border-radius: 13px;
+}
+
+.reg_form_btn {
+  margin-top: 10rem;
+}
+
+/* buiness upload image css  */
+
+.bussines_main_div {
+  text-align: center;
+}
+
+.bussines_main_div div p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.upload_img {
+  width: 93%;
+}
+
+.bus_submit {
+  padding: 6px 25px;
+}
+
+.upload_back {
+  padding: 5px 30px;
+  width: 150px;
+}
+.upload_div > input {
+  display: none;
+}
+.main_upload_img_div {
+  display: flex;
+}
+.upload_result {
+  margin: 10px;
+}
+.upload_delete:hover {
+  cursor: pointer;
+}
+.upload_result {
+  text-align: start !important;
+  position: relative;
+  padding: 15px 10px;
+}
+.upload_delete {
+  position: absolute;
+  left: 100px;
+  top: -2px;
+  font-size: 1.3em;
+  background-color: #9ba3cc;
+  padding: 0px 8.5px;
+  color: var(--bg-white);
+
+  border-radius: 20px;
+  height: fit-content;
+}
+.upload_img_result {
+  width: 100px;
+  height: 120px;
+  object-fit: fill;
+}
+
+/*  */
+
+.cr_stepper {
+  width: 60%;
+  text-align: center;
+}
+
+.cr_stepper .login_form {
+  margin: 0 auto;
+}
+
+/*  */
+
+.reg_img_content .s_bgimg {
+  width: 400px !important;
+}
+
+.reg_img_content .swiper-pagination-bullets {
+  left: 65px !important;
+}
+
+.reg_stepper {
+  width: 702px;
+  margin: 20px auto 0 auto;
+}
+
+.cus_stepper_btn {
+  width: max-content;
+  padding: 8px 120px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .reg_stepper {
+    width: 655px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cr_stepper {
+    width: 100%;
+  }
+  .reg_stepper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .cr_stepper .MuiStepLabel-labelContainer {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .optp_code {
+    width: 100%;
+  }
+  .r_form {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tick_img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+  }
+  .r_form {
+    width: 93%;
+    margin: 0 auto;
+  }
+  .validation_text span {
+    font-size: 0.8rem;
+  }
+  .cus_stepper_btn {
+    padding: 8px 55px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .reg_btn1 {
+    padding: 8px 17px;
+  }
+}

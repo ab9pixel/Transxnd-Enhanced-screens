@@ -1,0 +1,149 @@
+.refer_main_ {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  /* margin-left: 38px; */
+  /* margin-right: 38px; */
+}
+.refer_card_social,
+.refer_copylink_card {
+  width: 35%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.refer_copylink_card {
+  text-align: center;
+}
+.refer_copylink_card > img {
+  margin-top: 20px;
+}
+.refer_copylink_card > h5 {
+  margin-top: 10px;
+}
+.refer_copylink_card > p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.link_inpt {
+  margin-top: 20px;
+  border: 1px solid #27bdad;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+.link_inpt > input {
+  width: 85%;
+  padding: 0px 6px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #27bdad;
+  font-size: 0.9rem;
+}
+
+.social_share_head {
+  text-align: center;
+  margin-top: 45px;
+}
+.social_share_head > p,
+.emailInput > p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.social_icon_div {
+  width: 350px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.orline_div {
+  display: flex;
+  align-items: center;
+}
+.orline_div > img {
+  width: 47%;
+}
+.orline_div > span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.emailInput {
+  text-align: center;
+  margin-top: 20px;
+}
+.entr_link {
+  /* margin-top: 15px; */
+  margin: 20px auto;
+}
+.dark_inp,
+.dark_inp::placeholder {
+  color: white !important;
+}
+
+@media screen and (max-width: 1204px) {
+  .social_icon_div {
+    width: 100%;
+  }
+  .link_inpt {
+    padding: 6px 9px;
+  }
+  .link_inpt img {
+    width: 16px;
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 991px) {
+  .refer_main_ {
+    flex-direction: column;
+    align-items: center;
+  }
+  .refer_copylink_card {
+    margin-top: 4rem;
+  }
+  .refer_card_social, .refer_copylink_card {
+    width: 400px;
+  }
+  .emailInput .p_input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .refer_card_social,
+  .refer_copylink_card {
+    width: 90%;
+    margin: 2rem auto 0 auto;
+  }
+  .orline_div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .orline_div > img {
+    width: 45%;
+  }
+  .social_icon_div {
+    width: 100%;
+  }
+  .social_icon_div > img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
+  .link_inpt {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+  }
+  .refer_main_ {
+    margin-top: 0;
+    margin-bottom: 27px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .orline_div > img {
+    width: 43%;
+  }
+}

@@ -1,0 +1,608 @@
+.dashboard_main {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* over view css  */
+.overview_main_div {
+  margin: 50px 0;
+  display: flex;
+}
+.over_view_user_card {
+  margin-top: 50px;
+}
+.overview_right_content_div {
+  width: 100%;
+  margin-left: 30px;
+}
+.head0verview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.over_view_link {
+  text-decoration: none;
+  color: #27bdad;
+  /* color: black; */
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 15px;
+  margin-top: 5px !important;
+  display: inline-block;
+  border-radius: 20px;
+  margin-left: 8px;
+  border: 1px solid #27bdad;
+}
+.dark_overview {
+  text-decoration: none;
+  color: #72faec;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 15px;
+  margin-top: 5px !important;
+  display: inline-block;
+  border-radius: 20px;
+  margin-left: 8px;
+  border: 1px solid #72faec;
+}
+/* .dark_overview:hover {
+  transition: 0.5s;
+  background-color: #72faec;
+  color: white;
+  border: none;
+} */
+/* .over_view_link:hover {
+  transition: 0.5s;
+  background-color: #27bdad;
+  color: white;
+} */
+.over_view_link:hover {
+  transition: 0.5s;
+  box-shadow: inset -4.1em 0 0 0 #27bdad, inset 4.1em 0 0 0 #27bdad;
+  color: white !important;
+}
+.dark_overview:hover {
+  transition: 0.5s;
+  box-shadow: inset -4.2em 0 0 0 #72faec, inset 4.2em 0 0 0 #72faec;
+  color: #213838 !important;
+  border: none !important;
+}
+.your_summery_div {
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.blnce_head_div,
+.wallet_card_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blnce_head_div .p_input {
+  width: max-content;
+  height: 25px;
+  padding: 0 7px;
+}
+.blnce_main_div {
+  width: 47%;
+  padding: 5px 15px;
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+.total_blnce {
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px 0px;
+  margin-top: 10px;
+}
+/* .blnce_head_div > h6 {
+  margin-top: 8px;
+} */
+.blnce_head_div,
+.wallet_card_div {
+  display: flex;
+  justify-content: space-between;
+}
+.e_wallet,
+.card_blnce {
+  margin-top: 10px;
+  width: 48%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px 0px ;
+}
+.e_wallet > p,
+.card_blnce > p,
+.total_blnce > p {
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.chart_main_div {
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.chart_main_div select {
+  padding: 2px 15px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+.bar_chart {
+  width: 100% !important;
+  max-height: 250px;
+  min-height: 200px;
+}
+
+/* transaction table css  */
+
+.transaction_table_div {
+  margin-top: 20px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  /* height: max-content; */
+  overflow-x: scroll;
+}
+.transaction_table_head {
+  display: flex;
+  justify-content: space-between;
+}
+.select_transaction_div {
+  padding: 0px 5px;
+}
+.select_transaction_div > select {
+  padding: 6px 15px;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 15px;
+  font-weight: 600;
+}
+.all_trans_link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.table_scrol {
+  max-height: 30vh;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.table_scroll_hist {
+  max-height: 88vh;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.table_scrol::-webkit-scrollbar,
+.table_scroll_hist::-webkit-scrollbar {
+  width: 5px;
+}
+.transaction_table_main_div {
+  overflow-x: auto;
+  /* width: 100%; */
+  min-width: 881px;
+}
+/* .transaction_table_div {
+  overflow-x: scroll;
+} */
+.transaction_table_main_div > table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  border: 0px;
+  text-indent: 0;
+  /* max-width: 900px; */
+  width: 100%;
+  /* margin: 10px auto; */
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-weight: lighter !important;
+  overflow-x: scroll;
+}
+.transaction_table_main_div > table > thead tr th {
+  padding: 10px 7px;
+  text-align: center;
+}
+tbody tr td {
+  padding: 5px 10px;
+  text-align: center;
+  border-left: none;
+  border-right: none;
+}
+
+.light_mode_table > td {
+  border-top: 1px solid #27bdad;
+  border-bottom: 1px solid #27bdad;
+}
+.dark_mode_table > td {
+  /* color: #72FAEC; */
+  border-top: 1px solid #72faec;
+  border-bottom: 1px solid #72faec;
+  color: white;
+}
+th:nth-child(1) {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+th:nth-child(8) {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.light_mode_table > td:nth-child(1) {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 1px solid #27bdad;
+}
+.light_mode_table > td:nth-child(8) {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-right: 1px solid #27bdad;
+}
+
+.dark_mode_table > td:nth-child(1) {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 1px solid #27bdad;
+}
+.dark_mode_table > td:nth-child(8) {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-right: 1px solid #27bdad;
+}
+
+/* user card css  */
+
+.userCard_main_div {
+  /* border: 2px saddlebrown solid; */
+  width: 300px;
+  background-color: #27bdad;
+  /* margin: 50px auto; */
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 0px;
+}
+.user_img_div {
+  position: relative;
+  text-align: center;
+  top: -40px;
+  /* margin-bottom: 100px; */
+}
+.user_img_div > img {
+  /* position: absolute; */
+  width: 80px;
+}
+.userName {
+  margin-top: -30px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: white;
+}
+.user_id_div {
+  width: fit-content;
+  padding: 3px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #27bdad;
+  margin: 5px auto;
+  background-color: white;
+}
+.user_email {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.user_balance_div {
+  width: fit-content;
+  padding: 7px 20px;
+  background-color: white;
+  color: #27bdad;
+  border-radius: 20px;
+  margin: 8px auto;
+  font-size: 0.9rem;
+}
+.user_ul,
+.dark_user_ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.user_ul > li,
+.dark_user_ul > li {
+  /* margin: 5px; */
+  margin-top: 5px;
+  padding: 8px 20px;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+.user_ul > li > span,
+.dark_user_ul > li > span {
+  margin-left: 15px;
+}
+.user_ul > li:hover {
+  /* opacity: .5; */
+  background-color: #a1ece6;
+  cursor: pointer;
+}
+.dark_user_ul > li:hover {
+  background-color: #213838;
+  cursor: pointer;
+}
+.user_ul > li > img,
+.dark_user_ul > li > img {
+  width: 18px;
+  object-fit: cover;
+}
+.transaction_table_main_div_mb {
+  display: none;
+}
+
+@media screen and (max-width: 1310px) {
+  .overview_right_content_div {
+    width: 876px;
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  .overview_right_content_div {
+    width: 806px;
+  }
+}
+
+@media screen and (max-width: 1183px) {
+  .overview_right_content_div {
+    width: 680px;
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  .overview_main_div {
+    margin-top: 50px;
+  }
+  /* .blnce_main_div {
+    width: 350px;
+  }
+  .chart_main_div {
+    width: 350px;
+  } */
+  .bar_chart {
+    /* width: 300px !important; */
+    margin-top: 20px;
+  }
+  .overview_right_content_div {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .overview_main_div {
+    margin-top: 50px;
+  }
+  /* .blnce_main_div {
+    width: 320px;
+  } */
+  /* .chart_main_div {
+    width: 40%;
+  } */
+  .bar_chart {
+    /* width: 30% !important; */
+    margin-top: 20px;
+    height: auto !important;
+  }
+  .overview_right_content_div {
+    margin-left: 10px;
+  }
+  .overview_right_content_div {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .transaction_table_head > h5 {
+    display: none;
+  }
+  .dashboard_main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .transaction_table_head {
+    justify-content: flex-end;
+  }
+  .overview_right_content_div {
+    width: 100%;
+  }
+  .userCard_main_div,
+  .transaction_table_main_div,
+  .dark_light_btn {
+    display: none;
+  }
+  .overview_main_div {
+    margin: 10px;
+    margin-top: 50px;
+  }
+  .overview_right_content_div {
+    margin-left: 0px;
+  }
+  .blnce_main_div {
+    width: 48%;
+  }
+  .chart_main_div {
+    width: 48%;
+  }
+  .bar_chart {
+    /* width: 330px !important; */
+    margin-top: 20px;
+    height: auto !important;
+  }
+  /*  */
+  .transaction_table_main_div_mb {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: block;
+  }
+  .t_cards {
+    border: 1px solid #27bdad;
+    border-radius: 20px;
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .t_cards img {
+    width: 21px;
+  }
+  .t_cards > div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 831px) {
+  .blnce_main_div {
+    width: 370px;
+  }
+  .chart_main_div {
+    width: 370px;
+  }
+  .bar_chart {
+    width: 320px !important;
+    margin-top: 20px;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .chart_main_div {
+    width: 49%;
+  }
+  .blnce_main_div {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 751px) {
+  .your_summery_div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .blnce_main_div {
+    width: 420px;
+    margin-top: 10px;
+  }
+  .chart_main_div {
+    width: 420px;
+    margin-top: 20px;
+  }
+  .bar_chart {
+    width: 350px !important;
+    margin-top: 20px;
+    height: auto !important;
+  }
+  .transaction_table_head > h5 {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  .select_transaction_div > select,
+  .all_trans_link {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .head0verview h2 {
+    font-size: 1.2rem;
+  }
+  .over_view_link {
+    margin-top: 0 !important;
+  }
+  .links_divpay {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 521px) {
+  .head0verview {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .links_divpay {
+    margin-top: 10px;
+  }
+  .all_trans_link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .t_cards span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .blnce_main_div {
+    width: 350px;
+    margin-top: 10px;
+  }
+  .chart_main_div {
+    width: 350px;
+    margin-top: 20px;
+  }
+  .bar_chart {
+    width: 300px !important;
+    margin-top: 20px;
+    height: auto !important;
+  }
+  .card_blnce > h4,
+  .e_wallet > h4,
+  .total_blnce > h4,
+  .blnce_head_div > h6 {
+    font-size: 0.9rem;
+  }
+  .total_blnce{
+    padding: 20px 0px;
+  }
+  .blnce_head_div > select,
+  .dark_overview {
+    font-size: 0.8rem;
+  }
+  .transaction_table_div {
+    padding: 20px 10px;
+  }
+  .select_transaction_div > select {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .blnce_main_div {
+    width: 320px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .chart_main_div {
+    width: 320px;
+    margin-top: 20px;
+    padding: 10px 10px;
+  }
+  .bar_chart {
+    width: 270px !important;
+    margin-top: 20px;
+    height: auto !important;
+  }
+  .transaction_table_head > h5 {
+    font-size: 0.8rem;
+  }
+  .select_transaction_div > select {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .e_wallet,
+  .card_blnce {
+    padding: 15px 8px;
+  }
+  .e_wallet > p,
+  .card_blnce > p {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,273 @@
+.setting_main_div {
+  display: flex;
+  margin-top: 100px;
+  /* margin-left: 50px; */
+  /* justify-content: s; */
+}
+.updateImg_div {
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 20px;
+  height: 85vh;
+}
+.upload_profile {
+  width: 300px;
+  object-fit: cover;
+}
+.updateImg_div > div > img {
+  margin-top: 30px;
+}
+.updateImg_div > p,
+.personal_info_div > p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.personal_info_div {
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 30px;
+  height: 85vh;
+}
+
+.personal_detail_container > p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.user_name_change_input_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+._name_change_div {
+  /* margin-left: 10px; */
+  padding: 6px 5px;
+  border: 1px solid #27bdad;
+  border-radius: 20px;
+  margin: 0px 8px;
+  width: 155px;
+}
+._name_change_div > input {
+  padding-left: 8px;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 110px;
+  font-size: 0.8rem;
+  color: #27bdad;
+}
+._name_change_div > img {
+  width: 15px;
+  margin-left: 5px;
+  margin-top: -3px;
+}
+.email_input_perosnal {
+  /* margin-left: 10px; */
+  padding: 6px 5px;
+  border: 1px solid #27bdad;
+  border-radius: 20px;
+  width: 330px;
+  margin: 0px auto;
+}
+.email_input_perosnal > input,
+.email_input_perosnal > select {
+  padding-left: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 87%;
+  color: #27bdad;
+  font-size: 0.8rem;
+}
+.email_input_perosnal {
+  margin-top: 15px;
+}
+.personal_cont_btn {
+  background: #27bdad;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  color: white;
+  font-size: 1rem;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.personal_detail_container {
+  height: 53vh;
+  overflow-y: auto;
+  margin-top: 0px;
+}
+.personal_detail_container::-webkit-scrollbar {
+  width: 5px;
+}
+.personal_detail_container::-webkit-scrollbar-thumb {
+  background-color: #27bdad;
+}
+.personal_detail_container::-webkit-scrollbar-track {
+  background-color: rgb(192, 245, 229);
+}
+.personal_detail_container > h6 {
+  margin-top: 20px;
+}
+.varify_para_div {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.upload_imgs_divs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.front_upload_div > p {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.front_upload_div > img {
+  width: 200px;
+  margin: 20px 0px;
+  height: 120px;
+  object-fit: cover;
+}
+.front_upload_div {
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.front_upload_div > button {
+  border: none;
+  outline: none;
+  padding: 6px 20px;
+  color: white;
+  background-color: #ff3d3d;
+  border-radius: 20px;
+}
+
+.darK_input input,
+.darK_input select {
+  color: white !important;
+}
+.darK_input input::placeholder {
+  color: white;
+}
+
+.upload_lic_card {
+  width: 35% !important;
+}
+.uploc_height {
+  height: 53vh !important;
+}
+
+@media screen and (max-width: 1125px) {
+  .personal_info_div {
+    margin-left: 10px;
+  }
+  .updateImg_div {
+    width: 300px;
+  }
+  .upload_profile {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .setting_main_div {
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .personal_info_div {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .setting_main_div {
+    flex-wrap: wrap;
+  }
+  .updateImg_div {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 0px !important;
+  }
+  /* .updateImg_div>div{
+        display: flex;
+        flex-direction: column;
+    } */
+  .upload_profile {
+    width: 300px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .setting_main_div {
+    padding: 10px;
+  }
+  .personal_info_div {
+    /* width: 95%; */
+    padding: 20px 10px;
+  }
+  .updateImg_div {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 413px) {
+  ._name_change_div > input {
+    width: 95px;
+  }
+  ._name_change_div{
+    width: 130px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .email_input_perosnal {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 364px) {
+  .personal_info_div {
+    height: 93vh;
+  }
+}
+@media screen and (max-width: 360px) {
+  .updateImg_div {
+    width: 300px;
+  }
+  .upload_profile {
+    width: 200px;
+  }
+  ._name_change_div > input {
+    width: 75px;
+  }
+  ._name_change_div{
+    width: 115px;
+  }
+  .email_input_perosnal {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 325px) {
+  ._name_change_div > input {
+    width: 70px;
+  }
+  ._name_change_div{
+    width: 105px;
+  }
+  .email_input_perosnal {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 305px) {
+  ._name_change_div > input {
+    width: 70px;
+  }
+}

@@ -1,0 +1,159 @@
+.money_selct{
+    height: 100px;
+    padding: 30px 0px;
+    vertical-align: middle;
+
+}
+.money_type_select{
+    display: flex;
+  justify-content: space-between;
+  align-items:inherit !important;
+}
+.money_type>p{
+    margin-top: 18px;
+}
+
+/* money info css  */
+.money_detail_container{
+    display: flex;
+    margin-top: 50px;
+}
+.user_card_div{
+    /* margin-left: 50px; */
+    width: 330px;
+}
+.money_detail_inputs_div{
+    /* width: 900px; */
+    width: 65%;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.money_detail_inputs_div>p{
+    margin-top: 10px;
+}
+.money_info{
+    margin-top: 15px;
+
+}
+.input_money_acc{
+    /* text-align: center; */
+    width: 400px;
+    margin: 20px auto;
+}
+.input_money_acc_D input ,.input_money_acc_D input::placeholder,.input_money_acc_D select{
+    font-size: .9rem;
+    color: white;
+}
+.account_formate_div{
+    margin-top: 10px;
+    text-align: start;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.acc_no{
+    margin-top: 20px;
+    font-size: .9rem;
+}
+.radio_div{
+    display: flex;
+    margin-top: 10px;
+}
+.radio_div>p{
+    margin-top: 8px;
+}
+
+/* transaction css  */
+
+.transaction_div{
+    background: white;
+    border-radius: 15px;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.transaction_div p{
+    margin: 15px 0px;
+    margin-bottom: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 25px;
+    /* margin-bottom: 20px; */
+}
+.transaction_div>div{
+    display: flex;
+    justify-content: center;
+}
+
+.transaction_div>h5{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1em !important;
+}
+
+@media screen and (max-width:991px){
+    .money_detail_container{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .mob_bg_clr_trans{
+        background-color: #e9f8f7;
+    }
+    .review_trans_head{
+        display: none;
+    }
+    .money_detail_inputs_div{
+        background-color: transparent !important;
+    }
+    .money_detail_inputs_div>h4,.user_card_div{
+        display: none;
+    }
+}
+@media screen and (max-width:461px){
+    .money_detail_inputs_div{
+        width: auto;
+
+    }
+    .input_money_acc{
+        width: 98%;
+        margin: 20px auto;
+    }
+    .transaction_div p{
+      font-size: .8rem;
+    }
+    .transaction_div{
+        width: 300px;
+    }
+     
+    .transaction_div>h5{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: .9rem;
+    }
+    .confirm_trans_main_div button{
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width:360px){
+    .confirm_trans_main_div button{
+        font-size: .8rem;
+        width: 120px !important;
+    }
+    .transaction_div{
+        width: 280px;
+    }
+}
+@media screen and (max-width:324px){
+    .money_detail_inputs_div{
+        width: 94%;
+        padding: 20px 0px;
+    }
+    .input_money_acc{
+        width: 94%;
+    }
+    .tick_sign>img{
+        margin-left: 5px;
+
+    }
+}
