@@ -5,7 +5,7 @@ import './styles.scss'
 import data from './data.json';
 import TransferDetails from '../TransferDetails';
 import CollectionPoint from '../CollectionPoint';
-const InnerContent = ({setAddedBenData, collectionPoint}) => {
+const InnerContent = ({setAddedBenData, collectionPoint , transferDetails}) => {
   const [addBen, setAddBen] = useState(false)
   const [ben, setBen] = useState(false)
   const [addBenData, setAddBenData] = useState(false)
@@ -28,8 +28,10 @@ const InnerContent = ({setAddedBenData, collectionPoint}) => {
       :
       !collectionPoint?
       <AddBeneficiary data={data} addBenData = {addBenData} setAddBenData = {(val)=>{setAddBenData(val)}} />
-        :
+        :!transferDetails?
       <CollectionPoint />
+      :
+      <TransferDetails />
       }
     </div>
   )
