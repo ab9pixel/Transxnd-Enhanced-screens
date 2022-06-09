@@ -9,6 +9,7 @@ import './styles.scss'
 const checkbox = '../images/search.svg'
 const creditCardIcon = '../images/search.svg'
 const cardIcon = '../images/search.svg'
+const spinnerImage = '../images/spinner-image.svg'
 
 
 const PaymentMethod = () => {
@@ -39,15 +40,17 @@ const PaymentMethod = () => {
           <PaymentOptions checkbox={checkbox} text="Bank Account" methodOptionIcon={creditCardIcon}/>
         </div>
         <div className='payment-body-right'>
-          <h5>Credit/Debit Card</h5>
-          <div className='credit-card-display'>
-            {/* <CreditDebitCardDetails checkbox={checkbox} cardNumber="9360" expiryDate="Expiry Date" userName="Salman Altaf" cardIcon={cardIcon}/>
+          {/* <h5>Credit/Debit Card</h5> */}
+          {/* <div className='credit-card-display'>
+            <h5>Credit/Debit Card</h5>
+            <CreditDebitCardDetails checkbox={checkbox} cardNumber="9360" expiryDate="Expiry Date" userName="Salman Altaf" cardIcon={cardIcon}/>
             <GreenFullButton 
             onClickFunc={addCreditCard}
             style={{boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px'}}
-            > Add a new credit/debit card</GreenFullButton> */}
-          </div>
-          <div className='credit-card-form'>
+            > Add a new credit/debit card</GreenFullButton>
+          </div> */}
+          {/* <div className='credit-card-form'>
+              <h5>Credit/Debit Card</h5>
               <div className='card-number-field'>
                 <input
                   type="text"
@@ -111,6 +114,15 @@ const PaymentMethod = () => {
                   Save card information for future payments
                 </span>
               </div>
+          </div> */}
+          <div className='spinner'>
+            <div className='spinner-header'>
+              <h5>Tranxnd Wallet</h5>
+            </div>
+            <div className='spinner-image'>
+              <img src={spinnerImage} alt="loadingErr"/>
+            </div>
+            <span>Please wait while we process your information</span>
           </div>
         </div>
       </div>
