@@ -6,7 +6,6 @@ const search = "../images/search.svg";
 const downArrow = "../images/filter.svg";
 
 const CollectionPoint = () => {
-  console.log('data',data)
   return (
     <div className='collection-point'>
         <div className='collection-point-header'>

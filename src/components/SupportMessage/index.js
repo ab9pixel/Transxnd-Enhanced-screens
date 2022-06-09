@@ -1,25 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './styles.scss'
-const SupportMessage = ({buttonLink}) => {
-
+import Button from '../SimpleButton'
+import CollectionPoint from '../CollectionPoint'
+const SupportMessage = ({buttonLink, setCollectionPoint}) => {
   const backScreenHandler = () => {
-    
-  }
-  const nextScreenHandler = () => {
-    if(buttonLink ==="transaction"){
       
-    }
   }
   
 
   return (
-    <div className='support-message'>
-        <div>
-          Have a problem? Contact <span>Customer Support Team</span>
+    <div className='support-message '>
+        <div className='flex flex-between items-center'><p>
+         Have a problem? Contact <span>Customer Support Team</span></p>
           {
             buttonLink ? (<div>
-          <button onClick={backScreenHandler}>Back</button>
-          <button onClick={nextScreenHandler}>Continue</button>
+          <Button className='green med m-right-15' onClick={backScreenHandler} text = "Back" />
+          <Button className='sea-green-hollow med' onClick={()=>setCollectionPoint(true)} text = "Continue" />
             </div>) : null
           }
 
