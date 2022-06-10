@@ -5,12 +5,13 @@ import CreditDebitCardDetails from './CreditDebitCardDetails'
 import PaymentOptions from './PaymentOptions'
 import RadioMark from '../InnerSidebar/RadioMark'
 import './styles.scss'
+import WalletAmount from './WalletAmount'
 
 const checkbox = '../images/search.svg'
 const creditCardIcon = '../images/search.svg'
 const cardIcon = '../images/search.svg'
 const spinnerImage = '../images/spinner-image.svg'
-
+const warningAlert = '../images/warning.svg'
 
 const PaymentMethod = () => {
   const [saveCard, setSaveCard] = useState(false)
@@ -115,7 +116,7 @@ const PaymentMethod = () => {
                 </span>
               </div>
           </div> */}
-          <div className='spinner'>
+          {/* <div className='spinner'>
             <div className='spinner-header'>
               <h5>Tranxnd Wallet</h5>
             </div>
@@ -123,6 +124,27 @@ const PaymentMethod = () => {
               <img src={spinnerImage} alt="loadingErr"/>
             </div>
             <span>Please wait while we process your information</span>
+          </div> */}
+          {/* <div className='tranxnd-wallet'>
+            <div className='wallet-header'>
+              <h5>Tranxnd Wallet</h5>
+            </div>
+            <WalletAmount text="Current Balance" amount="XOF 104,535.53" marginBottom="42px" color= "#27BDAD"/>
+            <WalletAmount text="Transaction Amount" amount="XOF 4,500.00" marginBottom="230px" color= "#27BDAD"/>
+          </div> */}
+          <div className='wallet-response'>
+            <h5>Tranxnd Wallet</h5>
+            <div className='wallet-resonse-img'>
+              <img src={warningAlert} alt="warningAlert"/>
+            </div>
+            <p className='warning-message'>Insufficient Wallet allowance:</p>
+            <p className='response-para'>The source wallet maximum balance will not be enough to pay for this transaction even if you transfer funds into it.</p>
+            <p className='response-para'>Please select a different payment method or reduce the transaction amount to continue with the current source wallet.</p>
+            <div className='response-balance-amount'>
+                <WalletAmount text="Current Balance" amount="XOF 104,535.53" marginBottom="23px" color= "#FA7272" fontSize="22px"/>
+                <WalletAmount text="Transaction Amount" amount="XOF 4,500.00" marginBottom="23px" color= "#27BDAD" fontSize="22px"/>
+            </div>
+            <GreenFullButton style={{width: '90%', margin: '0 auto'}}>Fund your transxnd wallet</GreenFullButton>
           </div>
         </div>
       </div>

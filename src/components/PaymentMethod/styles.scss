@@ -19,6 +19,7 @@
 }
 .payment-body-right h5{
     font-size: 18px;
+    font-family: 'Poppins';
     font-weight: 600;
     margin-bottom: 26px;
     text-align: center;
@@ -150,10 +151,7 @@
     align-items: center;
     flex-direction: column;
 }
-.spinner-header h5{
-    font-size: 18px;
-    font-family: 'Poppins';
-    text-align: center;
+.spinner-header h5 {
     margin-bottom: 158px;
 }
 .spinner img{
@@ -164,4 +162,61 @@
     font-weight: 600;
     font-family: inherit;
     margin-bottom: 224px;
+}
+.wallet-amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wallet-amount p{
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 600;
+}
+.wallet-amount span{
+    font-size: 30px;
+    font-family: inherit;
+    color: #27BDAD;
+    font-weight: bold;
+}
+.tranxnd-wallet h5 {
+    margin-bottom: 38px;
+}
+// .wallet-response{
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+// }
+.wallet-resonse-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wallet-resonse-img img{
+    width: 32px;
+    margin-bottom: 18px;
+}
+.wallet-response h5{
+    margin-bottom: 29px;
+}
+.warning-message{
+    font-size: 16px;
+    color: #FE0000;
+    line-height: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.response-para{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.response-balance-amount{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
