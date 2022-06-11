@@ -1,0 +1,55 @@
+.otp-confirmation{
+    padding: 26px 23px 44px 33px;
+    background-color: #D3F2EF;
+    font-family: 'Poppins';
+    height: 100%;
+    &__header{
+        margin-bottom: 24px;
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 23px;
+        }
+    }
+    &__body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 33px 0px 22px;
+        border: 0.5px solid #72FAEC;
+        border-radius: 5px;
+        .otp-inputs{
+            display: flex;
+            align-items: center;
+            input{
+                width: 48px;
+                height: 48px;
+            }
+        }
+        p{
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .mobile-number{
+            margin-bottom: 22px;
+            span{
+                color: #27BDAD;
+                font-size: 16px;
+                font-weight: 600;
+                margin-right: 17px;
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                width: 17px;
+                height: 15px;
+                padding: 0;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
