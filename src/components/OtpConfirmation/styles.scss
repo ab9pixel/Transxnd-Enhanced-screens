@@ -51,5 +51,56 @@
             }
         }
 
+        .mobile-image{
+            margin-bottom: 23px;
+            img{
+                width: 84px;
+                height: 84px;
+                margin: 0 auto;
+            }
+        }
+        .otp-inputs{
+            width: 231px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 27px;
+            input{
+                border: none;
+                border-radius: 5px;
+                // box-shadow: inset 3px 3px 5px 6px rgba(68,68,68,0.6);
+                box-shadow: inset 0.5px 1px 5px rgba(50, 50, 50, 0.75);
+                padding: 5px 10px;
+                text-align: center;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+        .otp-warning{
+            .warning-sign{
+                img{
+                    width: 22px;
+                }
+                span{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #FF3D3D;
+                }
+                margin-bottom: 15px;
+            }
+            .otp-expiry-time{
+                font-size: 16px;
+                text-align: center;
+                font-weight: 600;
+                margin-bottom: 50px;
+            }
+            .opt-confirmation-button{
+                margin-bottom: 10px;
+            }
+            p{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
     }
 }

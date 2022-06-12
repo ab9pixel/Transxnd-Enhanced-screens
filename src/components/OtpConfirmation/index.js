@@ -39,7 +39,7 @@ const OtpConfirmation = () => {
                     <span>Resend OTP (00:30)</span>
                 </div>
                 <div className='opt-confirmation-button'>
-                    <GreenFullButton style={{width: '50%', margin: '0 auto'}}>Confirm and Pay</GreenFullButton>
+                    <GreenFullButton style={{margin: '0 auto'}}>Confirm and Pay</GreenFullButton>
                 </div>
                 <p>
                     Did'nt receive a code?
