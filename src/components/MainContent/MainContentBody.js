@@ -5,7 +5,7 @@ import InnerSidebar from "../InnerSidebar";
 import InnerContent from "../InnerContent";
 import SupportMessage from "../SupportMessage";
 const MainContentBody = () => {
-  const [progress, setProgress] = useState(0)
+  const [progress, setProgress] = useState(1)
   const [sendMoneyNow, setSendMoneyNow] = useState (false)
   const [addedBen, setAddedBenData] = useState("")
   const [collectionPoint, setCollectionPoint] = useState(false)

@@ -65,6 +65,19 @@ h1, h2, h3 , h4 , h5, p{
            border: 0;
            color: #fff;
         }
+        .accordion-header, .accordion-header button[aria-expanded=true]{
+            background: #112623;
+            color: #fff;
+        }
+        .accordion-body{
+            background: #0C1917;
+        }
+        .inner-content{
+            background: #060D0C;
+        } input{
+            background: #060D0C;
+            border: 1px solid #72FAEC;
+        }
     }
     &.footerMain{
         background:#000;
