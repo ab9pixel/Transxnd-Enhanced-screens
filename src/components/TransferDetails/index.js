@@ -52,7 +52,41 @@ const TransferDetails = () => {
             <img src={infoCircle} alt="info circle err" />
           </div>
           <div className="transaction-type-form">
-            <button onClick={() => setRadioActive("cash")}></button>
+            <div className="transactionType">
+                <div className="SmallInput">
+                  <div className="SmallInputWrap">
+                    <input
+                      type="checkbox"
+                      name="cashCollection"
+                      value={transactionType.cashCollection}
+                      onClick={() => {}}
+                    />
+                    <p>Cash Collection</p>
+                  </div>
+                </div>
+                <div className="SmallInput">
+                  <div className="SmallInputWrap">
+                    <input
+                      type="checkbox"
+                      name="utilityPayment"
+                      value={transactionType.utilityPayment}
+                      onClick={() => {}}
+                    />
+                    <p>Utility Payment</p>
+                  </div>
+                </div>
+                <div className="SmallInput">
+                  <div className="SmallInputWrap">
+                    <input
+                      type="checkbox"
+                      name="mobileTransfer"
+                      value={transactionType.mobileTransfer}
+                      onClick={() => {}}
+                    />
+                    <p>Mobile Transfer</p>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
         <div className="transaction-right">

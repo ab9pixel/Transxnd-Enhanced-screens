@@ -19,11 +19,11 @@ const InnerContent = ({setAddedBenData}) => {
   return (
     <div className="inner-content">
       {/***************** test code start */}
-      <OtpConfirmation/>
+      {/* <OtpConfirmation/> */}
         {/* <ReviewPayment/> */}
         {/* <PaymentMethod/> */}
         {/* <CollectionPoint/> */}
-      {/* <TransferDetails/> */}
+      <TransferDetails/>
 
       {/*****************  test code end */}
       {/* {!addBen?
