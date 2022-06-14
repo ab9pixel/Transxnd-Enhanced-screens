@@ -10,7 +10,7 @@ const upDownArrows = "../images/upDownArrows.svg";
 const circle = "../images/circle.svg";
 
 
-const ReviewPayment = () => {
+const ReviewPayment = ({setOtp}) => {
   return (
     <div className='review-payment'>
         <div className='review-payment-header'>
@@ -62,7 +62,7 @@ const ReviewPayment = () => {
                 <p>Note: Charges will be applicable as per Schedule of Bank Charges. Please <a href='https://www.google.com'>click here</a> to review the charges.</p>
             </div>
             <div className='confirmation-button'>
-                <GreenFullButton style={{width: '50%', margin: '0 auto'}}>Confirm and Pay</GreenFullButton>
+                <GreenFullButton onClick = {()=>setOtp(true)} style={{width: '50%', margin: '0 auto'}}>Confirm and Pay</GreenFullButton>
             </div>  
         </div>
     </div>

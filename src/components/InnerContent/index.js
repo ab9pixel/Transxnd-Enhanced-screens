@@ -12,6 +12,7 @@ const InnerContent = ({setAddedBenData, collectionPoint, transferDetails, paymen
   const [addBen, setAddBen] = useState(false)
   const [ben, setBen] = useState(false)
   const [addBenData, setAddBenData] = useState(false)
+  const [otp, setOtp] = useState(false)
 
   if(ben){
     setAddedBenData("transaction")
@@ -23,7 +24,7 @@ const InnerContent = ({setAddedBenData, collectionPoint, transferDetails, paymen
         {/* <ReviewPayment/> */}
         {/* <PaymentMethod/> */}
         {/* <CollectionPoint/> */}
-      <TransferDetails/>
+      {/* <TransferDetails/> */}
       {/*****************  test code end */}
       {!addBen?
       <AddBeneficiary setAddBen = {(val)=>{setAddBen(val)}}/>
@@ -40,8 +41,10 @@ const InnerContent = ({setAddedBenData, collectionPoint, transferDetails, paymen
       !reviewPayment?
       <PaymentMethod />
       :
-      <ReviewPayment />
-      
+      !otp?
+      <ReviewPayment  setOtp ={(val)=>{setOtp(val)}}/>
+        :
+      <OtpConfirmation />
       }
     </div>
   )

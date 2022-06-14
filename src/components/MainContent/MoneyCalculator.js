@@ -188,7 +188,7 @@ const MoneyCalculator = ({setSendMoneyNow}) => {
               </div>
             )}
             <GreenFullButton
-              onClickFunc={!convertedCurr ? currenctConvert : sendMoneyNow}
+              onClick={!convertedCurr ? currenctConvert : sendMoneyNow}
               style={{ marginTop: convertedCurr ? "25px" : "134px" }}
             >
               {convertedCurr ? "Send Money Now" : "Calculator"}
