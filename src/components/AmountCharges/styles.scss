@@ -1,0 +1,55 @@
+.transaction-steps{
+    position: relative;
+    padding: 30px 0;
+    
+    
+    span{
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        position: relative;
+        padding-left: 18.5px;
+        &.active{
+            color: #27BDAD;
+            font-size: 15px;
+            margin-bottom: 25px !important;
+            &::before{
+                width: 22px;
+                height: 22px;
+                background-image: url(../../../public/images/updown-chevron.png);
+                background-size: contain;
+                left: -7px;
+            }
+        }
+    
+        &:not(:last-child){
+            margin-bottom: 17px;
+        }
+    
+        &::before{
+             content: '';
+             display: block;
+             position: absolute;
+             width: 8px;
+             height: 8px;
+             left: 0;
+             border-radius: 100%;
+             background-color: #fff;
+             border: 1px solid #27BDAD; 
+             top: 50%;
+             transform: translateY(-50%);
+        }
+    }
+    
+        &::before{
+            content: "" ;
+            position: absolute;
+            width: 1px;
+            top: 0;
+            left: 4px;
+            bottom: 0;
+            height: 100%;
+            background-color: #27BDAD;
+        }
+    
+    }

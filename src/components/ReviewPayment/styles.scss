@@ -1,0 +1,62 @@
+.review-payment{
+    padding: 26px 23px 44px 33px;
+    background-color: #D3F2EF;
+    font-family: 'Poppins';
+}
+.beneficiary-transaction{
+    display: flex;
+    margin-bottom: 44px;
+}
+.review-payment-body{
+    padding: 26px;
+    background-color: #E8F9F7;
+    border: 0.5px solid #27BDAD;
+    border-radius: 5px;
+}
+.beneficiary-details{
+    margin-right: 54px;
+    width: 30%;
+}
+h5{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+h6{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.beneficiary-details span, .review-country-send span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #27BDAD;
+}
+.review-country-send span{
+    font-size: 18px;
+    font-weight: 700;
+}
+.review-name{
+    margin-bottom: 23px;
+}
+.review-country-flag{
+    display: inline;
+    margin-right: 13px;
+}
+.review-country{
+    margin-bottom: 20px;
+}
+.review-payment-note{
+    font-size: 12px;
+    max-width: 90%;
+    text-align: center;
+    margin: 17px auto;
+    font-weight: 100;
+    font-style: italic;
+}
+.review-payment-note a{
+    color: black;
+    font-style: normal;
+}
