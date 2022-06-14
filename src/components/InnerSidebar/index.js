@@ -1,8 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import {Accordion} from 'react-bootstrap'
 import BeneficiaryCard from '../BeneficiaryCard'
+import TransferCard from '../TransferDetails/TransferCard'
 import RadioMark from './RadioMark'
 import './styles.scss'
+
+const usaFlag = '../images/usd.png';
+const pakFlag = '../images/pkr.png';
+
 export default function InnerSidebar({progress}) {
 useEffect(()=>{
   const highlightedItems = document.querySelectorAll(".accordion .hollow");
@@ -49,8 +54,14 @@ document.querySelector('.accordion .in-progress')?.parentNode?.parentNode?.setAt
              <path id="Path_7708" data-name="Path 7708" d="M-14403.338,20463.662l5.354,5.354,5.354-5.354" transform="translate(14404.752 -20462.248)" fill="none" stroke="#27bdad" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
           </svg></Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          est laborum.
+          <TransferCard 
+            sendFlagImage={usaFlag}
+            recipentFlagImage={pakFlag}
+            sendAmount="1000"
+            recipientAmount="18565"
+            sendCurrency="USD"
+            recipientCurrency="PKR"
+          />
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2"> 

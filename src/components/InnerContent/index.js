@@ -7,6 +7,7 @@ import TransferDetails from '../TransferDetails';
 import CollectionPoint from '../CollectionPoint';
 import PaymentMethod from '../PaymentMethod';
 import ReviewPayment from '../ReviewPayment';
+import OtpConfirmation from '../OtpConfirmation';
 const InnerContent = ({setAddedBenData, collectionPoint, transferDetails, paymentMethod, reviewPayment}) => {
   const [addBen, setAddBen] = useState(false)
   const [ben, setBen] = useState(false)
@@ -18,7 +19,11 @@ const InnerContent = ({setAddedBenData, collectionPoint, transferDetails, paymen
   return (
     <div className="inner-content">
       {/***************** test code start */}
-        
+      {/* <OtpConfirmation/> */}
+        {/* <ReviewPayment/> */}
+        {/* <PaymentMethod/> */}
+        {/* <CollectionPoint/> */}
+      <TransferDetails/>
       {/*****************  test code end */}
       {!addBen?
       <AddBeneficiary setAddBen = {(val)=>{setAddBen(val)}}/>
