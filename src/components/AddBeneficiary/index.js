@@ -1,14 +1,19 @@
 import React from "react";
 import Button from "../MainContent/Button";
 import "./styles.scss";
+import {useDispatch, useSelector} from 'react-redux';
+
 
 const plus = "../images/plus.svg";
 const search = "../images/search.svg";
 const sort = "../images/sort.svg";
 const undraw = "../images/undraw.svg";
 const AddBeneficiary = ({ data, setAddBen }) => {
+  const darkMode = useSelector(state=>state.themeActions.darkMode)
+  const dispatch = useDispatch();
+
   return (
-    <div className="add-beneficiary">
+    <div className={`add-beneficiary ${darkMode?'dark-mode' : ''} `}>
       <div className="add-beneficiary-wrap">
         <div className="beneficiary-header">
           <div className="beneficiary-head-text">

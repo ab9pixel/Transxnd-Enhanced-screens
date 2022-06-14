@@ -77,9 +77,60 @@ body{
         }
         .inner-content{
             background: #060D0C;
-        } input{
+        } 
+        input{
             background: #060D0C;
             border: 1px solid #72FAEC;
+        }
+    }
+    .add-beneficiary{
+        table{
+            tr{
+                background:#0B1917;
+                .short-name{
+                    background-color: black;
+                    border-radius: 50%;
+                }
+                .full-name h2{
+                    color: #72FAEC;
+                }
+            }
+        }
+        .beneficiary-header{
+            button{
+                color: #060D0C;
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+        .input-sort{
+            button{
+                background:#0B1917;
+                color: white;
+                img{
+                    // filter: invert(1);
+                }
+            }
+        }
+    }
+    .review-payment{
+        background-color: #060D0C;
+        color: white;
+        .review-payment-body{
+            background-color: #060D0C;
+            color: white;
+        }
+    }
+    .otp-confirmation {
+        background-color: #060D0C;
+        color: white;
+        &__body{
+           .otp-inputs{
+               input{
+                   border: 1px solid white;
+               }
+           } 
         }
     }
     &.footerMain{

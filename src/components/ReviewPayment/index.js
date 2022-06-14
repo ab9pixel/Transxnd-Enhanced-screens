@@ -3,6 +3,7 @@ import AmountCharges from '../AmountCharges'
 import GreenFullButton from '../GreenFullButton/GreenFullButton'
 import InnerContentHeader from '../InnerContentHeader'
 import './styles.scss'
+import {useDispatch, useSelector} from 'react-redux';
 
 const pakFlag = '../images/pakFlag.svg'
 const usaFlag = '../images/usaFlag.svg'
@@ -11,8 +12,11 @@ const circle = "../images/circle.svg";
 
 
 const ReviewPayment = ({setOtp}) => {
+    const darkMode = useSelector(state=>state.themeActions.darkMode)
+    const dispatch = useDispatch();
+
   return (
-    <div className='review-payment'>
+    <div className={`review-payment ${darkMode?'dark-mode' : ''} `}>
         <div className='review-payment-header'>
             <InnerContentHeader text="Review Payment"/>
             <p>Review transaction before you make the payment</p>

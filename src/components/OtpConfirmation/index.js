@@ -2,13 +2,17 @@ import React from 'react'
 import './styles.scss'
 import InnerContentHeader from '../InnerContentHeader'
 import GreenFullButton from '../GreenFullButton/GreenFullButton'
+import {useDispatch, useSelector} from 'react-redux';
 
 const mobileEdit = '../images/mobile-edit.png'
 const mobileImage = '../images/mobileImage.png'
 const warningImage = '../images/warning.png'
 const OtpConfirmation = () => {
+    const darkMode = useSelector(state=>state.themeActions.darkMode)
+    const dispatch = useDispatch();
+
   return (
-    <div className='otp-confirmation'>
+    <div className={`otp-confirmation ${darkMode?'dark-mode' : ''} `}>
         <div className='otp-confirmation__header'>
             <InnerContentHeader text="OTP Confirmation"/>
             <p>Please enter the 4 digit OPT sent on your email and phone number!</p>
