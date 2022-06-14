@@ -6,9 +6,19 @@
     box-sizing: border-box;
     color: #0E2725;
 }
-h1, h2, h3 , h4 , h5{
+h1, h2, h3 , h4 , h5, p{
     margin: 0;
 }
+.flex{
+    display: flex;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.items-center{
+    place-items: center;
+}
+
 *{
     box-sizing: border-box;
     font-family: Poppins;
@@ -54,6 +64,19 @@ h1, h2, h3 , h4 , h5{
            background: #1E413D;
            border: 0;
            color: #fff;
+        }
+        .accordion-header, .accordion-header button[aria-expanded=true]{
+            background: #112623;
+            color: #fff;
+        }
+        .accordion-body{
+            background: #0C1917;
+        }
+        .inner-content{
+            background: #060D0C;
+        } input{
+            background: #060D0C;
+            border: 1px solid #72FAEC;
         }
     }
     &.footerMain{
