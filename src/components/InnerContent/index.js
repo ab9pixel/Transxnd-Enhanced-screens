@@ -8,7 +8,7 @@ import CollectionPoint from '../CollectionPoint';
 import PaymentMethod from '../PaymentMethod';
 import ReviewPayment from '../ReviewPayment';
 import OtpConfirmation from '../OtpConfirmation';
-const InnerContent = ({setAddedBenData}) => {
+const InnerContent = ({setAddedBenData, collectionPoint, transferDetails, paymentMethod, reviewPayment}) => {
   const [addBen, setAddBen] = useState(false)
   const [ben, setBen] = useState(false)
   const [addBenData, setAddBenData] = useState(false)
@@ -24,15 +24,25 @@ const InnerContent = ({setAddedBenData}) => {
         {/* <PaymentMethod/> */}
         {/* <CollectionPoint/> */}
       <TransferDetails/>
-
       {/*****************  test code end */}
-      {/* {!addBen?
+      {!addBen?
       <AddBeneficiary setAddBen = {(val)=>{setAddBen(val)}}/>
     :!ben?
       <BeneficiaryForm setBen = {(val)=>{setBen(val)}} />
       :
+      !collectionPoint?
       <AddBeneficiary data={data} addBenData = {addBenData} setAddBenData = {(val)=>{setAddBenData(val)}} />
-      } */}
+        :!transferDetails?
+        <TransferDetails />
+      :!paymentMethod?
+      <CollectionPoint />
+      :
+      !reviewPayment?
+      <PaymentMethod />
+      :
+      <ReviewPayment />
+      
+      }
     </div>
   )
 }
