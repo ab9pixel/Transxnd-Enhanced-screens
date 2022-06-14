@@ -48,7 +48,7 @@ const PaymentMethod = () => {
             <h5>Credit/Debit Card</h5>
             <CreditDebitCardDetails checkbox={checkbox} cardNumber="9360" expiryDate="Expiry Date" userName="Salman Altaf" cardIcon={cardIcon}/>
             <GreenFullButton 
-            onClickFunc={addCreditCard}
+            onClick={addCreditCard}
             style={{boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px'}}
             > Add a new credit/debit card</GreenFullButton>
           </div> */}
