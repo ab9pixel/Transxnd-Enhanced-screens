@@ -74,6 +74,10 @@ body{
         }
         .accordion-body{
             background: #0C1917;
+            .short-name{
+                background-color: black;
+                border-radius: 50%;
+            }
         }
         .inner-content{
             background: #060D0C;
@@ -131,6 +135,34 @@ body{
                    border: 1px solid white;
                }
            } 
+        }
+    }
+    .payment-method{
+        background-color: #060D0C;
+        color: white;
+        .payment-body-left{
+            .payment-option{
+                background-color: #060D0C;
+            }
+        }
+        .payment-body-right{
+            background-color: #060D0C;
+            color: white;
+            .credit-card-form{
+                input{
+                    color: white;
+                }
+                input::placeholder{
+                    color: white;
+                }
+                select{
+                    background-color: #060D0C;
+                    color: white;
+                }
+            }
+            .card-details-wrap{
+                background-color: #060D0C;
+            }
         }
     }
     &.footerMain{

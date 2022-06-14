@@ -6,6 +6,7 @@ import PaymentOptions from './PaymentOptions'
 import RadioMark from '../InnerSidebar/RadioMark'
 import './styles.scss'
 import WalletAmount from './WalletAmount'
+import {useDispatch, useSelector} from 'react-redux';
 
 const checkbox = '../images/hollow-checkbox.svg'
 const creditCardIcon = '../images/credit-card.svg'
@@ -17,8 +18,10 @@ const warningAlert = '../images/warning.svg'
 
 const PaymentMethod = () => {
   const [saveCard, setSaveCard] = useState(false)
-  const [countryFlag, setCountyFlag] = useState('usa')
+  const [countryFlag, setCountyFlag] = useState('usd')
   const flag = `../images/${countryFlag}.png`;
+  const darkMode = useSelector(state=>state.themeActions.darkMode);
+  const dispatch = useDispatch();
 
   const changeFlagHandler = (e) => {
     setCountyFlag(e.target.value);
@@ -31,7 +34,7 @@ const PaymentMethod = () => {
   }
 
   return (
-    <div className='payment-method'>
+    <div className={`payment-method ${darkMode?'dark-mode' : ''} `}>
       <div className='payment-method-header'>
         <InnerContentHeader text="Select a payment method"/>
         <p>Select how'd you like to pay for this translation!</p>
@@ -43,7 +46,6 @@ const PaymentMethod = () => {
           <PaymentOptions checkbox={checkbox} text="Bank Account" methodOptionIcon={bankIcon}/>
         </div>
         <div className='payment-body-right'>
-          {/* <h5>Credit/Debit Card</h5> */}
           {/* <div className='credit-card-display'>
             <h5>Credit/Debit Card</h5>
             <CreditDebitCardDetails checkbox={checkbox} cardNumber="9360" expiryDate="Expiry Date" userName="Salman Altaf" cardIcon={cardIcon}/>
@@ -52,6 +54,7 @@ const PaymentMethod = () => {
             style={{boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px'}}
             > Add a new credit/debit card</GreenFullButton>
           </div> */}
+
           {/* <div className='credit-card-form'>
               <h5>Credit/Debit Card</h5>
               <div className='card-number-field'>
@@ -87,8 +90,8 @@ const PaymentMethod = () => {
                     value={countryFlag}
                     onClick={changeFlagHandler}
                     >
-                      <option value="usa">Country</option>
-                      <option value="usa">USA</option>
+                      <option value="usd">Country</option>
+                      <option value="usd">USA</option>
                       <option value="pkr">PAK</option>
                       <option value="uk">UK</option>
                     </select>
@@ -118,6 +121,7 @@ const PaymentMethod = () => {
                 </span>
               </div>
           </div> */}
+        
           {/* <div className='spinner'>
             <div className='spinner-header'>
               <h5>Tranxnd Wallet</h5>
@@ -127,6 +131,7 @@ const PaymentMethod = () => {
             </div>
             <span>Please wait while we process your information</span>
           </div> */}
+          
           {/* <div className='tranxnd-wallet'>
             <div className='wallet-header'>
               <h5>Tranxnd Wallet</h5>
@@ -134,6 +139,7 @@ const PaymentMethod = () => {
             <WalletAmount text="Current Balance" amount="XOF 104,535.53" marginBottom="42px" color= "#27BDAD"/>
             <WalletAmount text="Transaction Amount" amount="XOF 4,500.00" marginBottom="230px" color= "#27BDAD"/>
           </div> */}
+
           <div className='wallet-response'>
             <h5>Tranxnd Wallet</h5>
             <div className='wallet-resonse-img'>
