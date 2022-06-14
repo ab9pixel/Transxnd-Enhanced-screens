@@ -6,7 +6,11 @@
     box-sizing: border-box;
     color: #0E2725;
 }
-h1, h2, h3 , h4 , h5, p{
+.row>*{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3 , h4 , h5, p, .row{
     margin: 0;
 }
 body{
@@ -98,3 +102,35 @@ body{
 
 
 }
+.App{
+@media(max-width: 990px){
+    
+    .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message  {
+    display: none;
+    }
+    .MoneyCalculator .row >.col-lg-6:first-child{
+        order: 2;
+    }
+    .headerWrap, .MainContentWrap{
+        margin: 0;
+    }
+    .SmallInput, .SmallInputWrap{
+        width: 100%;
+    }
+    .transactionType h3{
+        text-align: center;
+    }
+    .sendMoneyPageOneRight{
+        padding-right: 0;
+    }
+
+
+    .container{
+        width: 100%;
+        margin: 0 13px;
+        max-width: none;
+    }
+    .ContentHeaderText p{
+        display: none;
+    }
+}}

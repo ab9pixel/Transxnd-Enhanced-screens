@@ -111,6 +111,7 @@ const MoneyCalculator = ({setSendMoneyNow}) => {
                   text="number"
                   name="transactionAmount"
                   value={fromCurrency}
+                  placeholder="1,000"
                   onChange={(e) => setFromCurrency(e.target.value)}
                 />
                 <div className="currencyWrap">
