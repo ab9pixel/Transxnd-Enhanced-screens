@@ -5,7 +5,7 @@ import data from "./data.json";
 const search = "../images/search.svg";
 const downArrow = "../images/filter.svg";
 
-const CollectionPoint = () => {
+const CollectionPoint = ({setPaymentMethod}) => {
   return (
     <div className='collection-point'>
         <div className='collection-point-header'>

@@ -7,9 +7,11 @@ import RadioMark from '../InnerSidebar/RadioMark'
 import './styles.scss'
 import WalletAmount from './WalletAmount'
 
-const checkbox = '../images/search.svg'
-const creditCardIcon = '../images/search.svg'
+const checkbox = '../images/hollow-checkbox.svg'
+const creditCardIcon = '../images/credit-card.svg'
+const bankIcon = '../images/bank.svg'
 const cardIcon = '../images/search.svg'
+const transxndIcon = '../images/transxnd.svg'
 const spinnerImage = '../images/spinner-image.svg'
 const warningAlert = '../images/warning.svg'
 
@@ -37,8 +39,8 @@ const PaymentMethod = () => {
       <div className='payment-body'>
         <div className='payment-body-left'>
           <PaymentOptions checkbox={checkbox} text="Credit/Debit Card" methodOptionIcon={creditCardIcon}/>
-          <PaymentOptions checkbox={checkbox} text="Tranxnd Wallet" methodOptionIcon={creditCardIcon}/>
-          <PaymentOptions checkbox={checkbox} text="Bank Account" methodOptionIcon={creditCardIcon}/>
+          <PaymentOptions checkbox={checkbox} text="Tranxnd Wallet" methodOptionIcon={transxndIcon}/>
+          <PaymentOptions checkbox={checkbox} text="Bank Account" methodOptionIcon={bankIcon}/>
         </div>
         <div className='payment-body-right'>
           {/* <h5>Credit/Debit Card</h5> */}

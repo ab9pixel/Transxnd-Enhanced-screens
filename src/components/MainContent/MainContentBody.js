@@ -9,6 +9,7 @@ const MainContentBody = () => {
   const [sendMoneyNow, setSendMoneyNow] = useState (false)
   const [addedBen, setAddedBenData] = useState("")
   const [collectionPoint, setCollectionPoint] = useState(false)
+  const [paymentMethod, setPaymentMethod] = useState(false)
   const [transferDetails, setTransferDetails] = useState(false)
   return (
     <div className="MainContentBody">
@@ -19,10 +20,13 @@ const MainContentBody = () => {
           !sendMoneyNow ? <MoneyCalculator setSendMoneyNow={setSendMoneyNow}/> :
         <div className = "SendMoneyWrap">
           <InnerSidebar progress = {progress} setProgress = {(val)=> {setProgress(val)}} />
-          <InnerContent progress = {progress} setAddedBenData={setAddedBenData} transferDetails={transferDetails} setProgress = {(val)=> {setProgress(val)}} collectionPoint={collectionPoint}   />
+          <InnerContent progress = {progress} setAddedBenData={setAddedBenData} transferDetails={transferDetails} setProgress = {(val)=> {setProgress(val)}} collectionPoint={collectionPoint} paymentMethod={paymentMethod} />
         </div>
         }
-        <SupportMessage buttonLink={addedBen} setTransferDetails={(val)=>{setTransferDetails(true)}} collectionPoint={collectionPoint} setCollectionPoint= {(val)=>setCollectionPoint(val)}/>
+        <SupportMessage buttonLink={addedBen} setTransferDetails={(val)=>{setTransferDetails(true)}} collectionPoint={collectionPoint} setCollectionPoint= {(val)=>setCollectionPoint(val)}
+        paymentMethod = {paymentMethod}
+        setPaymentMethod={(val)=>{setPaymentMethod(val)}} 
+        />
       </div>        
     </div>
   );
