@@ -1,8 +1,25 @@
-.simple-button button{
+ button{
     padding:11px 41px;
     border-radius: 5px;
     display: inline;
     font-size: 20px;
     font-family: 'Poppins';
     font-weight: 600;
+}
+.sea-green-hollow{
+    border: 1px solid #27BDAD;
+    color: #27BDAD;
+    background: transparent;
+}
+
+.green{
+    background-color: #2ED06E;
+    color: #fff;
+    border: none;
+}
+.med{
+    min-width: 170px;
+}
+.m-right-15{
+    margin-right: 15px;
 }
