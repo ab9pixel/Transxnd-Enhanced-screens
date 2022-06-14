@@ -7,7 +7,7 @@ import TransferDetails from '../TransferDetails';
 import CollectionPoint from '../CollectionPoint';
 import PaymentMethod from '../PaymentMethod';
 import ReviewPayment from '../ReviewPayment';
-const InnerContent = ({setAddedBenData, collectionPoint , transferDetails, paymentMethod}) => {
+const InnerContent = ({setAddedBenData, collectionPoint, transferDetails, paymentMethod, reviewPayment}) => {
   const [addBen, setAddBen] = useState(false)
   const [ben, setBen] = useState(false)
   const [addBenData, setAddBenData] = useState(false)
@@ -18,7 +18,7 @@ const InnerContent = ({setAddedBenData, collectionPoint , transferDetails, payme
   return (
     <div className="inner-content">
       {/***************** test code start */}
-        <ReviewPayment/>
+        
       {/*****************  test code end */}
       {!addBen?
       <AddBeneficiary setAddBen = {(val)=>{setAddBen(val)}}/>
@@ -32,7 +32,10 @@ const InnerContent = ({setAddedBenData, collectionPoint , transferDetails, payme
       :!paymentMethod?
       <CollectionPoint />
       :
+      !reviewPayment?
       <PaymentMethod />
+      :
+      <ReviewPayment />
       
       }
     </div>

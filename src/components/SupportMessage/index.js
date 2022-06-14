@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './styles.scss'
 import Button from '../SimpleButton'
 import CollectionPoint from '../CollectionPoint'
-const SupportMessage = ({buttonLink, setCollectionPoint, collectionPoint, setTransferDetails, paymentMethod, setPaymentMethod}) => {
+const SupportMessage = ({buttonLink, reviewPayment, setReviewPayment, setCollectionPoint, collectionPoint, setTransferDetails, paymentMethod, setPaymentMethod}) => {
   const backScreenHandler = () => {
 
   }
@@ -18,7 +18,8 @@ const SupportMessage = ({buttonLink, setCollectionPoint, collectionPoint, setTra
           <Button className='sea-green-hollow med' onClick={()=>{
            collectionPoint?setTransferDetails(true):
            paymentMethod?setCollectionPoint(true):
-           setPaymentMethod(true)
+           reviewPayment?setPaymentMethod(true):
+           setReviewPayment(true)
           }} text = "Continue" />
             </div>) : null
           }
