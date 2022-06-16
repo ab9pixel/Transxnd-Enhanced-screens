@@ -178,6 +178,78 @@ body{
             color: #fff;
         }
     }
+}
 
+@media (max-width: 428px){
+    .headerMain{
+        .navbarLeft{
+            .navbarWrap, {
+                display: none;
+            }
+            .logoWrap img{
+                width: 122px;
+            }
+        }
+        .navbarRight{
+            // display: none;
+            .profileView{
+                display: none;
+            }
+            .fontAwesome{
+                width: 31px;
+                height: 31px;
+                button{
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        
 
+    }
+    .MainContentWrap{
+        .sidebarMain{
+            display: none;
+        }
+        .ContentHeaderText{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                display: none;
+            }
+            span{
+                margin-right: 10px;
+            }
+        }
+        .RateButton{
+            button{
+                padding: 5px !important;
+                font-size: 15px;
+                background-color: transparent;
+                color: black;
+                .green-calculator{
+                    width: 14px;
+                    display: inline;
+                }
+                .white-calculator{
+                    display: none;
+                }
+            }
+        }
+    }
+    .MoneyCalculator{
+        .row{
+            flex-direction: column-reverse;
+            .sendMoneyPageOneRight{
+                padding: 34px 25px 19px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }

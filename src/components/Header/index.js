@@ -21,7 +21,7 @@ const Header = () => {
                         <img src='../images/logo-dark.png' alt='LogoImage Error'/>
                         :<img src='../images/logoImage.png' alt='LogoImage Error'/>
                         }
-                        </div>
+                    </div>
                     <div className="navbarWrap">
                         <a href='#home'>
                             <Navbar navName='Home'/>
