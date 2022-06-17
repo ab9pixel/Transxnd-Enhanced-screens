@@ -212,6 +212,7 @@ body{
 
     }
     .MainContentWrap{
+        margin: 14px 13px !important;
         .sidebarMain{
             display: none;
         }
@@ -249,6 +250,21 @@ body{
                 padding: 34px 25px 19px;
                 display: flex;
                 flex-direction: column;
+                .SmallInput{
+                    width: 100%;
+                    .SmallInputWrap{
+                        width: 100%;
+                        margin-bottom: 14px;
+                    }
+                }
+                .transactionType{
+                    h3{
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 27px;
+                        font-weight: 600;
+                    }
+                }
             }
         }
     }
