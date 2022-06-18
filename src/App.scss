@@ -159,6 +159,9 @@ body{
 // MOBILE RESPONSIVE
 .App{
 @media(max-width: 990px){
+    *:not(input){
+        text-align: center;
+    }
     .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message  {
     display: none;
     }
@@ -175,7 +178,13 @@ body{
         text-align: center;
     }
     .sendMoneyPageOneRight{
-        padding-right: 0;
+        padding: 34px 25px;
+        border-radius: 5px;
+        background: #C2EDE9;
+        border-radius: 5px;
+    }
+    .sendMoneyPageOneLeft{
+        padding-top: 72px;
     }
     .container{
         min-width: 95%;
@@ -184,5 +193,23 @@ body{
     }
     .ContentHeaderText p{
         display: none;
+    }
+    .footerMain{
+        .footerLeftWrap{
+            padding-bottom: 45px;
+            .footerAddress{
+                margin-top: 20px;
+            }
+        }
+        .footerMiddleWrap{
+            flex-direction: column;
+        }
+        padding-bottom: 30px;
+        input{
+            position: static;
+        }
+        .modeAndLang, .footerContact, .footerSocialIcons, .footerButton{
+            display: none;
+        }
     }
 }}
