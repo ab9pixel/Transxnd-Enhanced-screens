@@ -153,9 +153,12 @@ body{
 
 
 }
+// LAPTOP LOWER RES RESPONSIVE
+
+
+// MOBILE RESPONSIVE
 .App{
 @media(max-width: 990px){
-    
     .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message  {
     display: none;
     }
@@ -174,12 +177,10 @@ body{
     .sendMoneyPageOneRight{
         padding-right: 0;
     }
-
-
     .container{
-        width: 100%;
-        margin: 0 13px;
-        max-width: none;
+        min-width: 95%;
+        max-width: 95%;
+        margin: 0 auto;
     }
     .ContentHeaderText p{
         display: none;
