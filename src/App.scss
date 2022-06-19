@@ -554,7 +554,17 @@ body{
                 }
         }
     }
+    .transaction-form{
+        flex-wrap: wrap;
+        .transaction-left{
+            width: 100%;
+        }
+    }
+    .otp-confirmation__body{
+        border: 0;
+    }
     .support-message{
+        margin-top: 0;
         .action-btns{
             width: 100%;
             display: flex;
@@ -562,6 +572,7 @@ body{
             flex-direction: column-reverse;
             flex-wrap: wrap;
             gap: 10px;
+            background-color: #D3F2EF;
             button:first-child{
                 margin-right: 0;
             }
