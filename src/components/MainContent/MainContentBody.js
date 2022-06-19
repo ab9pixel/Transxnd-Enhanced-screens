@@ -24,7 +24,7 @@ const MainContentBody = () => {
           <InnerContent progress = {progress} reviewPayment={reviewPayment} setAddedBenData={setAddedBenData} transferDetails={transferDetails} setProgress = {(val)=> {setProgress(val)}} collectionPoint={collectionPoint} paymentMethod={paymentMethod} />
         </div>
         }
-        <SupportMessage buttonLink={addedBen} reviewPayment={reviewPayment} setReviewPayment={(val)=>setReviewPayment(val)} setTransferDetails={(val)=>{setTransferDetails(true)}} collectionPoint={collectionPoint} setCollectionPoint= {(val)=>setCollectionPoint(val)}
+        <SupportMessage buttonLink={addedBen} transferDetails={transferDetails} reviewPayment={reviewPayment} setReviewPayment={(val)=>setReviewPayment(val)} setTransferDetails={(val)=>{setTransferDetails(true)}} collectionPoint={collectionPoint} setCollectionPoint= {(val)=>setCollectionPoint(val)}
         paymentMethod = {paymentMethod}
         setPaymentMethod={(val)=>{setPaymentMethod(val)}} 
         />

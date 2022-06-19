@@ -184,242 +184,242 @@ body{
     }
 }
 
-@media (max-width: 428px){
-    .headerMain{
-        .navbarLeft{
-            .navbarWrap, {
-                display: none;
-            }
-            .logoWrap img{
-                width: 122px;
-            }
-        }
-        .navbarRight{
-            // display: none;
-            .profileView{
-                display: none;
-            }
-            .fontAwesome{
-                width: 31px;
-                height: 31px;
-                button{
-                    img{
-                        width: 15px;
-                        height: 15px;
-                    }
-                    display: flex;
-                    align-items: center;
-                }
-            }
-        }
-    }
-    .MainContentWrap{
-        margin: 14px 13px !important;
-        .sidebarMain{
-            display: none;
-        }
-        .ContentHeaderText{
-            h3{
-                font-size: 20px;
-            }
-            p{
-                display: none;
-            }
-            span{
-                margin-right: 10px;
-            }
-        }
-        .RateButton{
-            button{
-                padding: 5px !important;
-                font-size: 15px;
-                background-color: transparent;
-                color: black;
-                .green-calculator{
-                    width: 14px;
-                    display: inline;
-                }
-                .white-calculator{
-                    display: none;
-                }
-            }
-        }
-    }
-    .MoneyCalculator{
-        .row{
-            flex-direction: column-reverse;
-            .sendMoneyPageOneRight{
-                padding: 34px 25px 19px;
-                display: flex;
-                flex-direction: column;
-                .SmallInput{
-                    width: 100%;
-                    .SmallInputWrap{
-                        width: 100%;
-                        margin-bottom: 14px;
-                        p{
-                            font-size: 15px;
-                        }
-                    }
-                }
-                .transactionType{
-                    h3{
-                        text-align: center;
-                        font-size: 18px;
-                        line-height: 27px;
-                        font-weight: 600;
-                    }
-                }
-                .transactionAmountWrap{
-                    h3{
-                        font-size: 18px;
-                        font-weight: normal;
-                        text-align: center;
-                    }
-                    .transactionAmount{
-                        input{
-                            padding: 10px 12px;
-                        }
-                        .currencyWrap{
-                            padding: 3px 7px;
-                        }
-                    }
-                }
-                .GreenFullButton_GreenFullButton__80YVK{
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 80%;
-                    button{
-                        font-size: 16px;
-                    }
-                }
-            }
-            .sendMoneyPageOneLeft{
-                padding: 74px 24px 50px;
-                .contentBodyHeading{
-                    font-size: 25px;
-                    text-align: center;
-                    margin-bottom: 16px;
-                }
-                .contentBodyPara{
-                    margin-bottom: 29px;
-                    p{
-                        font-size: 13px;
-                        font-weight: 400;
-                        text-align: center;
-                    }
-                }
-                .howToLink{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .playIcon{
-                        img{
-                            width: 28px;
-                            height: 28px;
-                            margin-right: 9px;
-                        }
-                    }
-                    .playText{
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-    }
-    .footerWrap{
-        margin: 0 auto;
-        padding-bottom: 16px;
-        .footerLeft{
-            .footerLogo{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-                img{
-                    width: 227px;
-                    height: 40px;
-                }
-            }
-            .footerButton{
-                display: none;
-            }
-            .footerAddress{
-                text-align: center;
-                margin-bottom: 47px;
-            }
-            .footerContact{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                p{
-                    text-align: center;
-                    margin: 0px;
-                    font-size: 16px;
-                }
-                div{
-                    margin-bottom: 23px;
-                }
-            }
-            .footerSocialIcons{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .SocialIconsMain{
-                    width: 34px;
-                    height: 34px;
-                    img{
-                        width: 13px;
-                    }
-                }
-            }
-        }
-        .footerMiddleWrap{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .MenuHeadingMain{
-                text-align: center;
-            }
-            ul li{
-                text-align: center;
-                font-size: 14px;
-            }
-            margin-bottom: 63px;
-        }
-        .footerRightWrap{
-            width: 100%;
-            .MenuHeadingMain{
-                text-align: center;
-            }
-            p{
-                text-align: center;
-                font-size: 14px;
-                font-weight: 500;
-                margin-right: 0px;
-                margin-bottom: 36px;
-            }
-            .footerInput{
-                width: 90%;
-                margin: 0 auto;
-            }
-            .modeAndLang{
-               display: none;
-            }
-        }
-    }
-    .copyRight{
-        margin-top: 136px;
-        margin-bottom: 31px;
-        p{
-            font-size: 14px;
-        }
-    }
-}
+// @media (max-width: 428px){
+//     .headerMain{
+//         .navbarLeft{
+//             .navbarWrap, {
+//                 display: none;
+//             }
+//             .logoWrap img{
+//                 width: 122px;
+//             }
+//         }
+//         .navbarRight{
+//             // display: none;
+//             .profileView{
+//                 display: none;
+//             }
+//             .fontAwesome{
+//                 width: 31px;
+//                 height: 31px;
+//                 button{
+//                     img{
+//                         width: 15px;
+//                         height: 15px;
+//                     }
+//                     display: flex;
+//                     align-items: center;
+//                 }
+//             }
+//         }
+//     }
+//     .MainContentWrap{
+//         margin: 14px 13px !important;
+//         .sidebarMain{
+//             display: none;
+//         }
+//         .ContentHeaderText{
+//             h3{
+//                 font-size: 20px;
+//             }
+//             p{
+//                 display: none;
+//             }
+//             span{
+//                 margin-right: 10px;
+//             }
+//         }
+//         .RateButton{
+//             button{
+//                 padding: 5px !important;
+//                 font-size: 15px;
+//                 background-color: transparent;
+//                 color: black;
+//                 .green-calculator{
+//                     width: 14px;
+//                     display: inline;
+//                 }
+//                 .white-calculator{
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+//     .MoneyCalculator{
+//         .row{
+//             flex-direction: column-reverse;
+//             .sendMoneyPageOneRight{
+//                 padding: 34px 25px 19px;
+//                 display: flex;
+//                 flex-direction: column;
+//                 .SmallInput{
+//                     width: 100%;
+//                     .SmallInputWrap{
+//                         width: 100%;
+//                         margin-bottom: 14px;
+//                         p{
+//                             font-size: 15px;
+//                         }
+//                     }
+//                 }
+//                 .transactionType{
+//                     h3{
+//                         text-align: center;
+//                         font-size: 18px;
+//                         line-height: 27px;
+//                         font-weight: 600;
+//                     }
+//                 }
+//                 .transactionAmountWrap{
+//                     h3{
+//                         font-size: 18px;
+//                         font-weight: normal;
+//                         text-align: center;
+//                     }
+//                     .transactionAmount{
+//                         input{
+//                             padding: 10px 12px;
+//                         }
+//                         .currencyWrap{
+//                             padding: 3px 7px;
+//                         }
+//                     }
+//                 }
+//                 .GreenFullButton_GreenFullButton__80YVK{
+//                     margin: 0 auto;
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     width: 80%;
+//                     button{
+//                         font-size: 16px;
+//                     }
+//                 }
+//             }
+//             .sendMoneyPageOneLeft{
+//                 padding: 74px 24px 50px;
+//                 .contentBodyHeading{
+//                     font-size: 25px;
+//                     text-align: center;
+//                     margin-bottom: 16px;
+//                 }
+//                 .contentBodyPara{
+//                     margin-bottom: 29px;
+//                     p{
+//                         font-size: 13px;
+//                         font-weight: 400;
+//                         text-align: center;
+//                     }
+//                 }
+//                 .howToLink{
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     .playIcon{
+//                         img{
+//                             width: 28px;
+//                             height: 28px;
+//                             margin-right: 9px;
+//                         }
+//                     }
+//                     .playText{
+//                         font-size: 14px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     .footerWrap{
+//         margin: 0 auto;
+//         padding-bottom: 16px;
+//         .footerLeft{
+//             .footerLogo{
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 margin-bottom: 20px;
+//                 img{
+//                     width: 227px;
+//                     height: 40px;
+//                 }
+//             }
+//             .footerButton{
+//                 display: none;
+//             }
+//             .footerAddress{
+//                 text-align: center;
+//                 margin-bottom: 47px;
+//             }
+//             .footerContact{
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 flex-direction: column;
+//                 p{
+//                     text-align: center;
+//                     margin: 0px;
+//                     font-size: 16px;
+//                 }
+//                 div{
+//                     margin-bottom: 23px;
+//                 }
+//             }
+//             .footerSocialIcons{
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 .SocialIconsMain{
+//                     width: 34px;
+//                     height: 34px;
+//                     img{
+//                         width: 13px;
+//                     }
+//                 }
+//             }
+//         }
+//         .footerMiddleWrap{
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+//             .MenuHeadingMain{
+//                 text-align: center;
+//             }
+//             ul li{
+//                 text-align: center;
+//                 font-size: 14px;
+//             }
+//             margin-bottom: 63px;
+//         }
+//         .footerRightWrap{
+//             width: 100%;
+//             .MenuHeadingMain{
+//                 text-align: center;
+//             }
+//             p{
+//                 text-align: center;
+//                 font-size: 14px;
+//                 font-weight: 500;
+//                 margin-right: 0px;
+//                 margin-bottom: 36px;
+//             }
+//             .footerInput{
+//                 width: 90%;
+//                 margin: 0 auto;
+//             }
+//             .modeAndLang{
+//                display: none;
+//             }
+//         }
+//     }
+//     .copyRight{
+//         margin-top: 136px;
+//         margin-bottom: 31px;
+//         p{
+//             font-size: 14px;
+//         }
+//     }
+// }
 // LAPTOP LOWER RES RESPONSIVE
 
 
@@ -429,7 +429,7 @@ body{
     *:not(input):not(.inner-content *){
         text-align: center;
     }
-    .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message  {
+    .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message p {
     display: none;
     }
     .MoneyCalculator .row >.col-lg-6:first-child{
@@ -554,7 +554,20 @@ body{
                 }
         }
     }
-
+    .support-message{
+        .action-btns{
+            width: 100%;
+            display: flex;
+            place-content: center;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            gap: 10px;
+            button:first-child{
+                margin-right: 0;
+            }
+        }
+        }
+    }
 }
 
     // footer
@@ -578,4 +591,4 @@ body{
             display: none;
         }
     }
-}}
+}
