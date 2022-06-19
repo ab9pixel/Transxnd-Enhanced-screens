@@ -578,6 +578,12 @@ body{
             padding: 20px 0;
             button:first-child{
                 margin-right: 0;
+                background: transparent;
+                color: #000;
+            }
+            button:not(button:first-child){
+                background: #2ED06E;
+                color: #fff;
             }
         }
         }
