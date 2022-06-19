@@ -487,6 +487,9 @@ body{
 }
    // inner components responsiveness
    .MainContent {
+    .MainContentBodyWrap{
+        background: #E9F8F7;
+    }
     .accordion{
         display: none;
     }
@@ -572,7 +575,7 @@ body{
             flex-direction: column-reverse;
             flex-wrap: wrap;
             gap: 10px;
-            background-color: #D3F2EF;
+            padding: 20px 0;
             button:first-child{
                 margin-right: 0;
             }
