@@ -29,6 +29,9 @@
 .RateButton img{
     margin-right: 9px;
 }
+.green-calculator{
+    display: none;
+}
 .ContentHeaderWrap h3{
     font-size: 25px;
     font-weight: 600;
@@ -67,6 +70,7 @@
     display: flex;
     flex-direction: column;
     padding: 48px 38px 0px 0px ;
+    background-color: rgba(39, 189, 173, 0.2);
 }
 .contentBodyHeading{
     font-size: 35px;
@@ -159,7 +163,6 @@ input:focus{
     font-size: 18px;
     font-weight: 500;
     padding: 8px;
-    color: green;
 }
 .lineDiv span{
     height: 45px;
