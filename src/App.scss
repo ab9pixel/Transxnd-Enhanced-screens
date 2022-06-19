@@ -159,7 +159,7 @@ body{
 // MOBILE RESPONSIVE
 .App{
 @media(max-width: 990px){
-    *:not(input){
+    *:not(input):not(.inner-content *){
         text-align: center;
     }
     .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message  {
@@ -167,6 +167,9 @@ body{
     }
     .MoneyCalculator .row >.col-lg-6:first-child{
         order: 2;
+    }
+    .MainContent, .MainContentBody{
+        padding-bottom: 0;
     }
     .headerWrap, .MainContentWrap{
         margin: 0;
@@ -185,20 +188,116 @@ body{
     }
     .sendMoneyPageOneLeft{
         padding-top: 72px;
+        .howToLink{
+            justify-content: center;
+        }
     }
     .container{
         min-width: 95%;
         max-width: 95%;
         margin: 0 auto;
     }
-    .ContentHeaderText p{
+    .ContentHeaderWrap{
+        justify-content: space-around;
+        .RateButton{
+            button{
+            background: #fff;
+            color: #000;
+        }
+        }
+    }
+    .ContentHeaderText{ 
+        p{
         display: none;
     }
+        h3{
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+        span{
+            margin-right: 14px;
+        }
+}
+   // inner components responsiveness
+   .MainContent {
+    .accordion{
+        display: none;
+    }
+    .inner-content{
+        width: 100%;
+    }
+    .beneficiary-head-text {
+        *{
+        text-align: left;
+    }
+    p{
+        padding-right: 20px;
+    }
+}
+    .beneficiary-header .RateButton button{
+        min-width: 189px;
+        font-size: 16px;
+        padding-left: 16px !important;
+        padding-right: 16px;
+    }
+    .add-beneficiary-wrap input::placeholder{
+        color: transparent;
+    }
+    .add-beneficiary-wrap .input-field img{
+        right: 8%;
+    }
+    .beneficiary-form{
+        text-align:left;
+        background: #C2EDE9;
+        border-radius: 5px;
+        .beneficiary-input-fields{
+            label{
+                margin-bottom: 12px;
+            }
+            .beneficiary-form-add{
+                justify-content: center;
+                flex-direction: column-reverse;
+                align-items: center;    
+            button:first-child{
+                margin-right: 0 !important;
+                margin-top: 10px;
+            }}
+            .name-email, .name-email *, .beneficiary-account, .beneficiary-country  {
+                display: block;
+                width: 100%;
+            }
+            input{
+                width: 100%;
+            }
+            .beneficiary-name{
+                margin-right: 0;
+            }
+        }
+    }
+    .beneficiary-content tr 
+    {
+        td{
+            width: 50%;
+            &:nth-child(2){
+                display: none;
+                }
+                .bank-card-wrap *{
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+        }
+    }
+
+}
+
+    // footer
     .footerMain{
         .footerLeftWrap{
             padding-bottom: 45px;
             .footerAddress{
                 margin-top: 20px;
+                width: 80%;
+                margin: 20px auto 0 auto;
             }
         }
         .footerMiddleWrap{
