@@ -559,7 +559,7 @@ body{
     }
     .transaction-form{
         flex-wrap: wrap;
-        .transaction-left{
+        &>div{
             width: 100%;
         }
     }
