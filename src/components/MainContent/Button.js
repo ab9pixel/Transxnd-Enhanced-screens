@@ -1,12 +1,23 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './styles.scss'
 
 const Button = ({icon, text, dropdown, lessPadding, onClick}) => {
+  const mobileIcon = "../images/mobile-calculator.svg"
+  const [img, setImg] = useState(icon)
+  
+  useEffect(()=>{
+    handleResize();
+    window.addEventListener('resize', handleResize);
+  },[])
+  
+  function handleResize() {
+    window.innerWidth<990?setImg(mobileIcon):setImg(icon)
+  }
   return (
     <div>
         <div className="RateButton" style={{position:'relative'}}>
           <button onClick={onClick} style={{paddingLeft:lessPadding?'5px':'33px'}}>
-            <img className='white-calculator' src={icon} alt="Awesome_Calculate_Error" />
+            <img className='white-calculator' src={img} alt="Awesome_Calculate_Error" />
             <img className='green-calculator' src="../images/green_calculator.png" alt="Green_Calculate_Error"/>
             {text}
             {dropdown &&

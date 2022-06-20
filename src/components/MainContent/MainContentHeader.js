@@ -6,7 +6,6 @@ import {useSelector} from 'react-redux';
 const MainContentHeader = () => {
   const darkMode = useSelector(state=>state.themeActions.darkMode)
   const rateButton = "../images/awesome-calculator.svg";
-  const mobileRateButton = "../images/mobile.calculator"
   return (
     <div className={`ContentHeader`}>
       <div className="ContentHeaderWrap">

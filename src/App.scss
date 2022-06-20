@@ -588,27 +588,26 @@ body{
         }
         }
     }
-}
-
-    // footer
-    .footerMain{
-        .footerLeftWrap{
-            padding-bottom: 45px;
-            .footerAddress{
-                margin-top: 20px;
-                width: 80%;
-                margin: 20px auto 0 auto;
+        // footer
+        .footerMain{
+            .footerLeftWrap{
+                padding-bottom: 45px;
+                .footerAddress{
+                    margin-top: 20px;
+                    width: 80%;
+                    margin: 20px auto 0 auto;
+                }
+            }
+            .footerMiddleWrap{
+                flex-direction: column;
+            }
+            padding-bottom: 30px;
+            input{
+                position: static;
+            }
+            .modeAndLang, .footerContact, .footerSocialIcons, .footerButton{
+                display: none;
             }
         }
-        .footerMiddleWrap{
-            flex-direction: column;
-        }
-        padding-bottom: 30px;
-        input{
-            position: static;
-        }
-        .modeAndLang, .footerContact, .footerSocialIcons, .footerButton{
-            display: none;
-        }
-    }
+}
 }
