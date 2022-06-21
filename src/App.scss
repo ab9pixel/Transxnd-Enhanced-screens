@@ -589,6 +589,258 @@ body {
             }
           }
         }
+
+        .otp-confirmation {
+          .otp-confirmation__header {
+            text-align: center;
+          }
+
+          &__body {
+            border: none;
+            text-align: center;
+
+            p {
+              font-size: 15px;
+            }
+
+            .otp-warning {
+              .warning-sign {
+                display: flex;
+                gap: 19px;
+                align-items: center;
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+
+        .collection-point {
+          padding: 29px 20px 0;
+          .collection-point-header {
+            .inner-content-header {
+              font-size: 18px;
+            }
+
+            p {
+              font-size: 12px;
+              margin-bottom: 15px;
+            }
+
+            .search-filter {
+              flex-direction: column;
+              gap: 17px;
+              margin-bottom: 15px;
+              .input-field {
+                input {
+                  margin-right: -33px;
+                  &::placeholder {
+                    font-size: 2px;
+                    color: transparent;
+                  }
+                }
+              }
+
+              .advancedFilters {
+                align-self: end;
+                font-size: 14px;
+              }
+            }
+
+            .beneficiary-content {
+              table {
+                margin: 0;
+
+                tr {
+                  align-items: center;
+                  justify-content: space-between;
+                  border-radius: 0;
+                  .name-location-table-wrap {
+                    align-items: center;
+                    & > div {
+                      & > div {
+                        h2 {
+                          font-size: 15px;
+                        }
+                        h3 {
+                          font-size: 13px;
+                        }
+                      }
+                    }
+                  }
+                  td {
+                    vertical-align: middle;
+                    width: auto;
+                    h4 {
+                      font-size: 12px;
+                      color: #27bdad;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .payment-method {
+          padding: 34px 13px 0;
+          .payment-method-header {
+            text-align: center;
+            h3 {
+              font-size: 18px;
+              color: #000;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+
+          .payment-body {
+            flex-direction: column;
+
+            & > div {
+              width: 100%;
+            }
+
+            .payment-body-left {
+              padding-inline: 28px;
+            }
+
+            .payment-body-right {
+              background-color: #c2ede9;
+              border: none;
+              width: 100%;
+
+              .wallet-response {
+                .warning-message {
+                  margin-bottom: 14px;
+                }
+                .response-para {
+                  display: none;
+                }
+
+                .response-balance-amount {
+                  margin-bottom: 19px;
+                  .wallet-amount {
+                    display: block;
+                    text-align: center;
+                    margin: 0 !important;
+                    p {
+                      font-size: 13px;
+                    }
+                    span {
+                      font-size: 18px !important;
+                    }
+                  }
+                }
+              }
+
+              button {
+                width: max-content;
+                font-size: 16px;
+                padding: 14px 33px;
+              }
+
+              .credit-card-display {
+                .card-details-wrap {
+                  .card-details {
+                    span {
+                      font-size: 16px;
+                    }
+                    p {
+                      font-size: 15px;
+                    }
+
+                    .card-name-icon {
+                      span {
+                        font-size: 16px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .credit-card-form {
+                .country-zipcode {
+                  input {
+                    margin: 0;
+                  }
+                  .select-wrapper {
+                    img {
+                      top: 50%;
+                      transform: translateY(-50%);
+                    }
+                    select {
+                      display: block;
+                      font-size: 12px;
+                      height: 100%;
+                      margin: 0;
+                    }
+
+                    &::after {
+                      top: 50%;
+                      transform: translateY(-50%);
+                    }
+                  }
+                }
+                .radio-input {
+                  span {
+                    font-size: 12px;
+                  }
+                }
+              }
+
+              .spinner {
+                display: block;
+                text-align: center;
+                .spinner-header {
+                  margin-bottom: 84px;
+                  h5 {
+                    margin: 0;
+                    font-size: 18px;
+                  }
+                }
+
+                .spinner-image {
+                  margin-bottom: 26px;
+
+                  img {
+                    margin: 0;
+                  }
+
+                  span {
+                    font-size: 15px;
+                  }
+                }
+              }
+
+              .tranxnd-wallet {
+                .wallet-header {
+                  margin-bottom: 30px;
+                  h5 {
+                    margin: 0;
+                    font-size: 18px;
+                  }
+                }
+
+                .wallet-amount {
+                  p {
+                    font-size: 13px;
+                  }
+
+                  span {
+                    font-size: 30px;
+                  }
+
+                  &:last-child {
+                    margin-bottom: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
 
