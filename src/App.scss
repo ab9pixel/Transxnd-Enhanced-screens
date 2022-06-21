@@ -416,6 +416,91 @@ body {
             }
           }
         }
+
+        .transfer-details {
+          .tranfer-detail-header {
+            text-align: center;
+
+            .inner-content-header {
+              h3 {
+                font-size: 18px;
+              }
+            }
+            p {
+              font-size: 13px;
+            }
+            img {
+              display: none;
+            }
+          }
+
+          .transaction-form {
+            flex-direction: column;
+
+            & > div {
+              width: 100%;
+            }
+
+            .transaction-left {
+              .transaction-form-header {
+                margin-bottom: 11px;
+                gap: 14px;
+                h3 {
+                  margin: 0;
+                }
+                img {
+                  margin: 0;
+                }
+              }
+              .transaction-type-form {
+                .transactionType {
+                  & > div {
+                    width: 100%;
+                  }
+
+                  .SmallInputWrap {
+                    margin: 0;
+                    width: 100%;
+                    margin-bottom: 14px;
+                  }
+                }
+              }
+            }
+            .transaction-right {
+              .transactionAmountWrap {
+                height: 170px;
+                overflow: hidden;
+                h3 {
+                  text-align: center;
+                  font-size: 18px;
+                }
+
+                .transactionAmount {
+                  input {
+                    padding: 8px 30px;
+                  }
+
+                  .currencyWrap {
+                    padding: 0;
+                    padding-inline: 13px;
+
+                    img {
+                      width: 30px;
+                      height: 18px;
+                    }
+                  }
+
+                  span {
+                    display: none;
+                  }
+                }
+              }
+              .infoNote {
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
 
