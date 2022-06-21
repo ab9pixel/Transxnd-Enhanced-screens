@@ -424,7 +424,26 @@ body {
     }
 
     .support-message {
-      display: none;
+      p {
+        display: none;
+      }
+      & > div {
+        justify-content: center;
+      }
+
+      .action-btns {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        button {
+          margin: 0;
+          &:first-child {
+            background-color: transparent;
+            color: #000;
+          }
+        }
+      }
     }
   }
   .MoneyCalculator {
