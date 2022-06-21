@@ -14,11 +14,11 @@ const Button = ({icon, text, dropdown, lessPadding, onClick}) => {
     window.innerWidth<990?setImg(mobileIcon):setImg(icon)
   }
   return (
-    <div>
+    
         <div className="RateButton" style={{position:'relative'}}>
           <button onClick={onClick} style={{paddingLeft:lessPadding?'5px':'33px'}}>
-            <img className='white-calculator' src={img} alt="Awesome_Calculate_Error" />
-            <img className='green-calculator' src="../images/green_calculator.png" alt="Green_Calculate_Error"/>
+            <img className='white-calculator' src={icon} alt="Awesome_Calculate_Error" />
+            {/* <img className='green-calculator' src="../images/green_calculator.png" alt="Green_Calculate_Error"/> */}
             {text}
             {dropdown &&
             <svg style={{position:'absolute', right:'10'}} xmlns="http://www.w3.org/2000/svg" width="13.352" height="8.309" viewBox="0 0 13.352 8.309">
@@ -26,7 +26,7 @@ const Button = ({icon, text, dropdown, lessPadding, onClick}) => {
             </svg>
             }
           </button>
-        </div>
+        
     </div>
   )
 }

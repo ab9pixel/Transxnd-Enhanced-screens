@@ -184,434 +184,540 @@ body{
     }
 }
 
-// @media (max-width: 428px){
-//     .headerMain{
-//         .navbarLeft{
-//             .navbarWrap, {
-//                 display: none;
-//             }
-//             .logoWrap img{
-//                 width: 122px;
-//             }
-//         }
-//         .navbarRight{
-//             // display: none;
-//             .profileView{
-//                 display: none;
-//             }
-//             .fontAwesome{
-//                 width: 31px;
-//                 height: 31px;
-//                 button{
-//                     img{
-//                         width: 15px;
-//                         height: 15px;
-//                     }
-//                     display: flex;
-//                     align-items: center;
-//                 }
-//             }
-//         }
-//     }
-//     .MainContentWrap{
-//         margin: 14px 13px !important;
-//         .sidebarMain{
-//             display: none;
-//         }
-//         .ContentHeaderText{
-//             h3{
-//                 font-size: 20px;
-//             }
-//             p{
-//                 display: none;
-//             }
-//             span{
-//                 margin-right: 10px;
-//             }
-//         }
-//         .RateButton{
-//             button{
-//                 padding: 5px !important;
-//                 font-size: 15px;
-//                 background-color: transparent;
-//                 color: black;
-//                 .green-calculator{
-//                     width: 14px;
-//                     display: inline;
-//                 }
-//                 .white-calculator{
-//                     display: none;
-//                 }
-//             }
-//         }
-//     }
-//     .MoneyCalculator{
-//         .row{
-//             flex-direction: column-reverse;
-//             .sendMoneyPageOneRight{
-//                 padding: 34px 25px 19px;
-//                 display: flex;
-//                 flex-direction: column;
-//                 .SmallInput{
-//                     width: 100%;
-//                     .SmallInputWrap{
-//                         width: 100%;
-//                         margin-bottom: 14px;
-//                         p{
-//                             font-size: 15px;
-//                         }
-//                     }
-//                 }
-//                 .transactionType{
-//                     h3{
-//                         text-align: center;
-//                         font-size: 18px;
-//                         line-height: 27px;
-//                         font-weight: 600;
-//                     }
-//                 }
-//                 .transactionAmountWrap{
-//                     h3{
-//                         font-size: 18px;
-//                         font-weight: normal;
-//                         text-align: center;
-//                     }
-//                     .transactionAmount{
-//                         input{
-//                             padding: 10px 12px;
-//                         }
-//                         .currencyWrap{
-//                             padding: 3px 7px;
-//                         }
-//                     }
-//                 }
-//                 .GreenFullButton_GreenFullButton__80YVK{
-//                     margin: 0 auto;
-//                     display: flex;
-//                     justify-content: center;
-//                     align-items: center;
-//                     width: 80%;
-//                     button{
-//                         font-size: 16px;
-//                     }
-//                 }
-//             }
-//             .sendMoneyPageOneLeft{
-//                 padding: 74px 24px 50px;
-//                 .contentBodyHeading{
-//                     font-size: 25px;
-//                     text-align: center;
-//                     margin-bottom: 16px;
-//                 }
-//                 .contentBodyPara{
-//                     margin-bottom: 29px;
-//                     p{
-//                         font-size: 13px;
-//                         font-weight: 400;
-//                         text-align: center;
-//                     }
-//                 }
-//                 .howToLink{
-//                     display: flex;
-//                     justify-content: center;
-//                     align-items: center;
-//                     .playIcon{
-//                         img{
-//                             width: 28px;
-//                             height: 28px;
-//                             margin-right: 9px;
-//                         }
-//                     }
-//                     .playText{
-//                         font-size: 14px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     .footerWrap{
-//         margin: 0 auto;
-//         padding-bottom: 16px;
-//         .footerLeft{
-//             .footerLogo{
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 margin-bottom: 20px;
-//                 img{
-//                     width: 227px;
-//                     height: 40px;
-//                 }
-//             }
-//             .footerButton{
-//                 display: none;
-//             }
-//             .footerAddress{
-//                 text-align: center;
-//                 margin-bottom: 47px;
-//             }
-//             .footerContact{
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 flex-direction: column;
-//                 p{
-//                     text-align: center;
-//                     margin: 0px;
-//                     font-size: 16px;
-//                 }
-//                 div{
-//                     margin-bottom: 23px;
-//                 }
-//             }
-//             .footerSocialIcons{
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 .SocialIconsMain{
-//                     width: 34px;
-//                     height: 34px;
-//                     img{
-//                         width: 13px;
-//                     }
-//                 }
-//             }
-//         }
-//         .footerMiddleWrap{
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             flex-direction: column;
-//             .MenuHeadingMain{
-//                 text-align: center;
-//             }
-//             ul li{
-//                 text-align: center;
-//                 font-size: 14px;
-//             }
-//             margin-bottom: 63px;
-//         }
-//         .footerRightWrap{
-//             width: 100%;
-//             .MenuHeadingMain{
-//                 text-align: center;
-//             }
-//             p{
-//                 text-align: center;
-//                 font-size: 14px;
-//                 font-weight: 500;
-//                 margin-right: 0px;
-//                 margin-bottom: 36px;
-//             }
-//             .footerInput{
-//                 width: 90%;
-//                 margin: 0 auto;
-//             }
-//             .modeAndLang{
-//                display: none;
-//             }
-//         }
-//     }
-//     .copyRight{
-//         margin-top: 136px;
-//         margin-bottom: 31px;
-//         p{
-//             font-size: 14px;
-//         }
-//     }
-// }
+@media (max-width: 428px){
+    .headerMain{
+        .navbarLeft{
+            .navbarWrap, {
+                display: none;
+            }
+            .logoWrap img{
+                width: 122px;
+            }
+        }
+        .navbarRight{
+            // display: none;
+            .profileView{
+                display: none;
+            }
+            .fontAwesome{
+                width: 31px;
+                height: 31px;
+                button{
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .MainContentWrap{
+        margin: 14px 13px !important;
+        .sidebarMain{
+            display: none;
+        }
+
+
+  .ContentHeader{
+      padding: 0 14px;
+  }
+
+        .ContentHeaderText{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                display: none;
+            }
+            span{
+                margin-right: 10px;
+            }
+        }
+        .RateButton{
+            button{
+                padding: 5px !important;
+                font-size: 15px;
+                background-color: transparent;
+                color: black;
+                // .green-calculator{
+                //     width: 14px;
+                //     display: inline;
+                // }
+                // .white-calculator{
+                //     display: none;
+                // }
+            }
+        }
+        .SendMoneyWrap{
+            .accordion{
+                display: none;
+            }
+            .inner-content{
+                width: 100%;
+                .add-beneficiary-wrap{
+                    padding: 32px 15px;
+                    .beneficiary-header{
+                      margin-bottom: 13px;
+                      position: relative;
+                     .beneficiary-head-text{
+                         h3{
+                            font-size: 18px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                       }
+                     .RateButton{
+                      
+                        button{
+                            padding: 9px 14px !important;
+                            font-size: 13px;
+                            background-color:#27BDAD;
+                            color: #fff;
+                            font-weight: normal;
+                            gap: 10px;
+                            position: absolute;
+                            right: 0;
+
+
+                            img{
+                                padding: 0;
+                                margin: 0;
+                                width: 10px;
+                                height: 10px;
+                            }
+                           
+                        }
+                    }
+
+               
+
+                 }
+
+
+                 .input-sort{
+                     gap: 10px;
+                     align-items: stretch;
+
+                    .input-field {
+                        
+                        input{
+                            margin: 0;
+                            margin-right: -33px;
+                        }
+                        input::placeholder{
+                            font-size: 2px;
+                            color: transparent;
+                        }
+
+                        img{
+                            position: static;
+                           
+
+                        }
+                    }
+                   
+                   
+                    .RateButton{
+                        button{
+                            padding: 0 10px !important;
+                            min-width: 61px;
+                            background-color: #27BDAD;
+                            height: 100%;
+                            color: #fff;
+
+                            svg{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                }
+            }
+        }
+
+        .MainContentBody{
+            margin: 0;
+        }
+    }
+    .MoneyCalculator{
+        .row{
+            flex-direction: column-reverse;
+            .sendMoneyPageOneRight{
+                padding: 34px 25px 19px;
+                display: flex;
+                flex-direction: column;
+                .SmallInput{
+                    width: 100%;
+                    .SmallInputWrap{
+                        width: 100%;
+                        margin-bottom: 14px;
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .transactionType{
+                    h3{
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 27px;
+                        font-weight: 600;
+                    }
+                }
+                .transactionAmountWrap{
+                    h3{
+                        font-size: 18px;
+                        font-weight: normal;
+                        text-align: center;
+                    }
+                    .transactionAmount{
+                        input{
+                            padding: 10px 12px;
+                        }
+                        .currencyWrap{
+                            padding: 3px 7px;
+                        }
+                    }
+                }
+                .GreenFullButton_GreenFullButton__80YVK{
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    button{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .sendMoneyPageOneLeft{
+                padding: 74px 24px 50px;
+                .contentBodyHeading{
+                    font-size: 25px;
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
+                .contentBodyPara{
+                    margin-bottom: 29px;
+                    p{
+                        font-size: 13px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+                .howToLink{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .playIcon{
+                        img{
+                            width: 28px;
+                            height: 28px;
+                            margin-right: 9px;
+                        }
+                    }
+                    .playText{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .footerWrap{
+        margin: 0 auto;
+        padding-bottom: 16px;
+        .footerLeft{
+            .footerLogo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                img{
+                    width: 227px;
+                    height: 40px;
+                }
+            }
+            .footerButton{
+                display: none;
+            }
+            .footerAddress{
+                text-align: center;
+                margin-bottom: 47px;
+            }
+            .footerContact{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    text-align: center;
+                    margin: 0px;
+                    font-size: 16px;
+                }
+                div{
+                    margin-bottom: 23px;
+                }
+            }
+            .footerSocialIcons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .SocialIconsMain{
+                    width: 34px;
+                    height: 34px;
+                    img{
+                        width: 13px;
+                    }
+                }
+            }
+        }
+        .footerMiddleWrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .MenuHeadingMain{
+                text-align: center;
+            }
+            ul li{
+                text-align: center;
+                font-size: 14px;
+            }
+            margin-bottom: 63px;
+        }
+        .footerRightWrap{
+            width: 100%;
+            .MenuHeadingMain{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                margin-right: 0px;
+                margin-bottom: 36px;
+            }
+            .footerInput{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .modeAndLang{
+               display: none;
+            }
+        }
+    }
+    .copyRight{
+        margin-top: 136px;
+        margin-bottom: 31px;
+        p{
+            font-size: 14px;
+
+
+            img{
+                margin-inline: 8px;
+            }
+        }
+    }
+}
+
+
 // LAPTOP LOWER RES RESPONSIVE
 
 
 // MOBILE RESPONSIVE
-.App{
-@media(max-width: 990px){
-    *:not(input):not(.inner-content *){
-        text-align: center;
-    }
-    .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message p {
-    display: none;
-    }
-    .MoneyCalculator .row >.col-lg-6:first-child{
-        order: 2;
-    }
-    .MainContent, .MainContentBody{
-        padding-bottom: 0;
-    }
-    .headerWrap, .MainContentWrap{
-        margin: 0;
-    }
-    .SmallInput, .SmallInputWrap{
-        width: 100%;
-    }
-    .transactionType h3{
-        text-align: center;
-    }
-    .sendMoneyPageOneRight{
-        padding: 34px 25px;
-        border-radius: 5px;
-        background: #C2EDE9;
-        border-radius: 5px;
-    }
-    .sendMoneyPageOneLeft{
-        padding-top: 72px;
-        .howToLink{
-            justify-content: center;
-        }
-    }
-    .container{
-        min-width: 95%;
-        max-width: 95%;
-        margin: 0 auto;
-    }
-    .ContentHeaderWrap{
-        justify-content: space-around;
-        .RateButton{
-            button{
-            background: #fff;
-            color: #000;
-        }
-        }
-    }
-    .ContentHeaderText{ 
-        p{
-        display: none;
-    }
-        h3{
-        text-transform: uppercase;
-        font-size: 20px;
-    }
-        span{
-            margin-right: 14px;
-        }
-}
-   // inner components responsiveness
-   .MainContent {
-    .MainContentBodyWrap{
-        background: #E9F8F7;
-    }
-    .accordion{
-        display: none;
-    }
-    .inner-content{
-        width: 100%;
-    }
-    .beneficiary-head-text {
-        *{
-        text-align: left;
-    }
-    p{
-        padding-right: 20px;
-    }
-}
-    .beneficiary-header .RateButton button{
-        min-width: 189px;
-        font-size: 16px;
-        padding-left: 16px !important;
-        padding-right: 16px;
-    }
-    .add-beneficiary-wrap input::placeholder{
-        color: transparent;
-    }
-    .add-beneficiary-wrap .input-field img{
-        right: 8%;
-    }
-    .beneficiary-form{
-        text-align:left;
-        background: #C2EDE9;
-        border-radius: 5px;
-        .beneficiary-input-fields{
-            label{
-                margin-bottom: 12px;
-            }
-            .beneficiary-form-add{
-                justify-content: center;
-                flex-direction: column-reverse;
-                align-items: center;    
-            button:first-child{
-                margin-right: 0 !important;
-                margin-top: 10px;
-            }}
-            .name-email, .name-email *, .beneficiary-account, .beneficiary-country  {
-                display: block;
-                width: 100%;
-            }
-            input{
-                width: 100%;
-            }
-            .beneficiary-name{
-                margin-right: 0;
-            }
-        }
-    }
-    .beneficiary-content tr 
-    {
-        td{
-            width: 50%;
-            &:nth-child(2){
-                display: none;
-                }
-                .bank-card-wrap *{
-                    margin-bottom: 0;
-                    margin-top: 0;
-                }
-        }
-    }
-    .transaction-form{
-        flex-wrap: wrap;
-        &>div{
-            width: 100%;
-        }
-    }
-    .otp-confirmation__body{
-        border: 0;
-    }
-    .support-message{
-        margin-top: 0;
-        .action-btns{
-            width: 100%;
-            display: flex;
-            place-content: center;
-            flex-direction: column-reverse;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 20px 0;
-            button:first-child{
-                margin-right: 0;
-                background: transparent;
-                color: #000;
-            }
-            button:not(button:first-child){
-                background: #2ED06E;
-                color: #fff;
-            }
-        }
-        }
-    }
-        // footer
-        .footerMain{
-            .footerLeftWrap{
-                padding-bottom: 45px;
-                .footerAddress{
-                    margin-top: 20px;
-                    width: 80%;
-                    margin: 20px auto 0 auto;
-                }
-            }
-            .footerMiddleWrap{
-                flex-direction: column;
-            }
-            padding-bottom: 30px;
-            input{
-                position: static;
-            }
-            .footerSocialIcons{
-                place-content: center;
-                margin-bottom: 0;
-            }
-            .modeAndLang, .footerContact, .footerButton{
-                display: none;
-            }
-        }
-}
-}
+// .App{
+// @media(max-width: 990px){
+//     *:not(input):not(.inner-content *){
+//         text-align: center;
+//     }
+//     .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message p {
+//     display: none;
+//     }
+//     .MoneyCalculator .row >.col-lg-6:first-child{
+//         order: 2;
+//     }
+//     .MainContent, .MainContentBody{
+//         padding-bottom: 0;
+//     }
+//     .headerWrap, .MainContentWrap{
+//         margin: 0;
+//     }
+//     .SmallInput, .SmallInputWrap{
+//         width: 100%;
+//     }
+//     .transactionType h3{
+//         text-align: center;
+//     }
+//     .sendMoneyPageOneRight{
+//         padding: 34px 25px;
+//         border-radius: 5px;
+//         background: #C2EDE9;
+//         border-radius: 5px;
+//     }
+//     .sendMoneyPageOneLeft{
+//         padding-top: 72px;
+//         .howToLink{
+//             justify-content: center;
+//         }
+//     }
+//     .container{
+//         min-width: 95%;
+//         max-width: 95%;
+//         margin: 0 auto;
+//     }
+//     .ContentHeaderWrap{
+//         justify-content: space-around;
+//         .RateButton{
+//             button{
+//             background: #fff;
+//             color: #000;
+//         }
+//         }
+//     }
+//     .ContentHeaderText{ 
+//         p{
+//         display: none;
+//     }
+//         h3{
+//         text-transform: uppercase;
+//         font-size: 20px;
+//     }
+//         span{
+//             margin-right: 14px;
+//         }
+// }
+//    // inner components responsiveness
+//    .MainContent {
+//     .MainContentBodyWrap{
+//         background: #E9F8F7;
+//     }
+//     .accordion{
+//         display: none;
+//     }
+//     .inner-content{
+//         width: 100%;
+//     }
+//     .beneficiary-head-text {
+//         *{
+//         text-align: left;
+//     }
+//     p{
+//         padding-right: 20px;
+//     }
+// }
+//     .beneficiary-header .RateButton button{
+//         min-width: 189px;
+//         font-size: 16px;
+//         padding-left: 16px !important;
+//         padding-right: 16px;
+//     }
+//     .add-beneficiary-wrap input::placeholder{
+//         color: transparent;
+//     }
+//     .add-beneficiary-wrap .input-field img{
+//         right: 8%;
+//     }
+//     .beneficiary-form{
+//         text-align:left;
+//         background: #C2EDE9;
+//         border-radius: 5px;
+//         .beneficiary-input-fields{
+//             label{
+//                 margin-bottom: 12px;
+//             }
+//             .beneficiary-form-add{
+//                 justify-content: center;
+//                 flex-direction: column-reverse;
+//                 align-items: center;    
+//             button:first-child{
+//                 margin-right: 0 !important;
+//                 margin-top: 10px;
+//             }}
+//             .name-email, .name-email *, .beneficiary-account, .beneficiary-country  {
+//                 display: block;
+//                 width: 100%;
+//             }
+//             input{
+//                 width: 100%;
+//             }
+//             .beneficiary-name{
+//                 margin-right: 0;
+//             }
+//         }
+//     }
+//     .beneficiary-content tr 
+//     {
+//         td{
+//             width: 50%;
+//             &:nth-child(2){
+//                 display: none;
+//                 }
+//                 .bank-card-wrap *{
+//                     margin-bottom: 0;
+//                     margin-top: 0;
+//                 }
+//         }
+//     }
+//     .transaction-form{
+//         flex-wrap: wrap;
+//         &>div{
+//             width: 100%;
+//         }
+//     }
+//     .otp-confirmation__body{
+//         border: 0;
+//     }
+//     .support-message{
+//         margin-top: 0;
+//         .action-btns{
+//             width: 100%;
+//             display: flex;
+//             place-content: center;
+//             flex-direction: column-reverse;
+//             flex-wrap: wrap;
+//             gap: 10px;
+//             padding: 20px 0;
+//             button:first-child{
+//                 margin-right: 0;
+//                 background: transparent;
+//                 color: #000;
+//             }
+//             button:not(button:first-child){
+//                 background: #2ED06E;
+//                 color: #fff;
+//             }
+//         }
+//         }
+//     }
+//         // footer
+//         .footerMain{
+//             .footerLeftWrap{
+//                 padding-bottom: 45px;
+//                 .footerAddress{
+//                     margin-top: 20px;
+//                     width: 80%;
+//                     margin: 20px auto 0 auto;
+//                 }
+//             }
+//             .footerMiddleWrap{
+//                 flex-direction: column;
+//             }
+//             padding-bottom: 30px;
+//             input{
+//                 position: static;
+//             }
+//             .footerSocialIcons{
+//                 place-content: center;
+//                 margin-bottom: 0;
+//             }
+//             .modeAndLang, .footerContact, .footerButton{
+//                 display: none;
+//             }
+//         }
+// }
+// }
