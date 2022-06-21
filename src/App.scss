@@ -445,6 +445,7 @@ body {
               .transaction-form-header {
                 margin-bottom: 11px;
                 gap: 14px;
+                justify-content: center;
                 h3 {
                   margin: 0;
                 }
@@ -498,6 +499,93 @@ body {
               .infoNote {
                 display: none;
               }
+            }
+          }
+        }
+
+        .review-payment {
+          background-color: #e9f8f7;
+          padding: 34px 13px 0;
+          .review-payment-header {
+            text-align: center;
+            h3 {
+              font-size: 18px;
+              color: #000;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+          .review-payment-body {
+            border: none;
+            background: #c1ede8;
+
+            .beneficiary-transaction {
+              flex-direction: column;
+
+              & > div {
+                width: 100%;
+                margin: 0;
+              }
+
+              .beneficiary-details {
+                margin-bottom: 38px;
+                h5 {
+                  font-size: 16px;
+                }
+                .review-name {
+                  margin-bottom: 23px;
+                  h6 {
+                    font-size: 14px;
+                  }
+                  span {
+                    font-size: 16px;
+                  }
+                }
+
+                .review-country {
+                  h6 {
+                    font-size: 14px;
+                  }
+                  .review-country-flag {
+                  }
+                  span {
+                  }
+                }
+              }
+            }
+
+            .transaction-details {
+              h5 {
+                font-size: 16px;
+              }
+
+              .amount-charges {
+                height: 170px;
+                overflow: hidden;
+
+                .transaction-steps {
+                  margin-left: 11px;
+                }
+              }
+
+              & > .review-country-send {
+                display: none;
+              }
+            }
+          }
+
+          .review-payment-note {
+            display: none;
+          }
+
+          .confirmation-button {
+            & > div {
+              width: max-content !important;
+            }
+            button {
+              padding: 13px 50px;
+              font-size: 16px;
             }
           }
         }
