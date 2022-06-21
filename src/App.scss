@@ -185,6 +185,10 @@ body{
 }
 
 @media (max-width: 428px){
+
+    .MainContent{
+        padding-bottom: 0;
+    }
     .headerMain{
         .navbarLeft{
             .navbarWrap, {
@@ -220,9 +224,9 @@ body{
         }
 
 
-  .ContentHeader{
-      padding: 0 14px;
-  }
+      .ContentHeader{
+         padding: 0 14px;
+             }
 
         .ContentHeaderText{
             h3{
@@ -337,12 +341,81 @@ body{
                 }
 
                 }
+               .beneficiary-form{
+                   padding: 29px 20px;
+
+                   .beneficiary-form-header{
+                       margin-bottom: 33px;
+                       h3{
+                           font-size: 18px;
+                       }
+                       p{
+                           margin: 0;
+                           font-size: 15px;
+                       }
+                   }
+
+                   .beneficiary-input-fields{
+                       display: flex;
+                       flex-direction: column;
+                       gap: 22px;
+                       & > div {
+                           width: 100%;
+                           margin: 0;
+                       }
+
+                       label{
+                           margin: 0 ;
+                           margin-bottom: 12px;
+                           font-size: 15px;
+                       }
+
+                       input{
+                           margin: 0;
+                       }
+                         .name-email{
+                             flex-direction: column;
+
+                             & > div {
+                                 width: 100%;
+                                 margin-right: 0;
+                             }
+                         }
+
+                         .beneficiary-form-add{
+                             margin-top: 114px;
+                             flex-direction: column-reverse;
+                             align-items: center;
+                             gap: 16px;
+
+                             button{
+                                 margin: 0 !important;
+                                 &:first-child{
+                                    border: none !important;
+                                    color: #000 !important;
+                                    padding: 0 !important;
+                                }
+                             }
+
+                             
+                         }
+
+                   }
+               }
+
             }
         }
 
         .MainContentBody{
             margin: 0;
+
+
         }
+
+        .support-message{
+            display: none;
+        }
+
     }
     .MoneyCalculator{
         .row{
@@ -427,6 +500,10 @@ body{
                 }
             }
         }
+    }
+
+    .footerMain {
+        padding-top: 22px;
     }
     .footerWrap{
         margin: 0 auto;
