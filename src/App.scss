@@ -256,8 +256,8 @@ body {
       button {
         padding: 5px !important;
         font-size: 15px;
-        background-color: transparent;
-        color: black;
+        // background-color: transparent;
+        // color: black;
         // .green-calculator{
         //     width: 14px;
         //     display: inline;
@@ -265,6 +265,11 @@ body {
         // .white-calculator{
         //     display: none;
         // }
+        img {
+          padding: 0;
+          margin-right: 8px;
+          width: 12px;
+        }
       }
     }
     .SendMoneyWrap {
@@ -1058,194 +1063,205 @@ body {
 // LAPTOP LOWER RES RESPONSIVE
 
 // MOBILE RESPONSIVE
-// .App{
-// @media(max-width: 990px){
-//     *:not(input):not(.inner-content *){
-//         text-align: center;
-//     }
-//     .headerMain  .navbarWrap, .profileView, .sidebarMain, .support-message p {
-//     display: none;
-//     }
-//     .MoneyCalculator .row >.col-lg-6:first-child{
-//         order: 2;
-//     }
-//     .MainContent, .MainContentBody{
-//         padding-bottom: 0;
-//     }
-//     .headerWrap, .MainContentWrap{
-//         margin: 0;
-//     }
-//     .SmallInput, .SmallInputWrap{
-//         width: 100%;
-//     }
-//     .transactionType h3{
-//         text-align: center;
-//     }
-//     .sendMoneyPageOneRight{
-//         padding: 34px 25px;
-//         border-radius: 5px;
-//         background: #C2EDE9;
-//         border-radius: 5px;
-//     }
-//     .sendMoneyPageOneLeft{
-//         padding-top: 72px;
-//         .howToLink{
-//             justify-content: center;
-//         }
-//     }
-//     .container{
-//         min-width: 95%;
-//         max-width: 95%;
-//         margin: 0 auto;
-//     }
-//     .ContentHeaderWrap{
-//         justify-content: space-around;
-//         .RateButton{
-//             button{
-//             background: #fff;
-//             color: #000;
-//         }
-//         }
-//     }
-//     .ContentHeaderText{
-//         p{
-//         display: none;
-//     }
-//         h3{
-//         text-transform: uppercase;
-//         font-size: 20px;
-//     }
-//         span{
-//             margin-right: 14px;
-//         }
-// }
-//    // inner components responsiveness
-//    .MainContent {
-//     .MainContentBodyWrap{
-//         background: #E9F8F7;
-//     }
-//     .accordion{
-//         display: none;
-//     }
-//     .inner-content{
-//         width: 100%;
-//     }
-//     .beneficiary-head-text {
-//         *{
-//         text-align: left;
-//     }
-//     p{
-//         padding-right: 20px;
-//     }
-// }
-//     .beneficiary-header .RateButton button{
-//         min-width: 189px;
-//         font-size: 16px;
-//         padding-left: 16px !important;
-//         padding-right: 16px;
-//     }
-//     .add-beneficiary-wrap input::placeholder{
-//         color: transparent;
-//     }
-//     .add-beneficiary-wrap .input-field img{
-//         right: 8%;
-//     }
-//     .beneficiary-form{
-//         text-align:left;
-//         background: #C2EDE9;
-//         border-radius: 5px;
-//         .beneficiary-input-fields{
-//             label{
-//                 margin-bottom: 12px;
-//             }
-//             .beneficiary-form-add{
-//                 justify-content: center;
-//                 flex-direction: column-reverse;
-//                 align-items: center;
-//             button:first-child{
-//                 margin-right: 0 !important;
-//                 margin-top: 10px;
-//             }}
-//             .name-email, .name-email *, .beneficiary-account, .beneficiary-country  {
-//                 display: block;
-//                 width: 100%;
-//             }
-//             input{
-//                 width: 100%;
-//             }
-//             .beneficiary-name{
-//                 margin-right: 0;
-//             }
-//         }
-//     }
-//     .beneficiary-content tr
-//     {
-//         td{
-//             width: 50%;
-//             &:nth-child(2){
-//                 display: none;
-//                 }
-//                 .bank-card-wrap *{
-//                     margin-bottom: 0;
-//                     margin-top: 0;
-//                 }
-//         }
-//     }
-//     .transaction-form{
-//         flex-wrap: wrap;
-//         &>div{
-//             width: 100%;
-//         }
-//     }
-//     .otp-confirmation__body{
-//         border: 0;
-//     }
-//     .support-message{
-//         margin-top: 0;
-//         .action-btns{
-//             width: 100%;
-//             display: flex;
-//             place-content: center;
-//             flex-direction: column-reverse;
-//             flex-wrap: wrap;
-//             gap: 10px;
-//             padding: 20px 0;
-//             button:first-child{
-//                 margin-right: 0;
-//                 background: transparent;
-//                 color: #000;
-//             }
-//             button:not(button:first-child){
-//                 background: #2ED06E;
-//                 color: #fff;
-//             }
-//         }
-//         }
-//     }
-//         // footer
-//         .footerMain{
-//             .footerLeftWrap{
-//                 padding-bottom: 45px;
-//                 .footerAddress{
-//                     margin-top: 20px;
-//                     width: 80%;
-//                     margin: 20px auto 0 auto;
-//                 }
-//             }
-//             .footerMiddleWrap{
-//                 flex-direction: column;
-//             }
-//             padding-bottom: 30px;
-//             input{
-//                 position: static;
-//             }
-//             .footerSocialIcons{
-//                 place-content: center;
-//                 margin-bottom: 0;
-//             }
-//             .modeAndLang, .footerContact, .footerButton{
-//                 display: none;
-//             }
-//         }
-// }
-// }
+.App {
+  @media (max-width: 990px) {
+    *:not(input):not(.inner-content *) {
+      text-align: center;
+    }
+    .headerMain .navbarWrap,
+    .profileView,
+    .sidebarMain,
+    .support-message p {
+      display: none;
+    }
+    .MoneyCalculator .row > .col-lg-6:first-child {
+      order: 2;
+    }
+    .MainContent,
+    .MainContentBody {
+      padding-bottom: 0;
+    }
+    .headerWrap,
+    .MainContentWrap {
+      margin: 0;
+    }
+    .SmallInput,
+    .SmallInputWrap {
+      width: 100%;
+    }
+    .transactionType h3 {
+      text-align: center;
+    }
+    .sendMoneyPageOneRight {
+      padding: 34px 25px;
+      border-radius: 5px;
+      background: #c2ede9;
+      border-radius: 5px;
+    }
+    .sendMoneyPageOneLeft {
+      padding-top: 72px;
+      .howToLink {
+        justify-content: center;
+      }
+    }
+    .container {
+      min-width: 95%;
+      max-width: 95%;
+      margin: 0 auto;
+    }
+    .ContentHeaderWrap {
+      justify-content: space-around;
+      // .RateButton {
+      //   button {
+      //     background: #fff;
+      //     color: #000;
+      //   }
+      // }
+    }
+    .ContentHeaderText {
+      p {
+        display: none;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+      span {
+        margin-right: 14px;
+      }
+    }
+    // inner components responsiveness
+    .MainContent {
+      .MainContentBodyWrap {
+        background: #e9f8f7;
+      }
+      .accordion {
+        display: none;
+      }
+      .inner-content {
+        width: 100%;
+      }
+      .beneficiary-head-text {
+        * {
+          text-align: left;
+        }
+        p {
+          padding-right: 20px;
+        }
+      }
+      .beneficiary-header .RateButton button {
+        min-width: 189px;
+        font-size: 16px;
+        padding-left: 16px !important;
+        padding-right: 16px;
+      }
+      .add-beneficiary-wrap input::placeholder {
+        color: transparent;
+      }
+      .add-beneficiary-wrap .input-field img {
+        right: 8%;
+      }
+      .beneficiary-form {
+        text-align: left;
+        background: #c2ede9;
+        border-radius: 5px;
+        .beneficiary-input-fields {
+          label {
+            margin-bottom: 12px;
+          }
+          .beneficiary-form-add {
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+            button:first-child {
+              margin-right: 0 !important;
+              margin-top: 10px;
+            }
+          }
+          .name-email,
+          .name-email *,
+          .beneficiary-account,
+          .beneficiary-country {
+            display: block;
+            width: 100%;
+          }
+          input {
+            width: 100%;
+          }
+          .beneficiary-name {
+            margin-right: 0;
+          }
+        }
+      }
+      .beneficiary-content tr {
+        td {
+          width: 50%;
+          &:nth-child(2) {
+            display: none;
+          }
+          .bank-card-wrap * {
+            margin-bottom: 0;
+            margin-top: 0;
+          }
+        }
+      }
+      .transaction-form {
+        flex-wrap: wrap;
+        & > div {
+          width: 100%;
+        }
+      }
+      .otp-confirmation__body {
+        border: 0;
+      }
+      .support-message {
+        margin-top: 0;
+        .action-btns {
+          width: 100%;
+          display: flex;
+          place-content: center;
+          flex-direction: column-reverse;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 20px 0;
+          button:first-child {
+            margin-right: 0;
+            background: transparent;
+            color: #000;
+          }
+          button:not(button:first-child) {
+            background: #2ed06e;
+            color: #fff;
+          }
+        }
+      }
+    }
+    // footer
+    .footerMain {
+      .footerLeftWrap {
+        padding-bottom: 45px;
+        .footerAddress {
+          margin-top: 20px;
+          width: 80%;
+          margin: 20px auto 0 auto;
+        }
+      }
+      .footerMiddleWrap {
+        flex-direction: column;
+      }
+      padding-bottom: 30px;
+      input {
+        position: static;
+      }
+      .footerSocialIcons {
+        place-content: center;
+        margin-bottom: 0;
+      }
+      .modeAndLang,
+      .footerContact,
+      .footerButton {
+        display: none;
+      }
+    }
+  }
+}

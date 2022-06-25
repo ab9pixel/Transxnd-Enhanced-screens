@@ -31,30 +31,45 @@ const InnerContent = ({
       {/***************** test code start */}
       {/* <OtpConfirmation/> */}
       {/* <ReviewPayment/> */}
-      <PaymentMethod />
+      {/* <PaymentMethod /> */}
       {/* <CollectionPoint /> */}
       {/* <TransferDetails/> */}
       {/*****************  test code end */}
-      {/* {!addBen?
-      <AddBeneficiary setAddBen = {(val)=>{setAddBen(val)}}/>
-    :!ben?
-      <BeneficiaryForm setBen = {(val)=>{setBen(val)}} />
-      :
-      !collectionPoint?
-      <AddBeneficiary data={data} addBenData = {addBenData} setAddBenData = {(val)=>{setAddBenData(val)}} />
-        :!transferDetails?
+      {!addBen ? (
+        <AddBeneficiary
+          setAddBen={(val) => {
+            setAddBen(val);
+          }}
+        />
+      ) : !ben ? (
+        <BeneficiaryForm
+          setBen={(val) => {
+            setBen(val);
+          }}
+        />
+      ) : !collectionPoint ? (
+        <AddBeneficiary
+          data={data}
+          addBenData={addBenData}
+          setAddBenData={(val) => {
+            setAddBenData(val);
+          }}
+        />
+      ) : !transferDetails ? (
         <TransferDetails />
-      :!paymentMethod?
-      <CollectionPoint />
-      :
-      !reviewPayment?
-      <PaymentMethod />
-      :
-      !otp?
-      <ReviewPayment  setOtp ={(val)=>{setOtp(val)}}/>
-        :
-      <OtpConfirmation />
-      } */}
+      ) : !paymentMethod ? (
+        <CollectionPoint />
+      ) : !reviewPayment ? (
+        <PaymentMethod />
+      ) : !otp ? (
+        <ReviewPayment
+          setOtp={(val) => {
+            setOtp(val);
+          }}
+        />
+      ) : (
+        <OtpConfirmation />
+      )}
     </div>
   );
 };
