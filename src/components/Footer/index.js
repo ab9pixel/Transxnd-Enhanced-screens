@@ -7,6 +7,7 @@ import CustomButton from "../CustomButton";
 import SocialIcons from "./SocialIcons";
 import MenuHeading from "./MenuHeading";
 import {useSelector} from 'react-redux';
+import TogglerButton from '../../components/TogglerButton'
 const Footer = () => {
     const footerLogo= '../images/logoImage.png'
     const facebookLogo = '../images/awesome-facebook-f.svg'
@@ -108,7 +109,11 @@ const Footer = () => {
                     <div className="lang">
                         
                     </div>
+                    <div>
+                    <TogglerButton />
+                    </div>
                 </div>
+                
               </div>
             </div>
           </Col>

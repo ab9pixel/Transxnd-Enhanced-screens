@@ -108,6 +108,12 @@
 .SmallInputWrap:hover{
     border:1px solid #27BDAD;
 }
+
+.checkButtonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
 .SmallInputWrap{
     display: flex;
     align-items: center;

@@ -3,6 +3,7 @@ import "./styles.scss";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import GreenFullButton from "../GreenFullButton/GreenFullButton";
+import CheckButton from '../CheckButton/CheckButton'
 
 const playIcon = "../images/playIcon.svg";
 const upDownArrows = "../images/upDownArrows.svg";
@@ -20,6 +21,7 @@ const MoneyCalculator = ({setSendMoneyNow}) => {
   const [fromCurrency, setFromCurrency] = useState(null);
   const [toCurrency, setToCurrency] = useState(null);
   const [convertedCurr, setConvertedCurr] = useState(false);
+  const [clickedIndex, setClickedIndex] = useState("");
 
   const currencyFromFlag = `../images/${currencyFromName}.png`;
   const currencyToFlag = `../images/${currencyToName}.png`;
@@ -37,6 +39,9 @@ const MoneyCalculator = ({setSendMoneyNow}) => {
 
   const sendMoneyNow = () => {
     setSendMoneyNow(true);
+  }
+  const handleCheckButton = (ind) => {
+    setClickedIndex(ind)
   }
   return (
     <div className="MoneyCalculator">
@@ -69,41 +74,18 @@ const MoneyCalculator = ({setSendMoneyNow}) => {
             <div className="transactionType">
               <h3>Transaction Type</h3>
             </div>
-            <div className="transactionType">
-              <div className="SmallInput">
-                <div className="SmallInputWrap">
-                  <input
-                    type="checkbox"
-                    name="cashCollection"
-                    value={transactionType.cashCollection}
-                    onClick={() => {}}
-                  />
-                  <p>Cash Collection</p>
-                </div>
-              </div>
-              <div className="SmallInput">
-                <div className="SmallInputWrap">
-                  <input
-                    type="checkbox"
-                    name="utilityPayment"
-                    value={transactionType.utilityPayment}
-                    onClick={() => {}}
-                  />
-                  <p>Utility Payment</p>
-                </div>
-              </div>
-              <div className="SmallInput">
-                <div className="SmallInputWrap">
-                  <input
-                    type="checkbox"
-                    name="mobileTransfer"
-                    value={transactionType.mobileTransfer}
-                    onClick={() => {}}
-                  />
-                  <p>Mobile Transfer</p>
-                </div>
-              </div>
-            </div>
+            
+      <div className="checkButtonWrapper">
+      {
+        ["Cash Collection","Utility Payment","Mobile Transfer"].map((val, ind) =>{
+          return(
+            <CheckButton value={val} index={ind} Click={() => handleCheckButton(ind)} clickedIndex={clickedIndex}/>
+          )
+        })
+      }
+      </div>
+      
+    
             <div className="transactionAmountWrap">
               <h3>Transaction Amount</h3>
               <div className="transactionAmount">

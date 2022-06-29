@@ -5,7 +5,8 @@ import Navbar from './Navbar'
 import ProfileView from './ProfileView';
 import allActions from '../../actions'
 import {useDispatch, useSelector} from 'react-redux';
-import ToggleSwitch from './ToggleSwitch.js'
+import ToggleSwitch from './ToggleSwitch.js';
+import TogglerButton from '../../components/TogglerButton'
 const Header = () => {
     const darkMode = useSelector(state=>state.themeActions.darkMode)
     const dispatch = useDispatch();
@@ -50,9 +51,13 @@ const Header = () => {
                             }
                         </button>
                     </div>
+                    <div>
+                    <TogglerButton />
+                    </div>
                     <div className="profileView">
                         <ProfileView name="Olalekan" username="olalekan.I@tranxnd.com" profileImg={dp}/>
                     </div>
+                    
                 </div>
             </div>
         </div>
