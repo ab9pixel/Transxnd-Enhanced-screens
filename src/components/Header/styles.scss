@@ -11,7 +11,6 @@
 }
 .logoWrap img{
     width: 239px;
-    height: 42px;
     margin-right: 20px;
 }
 .headerWrap{
@@ -51,6 +50,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-left: 13px;
 }
 .navbarRight{
     display: flex;
@@ -65,6 +65,7 @@
 }
 .profileUsername h5{
     font-size: 14px;
+    margin-bottom: 0;
 }
 .fontAwesome{
     width: 50px;
@@ -77,7 +78,7 @@
     margin-right: 38px;
 }
 .fontAwesome img{
-    width: 22px;
+    transform: translateX(-45%);
 }
 .headerMain .dark-color-button{
     width: 100%;

@@ -29,6 +29,9 @@
 .RateButton img{
     margin-right: 9px;
 }
+// .green-calculator{
+//     display: none;
+// }
 .ContentHeaderWrap h3{
     font-size: 25px;
     font-weight: 600;
@@ -53,6 +56,7 @@
     font-family: 'Poppins';
     padding-bottom: 16px;
     border-radius: 5px;
+    margin-left: 23px;
 }
 .MoneyCalculator{
     background-color: #E9F8F7;
@@ -103,6 +107,12 @@
 }
 .SmallInputWrap:hover{
     border:1px solid #27BDAD;
+}
+
+.checkButtonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
 }
 .SmallInputWrap{
     display: flex;
@@ -159,7 +169,6 @@ input:focus{
     font-size: 18px;
     font-weight: 500;
     padding: 8px;
-    color: green;
 }
 .lineDiv span{
     height: 45px;
@@ -226,7 +235,7 @@ input:focus{
     // justify-content: space-between;
 }
 .SendMoneyWrap > .accordion{
-    max-width: 30% !important;
+    max-width: 33% !important;
 }
 .SendMoneyWrap >div {
     border-radius: 5px;

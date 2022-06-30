@@ -1,0 +1,225 @@
+.payment-method{
+    background-color: #D3F2EF;
+}
+.payment-body{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    margin-top: 24px;
+}
+.payment-body-left{
+    width: 40%;
+}
+.payment-body-right{
+    width: 57%;
+    padding: 33px 27px 31px 18px;
+    border: 1px solid rgba(39, 189, 173, 0.3);
+    background-color: #E8F9F7;
+    border-radius: 8px;
+    // text-align: center;
+}
+.payment-body-right h5{
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-bottom: 26px;
+    text-align: center;
+}
+.payment-option{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 25px 30px 15px;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    background-color: white;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+.payment-option:hover{
+    border: 1px solid #27BDAD;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.payment-method{
+    padding: 26px 23px 44px 33px;
+}
+.checkbox-wrap img{
+    width: 18px;
+    height: 18px;
+    margin-right: 18px;
+}
+.card-details-wrap{
+    max-width: 100%;
+    background-color: #DCFAF6;
+    border: 1px solid #27BDAD;
+    border-radius: 5px;
+    padding: 13px 18px 8px 22px;
+    margin-bottom: 255px;
+}
+.card-details-wrap, .card-name-icon{
+    display: flex;
+    align-items: center;
+}
+.card-name-icon{
+    justify-content: space-between;
+}
+.card-details{
+    width: 100%;
+}
+.card-details span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-details p{
+    margin: 0;
+}
+.credit-card-form input, .credit-card-form select {
+    background: #fff;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+    box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.45;
+    outline: none;
+    // padding: 0.6em 1.45em 0.7em;
+    padding: 15px;
+    transition: .18s ease-out;
+    margin-bottom: 10px;
+}
+.credit-card-form input:hover, select:hover {
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+.credit-card-form input:focus, select:focus {
+    color: #4b515d;
+    border: 1px solid #B8B6B6;
+    box-shadow: inset 1px 2px 4px rgba(165, 165, 165, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.credit-card-form input::placeholder{
+    color: black
+}
+.card-number-field input, .card-cardholder-field input{
+    width: 100%;
+}
+.country-zipcode, .expiry-cvv{
+    display: flex;
+    justify-content: space-between;
+}
+.country-zipcode input, .expiry-cvv input, .select-wrapper{
+    width: 48%;
+}
+.select-wrapper select{
+    width: 98%;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 58px;
+}
+.country-zipcode select{
+    appearance: none;
+}
+.select-wrapper {
+    position: relative;
+}
+.select-wrapper img{
+    position: absolute;
+    width: 30px;
+    left: 10%;
+    top: 25%;
+}
+.select-wrapper::after {
+    content: "▼";
+    font-size: 18px;
+    top: 25%;
+    right: 10%;
+    position: absolute;
+    color:#27BDAD;
+}
+.radio-input span{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    margin-left: 7px;
+}
+.radio-input{
+    margin-bottom: 150px;
+}
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.spinner-header h5 {
+    margin-bottom: 158px;
+}
+.spinner img{
+    margin-bottom: 26px;
+}
+.spinner span{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    margin-bottom: 224px;
+}
+.wallet-amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wallet-amount p{
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 600;
+}
+.wallet-amount span{
+    font-size: 30px;
+    font-family: inherit;
+    color: #27BDAD;
+    font-weight: bold;
+}
+.tranxnd-wallet h5 {
+    margin-bottom: 38px;
+}
+// .wallet-response{
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+// }
+.wallet-resonse-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wallet-resonse-img img{
+    width: 32px;
+    margin-bottom: 18px;
+}
+.wallet-response h5{
+    margin-bottom: 29px;
+}
+.warning-message{
+    font-size: 16px;
+    color: #FE0000;
+    line-height: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.response-para{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.response-balance-amount{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

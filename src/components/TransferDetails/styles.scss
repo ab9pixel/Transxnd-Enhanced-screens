@@ -10,10 +10,21 @@
     top: 10px;
     width: 18px;
 }
+.transaction-form-header{
+    display: flex;
+    justify-content: space-between;
+    img{
+        margin-right: 30px;
+    }
+}
+.transaction-left{
+    width: 40%;
+    margin-top: 22px;
+}
 .transaction-form{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
 }
 .transactionAmount{
     position: relative;
@@ -43,4 +54,40 @@
 }
 .currencyWrap select{
     height: 46px;
+}
+.transfer-card{
+    h5{
+        font-size: 15px;
+        line-height: 23px;
+        font-weight: 500;
+    }
+    .collection-cash-country{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cash-country-image{
+            img{
+                width: 30px;
+                margin-right: 12px;
+            }
+            span{
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        .line-span{
+                width: 150px;
+                height: 1px;
+                background-color: #27BDAD;
+        }
+    }
+    .collection-country-names{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        color: #27BDAD;
+    }
 }

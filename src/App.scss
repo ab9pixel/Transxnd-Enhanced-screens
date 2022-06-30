@@ -1,84 +1,1523 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.container{
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    color: #0E2725;
-}
-h1, h2, h3 , h4 , h5, p{
-    margin: 0;
-}
-.flex{
-    display: flex;
-}
-.flex-between{
-    justify-content: space-between;
-}
-.items-center{
-    place-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  color: #0e2725;
 }
 
-*{
-    box-sizing: border-box;
-    font-family: Poppins;
+.row>* {
+  padding: 0;
+  margin: 0;
 }
-.dark-mode{
-    *{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+.row {
+  margin: 0;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  place-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.dark-mode {
+  * {
     color: #fff;
     box-shadow: none !important;
+  }
+
+  .navWrap {
+    color: #fff;
+  }
+
+  .navWrap:hover {
+    color: #27bdad;
+  }
+
+  .headerWrap .reactSwitchLabel {
+    background: transparent;
+  }
+
+  // Main Content
+  &.MainContent {
+    background: #000;
+
+    .ContentHeaderText h3 {
+      color: #27bdad;
     }
-    .navWrap{
-        color: #fff;
+
+    //Main Sidebar
+    .sidebarWrap,
+    .sendMoneyPageOneLeft,
+    .sendMoneyPageOneRight,
+    .MoneyCalculator,
+    .beneficiary-form,
+    .accordion {
+      background: #060d0c;
     }
-    .navWrap:hover{
-        color: #27BDAD;
+
+    .SmallInputWrap,
+    input[text="number"] {
+      background: #0c1917;
     }
-    // Main Content
-    &.MainContent{
-        background: #000;
-        .ContentHeaderText h3{
-            color: #27BDAD;
+
+    .SmallInputWrap:hover {
+      background: #112623;
+    }
+
+    .tabMain:hover .tabName,
+    .tabMain:hover .tabIcon img {
+      filter: invert(1);
+    }
+
+    .tabMain .tabName {
+      font-weight: 400;
+    }
+
+    .sidebarWrap .profileBalanceButton button {
+      background: #72faec;
+      color: #000;
+    }
+
+    .currencyWrap,
+    .currencyWrap * {
+      background: #1e413d;
+      border: 0;
+      color: #fff;
+    }
+
+    .accordion-header,
+    .accordion-header button[aria-expanded="true"] {
+      background: #112623;
+      color: #fff;
+    }
+
+    .accordion-body {
+      background: #0c1917;
+
+      .short-name {
+        background-color: black;
+        border-radius: 50%;
+      }
+    }
+
+    .inner-content {
+      background: #060d0c;
+    }
+
+    input {
+      background: #060d0c;
+      border: 1px solid #72faec;
+    }
+  }
+
+  .add-beneficiary {
+    table {
+      tr {
+        background: #0b1917;
+
+        .short-name {
+          background-color: black;
+          border-radius: 50%;
         }
-        //Main Sidebar
-        .sidebarWrap, .sendMoneyPageOneLeft, .sendMoneyPageOneRight, .MoneyCalculator, .beneficiary-form , .accordion{
-            background:#060D0C; 
+
+        .full-name h2 {
+          color: #72faec;
         }
-        .SmallInputWrap, input[text="number"] {
-           background:#0C1917;
+      }
+    }
+
+    .beneficiary-header {
+      button {
+        color: #060d0c;
+
+        img {
+          filter: invert(1);
         }
-        .SmallInputWrap:hover{
-            background: #112623;
+      }
+    }
+
+    .input-sort {
+      button {
+        background: #0b1917;
+        color: white;
+
+        img {
+          // filter: invert(1);
         }
-        .tabMain:hover .tabName, .tabMain:hover .tabIcon img, {
-            filter: invert(1);
+      }
+    }
+  }
+
+  .review-payment {
+    background-color: #060d0c;
+    color: white;
+
+    .review-payment-body {
+      background-color: #060d0c;
+      color: white;
+    }
+  }
+
+  .otp-confirmation {
+    background-color: #060d0c;
+    color: white;
+
+    &__body {
+      .otp-inputs {
+        input {
+          border: 1px solid white;
         }
-        .tabMain .tabName{
-            font-weight: 400;
+      }
+    }
+  }
+
+  .payment-method {
+    background-color: #060d0c;
+    color: white;
+
+    .payment-body-left {
+      .payment-option {
+        background-color: #060d0c;
+      }
+    }
+
+    .payment-body-right {
+      background-color: #060d0c;
+      color: white;
+
+      .credit-card-form {
+        input {
+          color: white;
         }
-        .sidebarWrap .profileBalanceButton button{
-            background: #72FAEC;
+
+        input::placeholder {
+          color: white;
+        }
+
+        select {
+          background-color: #060d0c;
+          color: white;
+        }
+      }
+
+      .card-details-wrap {
+        background-color: #060d0c;
+      }
+    }
+  }
+
+  &.footerMain {
+    background: #000;
+    border-top: 1px solid #383838;
+
+    .MenuHeadingMain {
+      color: #fff;
+    }
+
+    .SocialIconsMain img {
+      filter: invert(1);
+    }
+
+    .footerAddress p {
+      color: #fff;
+    }
+  }
+
+  .checkButton {
+    background: transparent;
+    border: 1px solid #72FAEC;
+  }
+
+  .filledBox {
+    border-radius: 50%;
+    background-color: #72FAEC;
+    border: 3px solid #25524D;
+
+  }
+
+  .emptyBox {
+    border-radius: 50%;
+    background-color: #25524D;
+    border: 3px solid #25524D;
+
+  }
+
+  // DARK MODE 
+
+}
+
+@media (max-width: 428px) {
+  .MainContent {
+    padding-bottom: 0;
+  }
+
+  .headerMain {
+    .navbarLeft {
+      .navbarWrap {
+        display: none;
+      }
+
+      .logoWrap img {
+        width: 122px;
+      }
+    }
+
+    .navbarRight {
+
+      // display: none;
+      .profileView {
+        display: none;
+      }
+
+      .fontAwesome {
+        width: 31px;
+        height: 31px;
+        margin-right: 14px;
+
+        button {
+          img {
+            width: 15px;
+            height: 15px;
+          }
+
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .reactSwitchLabel {
+        margin-right: 13px;
+      }
+
+      .reactSwitchLabel {
+        width: 60px;
+        height: 32px;
+      }
+
+      .reactSwitchLabel::before {
+        margin-left: 3px;
+        font-size: 13px;
+      }
+
+      .reactSwitchButton {
+        width: 27px;
+        height: 27px;
+      }
+
+      .reactSwitchLabel::after {
+        margin-right: 3px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .MainContentWrap {
+    margin: 14px 13px !important;
+
+    .sidebarMain {
+      display: none;
+    }
+
+    .ContentHeader {
+      padding: 0 14px;
+    }
+
+    .checkButton {
+      width: 100%;
+    }
+
+    .ContentHeaderText {
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        display: none;
+      }
+
+      span {
+        margin-right: 10px;
+      }
+    }
+
+    .RateButton {
+      button {
+        padding: 5px !important;
+        font-size: 15px;
+
+        // background-color: transparent;
+        // color: black;
+        // .green-calculator{
+        //     width: 14px;
+        //     display: inline;
+        // }
+        // .white-calculator{
+        //     display: none;
+        // }
+        img {
+          padding: 0;
+          margin-right: 8px;
+          width: 12px;
+        }
+      }
+    }
+
+    .SendMoneyWrap {
+      .accordion {
+        display: none;
+      }
+
+      .inner-content {
+        width: 100%;
+
+        .add-beneficiary-wrap {
+          padding: 32px 15px;
+
+          .beneficiary-header {
+            margin-bottom: 13px;
+            position: relative;
+
+            .beneficiary-head-text {
+              h3 {
+                font-size: 18px;
+                margin-bottom: 20px;
+              }
+
+              p {
+                font-size: 15px;
+              }
+            }
+
+            .RateButton {
+              button {
+                padding: 9px 14px !important;
+                font-size: 13px;
+                background-color: #27bdad;
+                color: #fff;
+                font-weight: normal;
+                gap: 10px;
+                position: absolute;
+                right: 0;
+
+                img {
+                  padding: 0;
+                  margin: 0;
+                  width: 10px;
+                  height: 10px;
+                }
+              }
+            }
+          }
+
+          .input-sort {
+            gap: 10px;
+            align-items: stretch;
+
+            .input-field {
+              input {
+                margin: 0;
+                margin-right: -33px;
+              }
+
+              input::placeholder {
+                font-size: 2px;
+                color: transparent;
+              }
+
+              img {
+                position: static;
+              }
+            }
+
+            .RateButton {
+              button {
+                padding: 0 10px !important;
+                min-width: 61px;
+                background-color: #27bdad;
+                height: 100%;
+                color: #fff;
+
+                svg {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .beneficiary-content {
+            max-width: 359px;
+            height: 403px;
+            margin: 20px auto 0;
+
+            table {
+              margin: 0;
+
+              tr {
+                border-radius: 0;
+                padding: 8px 10px 16px;
+              }
+            }
+          }
+        }
+
+        .beneficiary-form {
+          padding: 29px 20px;
+
+          .beneficiary-form-header {
+            margin-bottom: 33px;
+
+            h3 {
+              font-size: 18px;
+            }
+
+            p {
+              margin: 0;
+              font-size: 15px;
+            }
+          }
+
+          .beneficiary-input-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            &>div {
+              width: 100%;
+              margin: 0;
+            }
+
+            label {
+              margin: 0;
+              margin-bottom: 12px;
+              font-size: 15px;
+            }
+
+            input {
+              margin: 0;
+            }
+
+            .name-email {
+              flex-direction: column;
+
+              &>div {
+                width: 100%;
+                margin-right: 0;
+              }
+            }
+
+            .beneficiary-form-add {
+              margin-top: 114px;
+              flex-direction: column-reverse;
+              align-items: center;
+              gap: 16px;
+
+              button {
+                margin: 0 !important;
+
+                &:first-child {
+                  border: none !important;
+                  color: #000 !important;
+                  padding: 0 !important;
+                }
+              }
+            }
+          }
+        }
+
+        .transfer-details {
+          .tranfer-detail-header {
+            text-align: center;
+
+            .inner-content-header {
+              h3 {
+                font-size: 18px;
+              }
+            }
+
+            p {
+              font-size: 13px;
+            }
+
+            img {
+              display: none;
+            }
+          }
+
+          .transaction-form {
+            flex-direction: column;
+
+            &>div {
+              width: 100%;
+            }
+
+            .transaction-left {
+              .transaction-form-header {
+                margin-bottom: 11px;
+                gap: 14px;
+                justify-content: center;
+
+                h3 {
+                  margin: 0;
+                }
+
+                img {
+                  margin: 0;
+                }
+              }
+
+              .transaction-type-form {
+                .transactionType {
+                  &>div {
+                    width: 100%;
+                  }
+
+                  .SmallInputWrap {
+                    margin: 0;
+                    width: 100%;
+                    margin-bottom: 14px;
+                  }
+                }
+              }
+            }
+
+            .transaction-right {
+              .transactionAmountWrap {
+                height: 170px;
+                overflow: hidden;
+
+                h3 {
+                  text-align: center;
+                  font-size: 18px;
+                }
+
+                .transactionAmount {
+                  input {
+                    padding: 8px 30px;
+                  }
+
+                  .currencyWrap {
+                    padding: 0;
+                    padding-inline: 13px;
+
+                    img {
+                      width: 30px;
+                      height: 18px;
+                    }
+                  }
+
+                  span {
+                    display: none;
+                  }
+                }
+              }
+
+              .infoNote {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .review-payment {
+          background-color: #e9f8f7;
+          padding: 34px 13px 0;
+
+          .review-payment-header {
+            text-align: center;
+
+            h3 {
+              font-size: 18px;
+              color: #000;
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+
+          .review-payment-body {
+            border: none;
+            background: #c1ede8;
+
+            .beneficiary-transaction {
+              flex-direction: column;
+
+              &>div {
+                width: 100%;
+                margin: 0;
+              }
+
+              .beneficiary-details {
+                margin-bottom: 38px;
+
+                h5 {
+                  font-size: 16px;
+                }
+
+                .review-name {
+                  margin-bottom: 23px;
+
+                  h6 {
+                    font-size: 14px;
+                  }
+
+                  span {
+                    font-size: 16px;
+                  }
+                }
+
+                .review-country {
+                  h6 {
+                    font-size: 14px;
+                  }
+
+                  .review-country-flag {}
+
+                  span {}
+                }
+              }
+            }
+
+            .transaction-details {
+              h5 {
+                font-size: 16px;
+              }
+
+              .amount-charges {
+                height: 170px;
+                overflow: hidden;
+
+                .transaction-steps {
+                  margin-left: 11px;
+                }
+              }
+
+              &>.review-country-send {
+                display: none;
+              }
+            }
+          }
+
+          .review-payment-note {
+            display: none;
+          }
+
+          .confirmation-button {
+            &>div {
+              width: max-content !important;
+            }
+
+            button {
+              padding: 13px 50px;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .otp-confirmation {
+          .otp-confirmation__header {
+            text-align: center;
+          }
+
+          &__body {
+            border: none;
+            text-align: center;
+
+            p {
+              font-size: 15px;
+            }
+
+            .otp-warning {
+              .warning-sign {
+                display: flex;
+                gap: 19px;
+                align-items: center;
+
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+
+        .collection-point {
+          padding: 29px 20px 0;
+
+          .collection-point-header {
+            .inner-content-header {
+              font-size: 18px;
+            }
+
+            p {
+              font-size: 12px;
+              margin-bottom: 15px;
+            }
+
+            .search-filter {
+              flex-direction: column;
+              gap: 17px;
+              margin-bottom: 15px;
+
+              .input-field {
+                input {
+                  margin-right: -33px;
+
+                  &::placeholder {
+                    font-size: 2px;
+                    color: transparent;
+                  }
+                }
+              }
+
+              .advancedFilters {
+                align-self: end;
+                font-size: 14px;
+              }
+            }
+
+            .beneficiary-content {
+              table {
+                margin: 0;
+
+                tr {
+                  align-items: center;
+                  justify-content: space-between;
+                  border-radius: 0;
+
+                  .name-location-table-wrap {
+                    align-items: center;
+
+                    &>div {
+                      &>div {
+                        h2 {
+                          font-size: 15px;
+                        }
+
+                        h3 {
+                          font-size: 13px;
+                        }
+                      }
+                    }
+                  }
+
+                  td {
+                    vertical-align: middle;
+                    width: auto;
+
+                    h4 {
+                      font-size: 12px;
+                      color: #27bdad;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .payment-method {
+          padding: 34px 13px 0;
+
+          .payment-method-header {
+            text-align: center;
+
+            h3 {
+              font-size: 18px;
+              color: #000;
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+
+          .payment-body {
+            flex-direction: column;
+
+            &>div {
+              width: 100%;
+            }
+
+            .payment-body-left {
+              padding-inline: 28px;
+            }
+
+            .payment-body-right {
+              background-color: #c2ede9;
+              border: none;
+              width: 100%;
+
+              .wallet-response {
+                .warning-message {
+                  margin-bottom: 14px;
+                }
+
+                .response-para {
+                  display: none;
+                }
+
+                .response-balance-amount {
+                  margin-bottom: 19px;
+
+                  .wallet-amount {
+                    display: block;
+                    text-align: center;
+                    margin: 0 !important;
+
+                    p {
+                      font-size: 13px;
+                    }
+
+                    span {
+                      font-size: 18px !important;
+                    }
+                  }
+                }
+              }
+
+              button {
+                width: max-content;
+                font-size: 16px;
+                padding: 14px 33px;
+              }
+
+              .credit-card-display {
+                .card-details-wrap {
+                  .card-details {
+                    span {
+                      font-size: 16px;
+                    }
+
+                    p {
+                      font-size: 15px;
+                    }
+
+                    .card-name-icon {
+                      span {
+                        font-size: 16px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .credit-card-form {
+                .country-zipcode {
+                  input {
+                    margin: 0;
+                  }
+
+                  .select-wrapper {
+                    img {
+                      top: 50%;
+                      transform: translateY(-50%);
+                    }
+
+                    select {
+                      display: block;
+                      font-size: 12px;
+                      height: 100%;
+                      margin: 0;
+                    }
+
+                    &::after {
+                      top: 50%;
+                      transform: translateY(-50%);
+                    }
+                  }
+                }
+
+                .radio-input {
+                  span {
+                    font-size: 12px;
+                  }
+                }
+              }
+
+              .spinner {
+                display: block;
+                text-align: center;
+
+                .spinner-header {
+                  margin-bottom: 84px;
+
+                  h5 {
+                    margin: 0;
+                    font-size: 18px;
+                  }
+                }
+
+                .spinner-image {
+                  margin-bottom: 26px;
+
+                  img {
+                    margin: 0;
+                  }
+
+                  span {
+                    font-size: 15px;
+                  }
+                }
+              }
+
+              .tranxnd-wallet {
+                .wallet-header {
+                  margin-bottom: 30px;
+
+                  h5 {
+                    margin: 0;
+                    font-size: 18px;
+                  }
+                }
+
+                .wallet-amount {
+                  p {
+                    font-size: 13px;
+                  }
+
+                  span {
+                    font-size: 30px;
+                  }
+
+                  &:last-child {
+                    margin-bottom: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .MainContentBody {
+      margin: 0;
+    }
+
+    .support-message {
+      p {
+        display: none;
+      }
+
+      &>div {
+        justify-content: center;
+      }
+
+      .action-btns {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        button {
+          margin: 0;
+
+          &:first-child {
+            background-color: transparent;
             color: #000;
+          }
         }
-        .currencyWrap, .currencyWrap * {
-           background: #1E413D;
-           border: 0;
-           color: #fff;
-        }
+      }
     }
-    &.footerMain{
-        background:#000;
-        border-top: 1px solid #383838;
-        .MenuHeadingMain{
-            color: #fff;
+  }
+
+  .MoneyCalculator {
+    .row {
+      flex-direction: column-reverse;
+
+      .sendMoneyPageOneRight {
+        padding: 34px 25px 19px;
+        display: flex;
+        flex-direction: column;
+
+        .SmallInput {
+          width: 100%;
+
+          .SmallInputWrap {
+            width: 100%;
+            margin-bottom: 14px;
+
+            p {
+              font-size: 15px;
+            }
+          }
         }
-        .SocialIconsMain img{
-            filter: invert(1);
+
+        .transactionType {
+          h3 {
+            text-align: center;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 600;
+          }
         }
-        .footerAddress p{
-            color: #fff;
+
+        .transactionAmountWrap {
+          h3 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: center;
+          }
+
+          .transactionAmount {
+            input {
+              padding: 10px 12px;
+            }
+
+            .currencyWrap {
+              padding: 3px 7px;
+            }
+          }
         }
+
+        .GreenFullButton_GreenFullButton__80YVK {
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+
+          button {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .sendMoneyPageOneLeft {
+        padding: 74px 24px 50px;
+
+        .contentBodyHeading {
+          font-size: 25px;
+          text-align: center;
+          margin-bottom: 16px;
+        }
+
+        .contentBodyPara {
+          margin-bottom: 29px;
+
+          p {
+            font-size: 13px;
+            font-weight: 400;
+            text-align: center;
+          }
+        }
+
+        .howToLink {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .playIcon {
+            img {
+              width: 28px;
+              height: 28px;
+              margin-right: 9px;
+            }
+          }
+
+          .playText {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .footerMain {
+    padding-top: 22px;
+  }
+
+  .footerWrap {
+    margin: 0 auto;
+    padding-bottom: 16px;
+
+    .footerLeft {
+      .footerLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+          width: 227px;
+          height: 40px;
+        }
+      }
+
+      .footerButton {
+        display: none;
+      }
+
+      .footerAddress {
+        text-align: center;
+        margin-bottom: 47px;
+      }
+
+      .footerContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+          text-align: center;
+          margin: 0px;
+          font-size: 16px;
+        }
+
+        div {
+          margin-bottom: 23px;
+        }
+      }
+
+      .footerSocialIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .SocialIconsMain {
+          width: 34px;
+          height: 34px;
+
+          img {
+            width: 13px;
+          }
+        }
+      }
     }
 
+    .footerMiddleWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
+      .MenuHeadingMain {
+        text-align: center;
+      }
+
+      ul li {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      margin-bottom: 63px;
+    }
+
+    .footerRightWrap {
+      width: 100%;
+
+      .MenuHeadingMain {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 0px;
+        margin-bottom: 36px;
+      }
+
+      .footerInput {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .modeAndLang {
+        display: none;
+      }
+    }
+  }
+
+  .copyRight {
+    margin-top: 136px;
+    margin-bottom: 31px;
+
+    p {
+      font-size: 14px;
+
+      img {
+        margin-inline: 8px;
+      }
+    }
+  }
+
+}
+
+// LAPTOP LOWER RES RESPONSIVE
+
+// MOBILE RESPONSIVE
+.App {
+  @media (max-width: 990px) {
+    *:not(input):not(.inner-content *) {
+      text-align: center;
+    }
+
+    .headerMain .navbarWrap,
+    .profileView,
+    .sidebarMain,
+    .support-message p {
+      display: none;
+    }
+
+    .MoneyCalculator .row>.col-lg-6:first-child {
+      order: 2;
+    }
+
+    .MainContent,
+    .MainContentBody {
+      padding-bottom: 0;
+    }
+
+    .headerWrap,
+    .MainContentWrap {
+      margin: 0;
+    }
+
+    .SmallInput,
+    .SmallInputWrap {
+      width: 100%;
+    }
+
+    .transactionType h3 {
+      text-align: center;
+    }
+
+    .sendMoneyPageOneRight {
+      padding: 34px 25px;
+      border-radius: 5px;
+      background: #c2ede9;
+      border-radius: 5px;
+    }
+
+    .sendMoneyPageOneLeft {
+      padding-top: 72px;
+
+      .howToLink {
+        justify-content: center;
+      }
+    }
+
+    .container {
+      min-width: 95%;
+      max-width: 95%;
+      margin: 0 auto;
+    }
+
+    .ContentHeaderWrap {
+      justify-content: space-around;
+      // .RateButton {
+      //   button {
+      //     background: #fff;
+      //     color: #000;
+      //   }
+      // }
+    }
+
+    .ContentHeaderText {
+      p {
+        display: none;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+      span {
+        margin-right: 14px;
+      }
+    }
+
+    // inner components responsiveness
+    .MainContent {
+      .MainContentBodyWrap {
+        background: #e9f8f7;
+      }
+
+      .accordion {
+        display: none;
+      }
+
+      .inner-content {
+        width: 100%;
+      }
+
+      .beneficiary-head-text {
+        * {
+          text-align: left;
+        }
+
+        p {
+          padding-right: 20px;
+        }
+      }
+
+      .beneficiary-header .RateButton button {
+        min-width: 189px;
+        font-size: 16px;
+        padding-left: 16px !important;
+        padding-right: 16px;
+      }
+
+      .add-beneficiary-wrap input::placeholder {
+        color: transparent;
+      }
+
+      .add-beneficiary-wrap .input-field img {
+        right: 8%;
+      }
+
+      .beneficiary-form {
+        text-align: left;
+        background: #c2ede9;
+        border-radius: 5px;
+
+        .beneficiary-input-fields {
+          label {
+            margin-bottom: 12px;
+          }
+
+          .beneficiary-form-add {
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            button:first-child {
+              margin-right: 0 !important;
+              margin-top: 10px;
+            }
+          }
+
+          .name-email,
+          .name-email *,
+          .beneficiary-account,
+          .beneficiary-country {
+            display: block;
+            width: 100%;
+          }
+
+          input {
+            width: 100%;
+          }
+
+          .beneficiary-name {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .beneficiary-content tr {
+        td {
+          width: 50%;
+
+          &:nth-child(2) {
+            display: none;
+          }
+
+          .bank-card-wrap * {
+            margin-bottom: 0;
+            margin-top: 0;
+          }
+        }
+      }
+
+      .transaction-form {
+        flex-wrap: wrap;
+
+        &>div {
+          width: 100%;
+        }
+      }
+
+      .otp-confirmation__body {
+        border: 0;
+      }
+
+      .support-message {
+        margin-top: 0;
+
+        .action-btns {
+          width: 100%;
+          display: flex;
+          place-content: center;
+          flex-direction: column-reverse;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 20px 0;
+
+          button:first-child {
+            margin-right: 0;
+            background: transparent;
+            color: #000;
+          }
+
+          button:not(button:first-child) {
+            background: #2ed06e;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    // footer
+    .footerMain {
+      .footerLeftWrap {
+        padding-bottom: 45px;
+
+        .footerAddress {
+          margin-top: 20px;
+          width: 80%;
+          margin: 20px auto 0 auto;
+        }
+      }
+
+      .footerMiddleWrap {
+        flex-direction: column;
+      }
+
+      padding-bottom: 30px;
+
+      input {
+        position: static;
+      }
+
+      .footerSocialIcons {
+        place-content: center;
+        margin-bottom: 0;
+      }
+
+      .modeAndLang,
+      .footerContact,
+      .footerButton {
+        display: none;
+      }
+    }
+  }
 }
