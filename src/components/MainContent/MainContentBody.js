@@ -7,7 +7,7 @@ import SupportMessage from "../SupportMessage";
 const MainContentBody = () => {
   const [progress, setProgress] = useState(1);
   const [sendMoneyNow, setSendMoneyNow] = useState(false);
-  const [addedBen, setAddedBenData] = useState("");
+  const [addedBen, setAddedBenData] = useState(false)
   const [collectionPoint, setCollectionPoint] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState(false);
   const [transferDetails, setTransferDetails] = useState(false);
@@ -30,7 +30,7 @@ const MainContentBody = () => {
             <InnerContent
               progress={progress}
               reviewPayment={reviewPayment}
-              setAddedBenData={setAddedBenData}
+              setAddedBenData={(val)=>setAddedBenData(val)}
               transferDetails={transferDetails}
               setProgress={(val) => {
                 setProgress(val);
@@ -41,7 +41,8 @@ const MainContentBody = () => {
           </div>
         )}
         <SupportMessage
-          buttonLink={addedBen}
+          addedBen={addedBen}
+          setAddedBenData={(val)=>setAddedBenData(val)}
           transferDetails={transferDetails}
           reviewPayment={reviewPayment}
           setReviewPayment={(val) => setReviewPayment(val)}

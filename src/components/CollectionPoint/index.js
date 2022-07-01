@@ -29,6 +29,7 @@ const CollectionPoint = ({setPaymentMethod}) => {
             <div className="beneficiary-content">
           {data ? (
             <table>
+              <tbody>
               {data?.map((user) => {
                 return (
                   <tr>
@@ -54,6 +55,7 @@ const CollectionPoint = ({setPaymentMethod}) => {
                   </tr>
                 );
               })}
+              </tbody>
             </table>
           ) : null}
         </div>
