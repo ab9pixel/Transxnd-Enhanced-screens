@@ -58,7 +58,7 @@ body {
     color: #27bdad;
   }
 
-  .headerWrap .reactSwitchLabel {
+  .reactSwitchLabel {
     background: transparent;
   }
 
@@ -132,6 +132,9 @@ body {
     input {
       background: #060d0c;
       border: 1px solid #72faec;
+    }
+    .accordion-button{
+      background: #000;
     }
   }
 
@@ -265,6 +268,16 @@ body {
     background-color: #25524D;
     border: 3px solid #25524D;
 
+  }
+
+  .beneficiary-content{
+    tr{
+      background: transparent;
+      border-bottom: 1px solid #707070;
+    }
+    h2{
+      color: #72FAEC;
+    }
   }
 
   // DARK MODE 
@@ -480,7 +493,40 @@ body {
               tr {
                 border-radius: 0;
                 padding: 8px 10px 16px;
+                display: flex;
+    flex-direction: column;
               }
+              td{
+                width: 100%;
+              }
+              .name-location{
+                display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+              }
+              img{
+                border-radius: 50%;
+                max-width: 15px;
+              }
+              .short-name{
+                padding: 4px !important;
+              }
+              h1{
+                font-size: 13px;
+              }
+              .bank-card-wrap {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            h4{
+              font-size: 12px;
+            }
+            h5{
+              font-size: 10px;
+            }
             }
           }
         }

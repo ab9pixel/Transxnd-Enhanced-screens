@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.scss";
 import Button from "../SimpleButton";
 const SupportMessage = ({
+  progress,
+  setProgress,
   addedBen,
   transferDetails,
   reviewPayment,
@@ -12,7 +14,24 @@ const SupportMessage = ({
   paymentMethod,
   setPaymentMethod,
 }) => {
-  const backScreenHandler = () => {};
+  const backScreenHandler = () => { };
+
+  const handleCollectionPoint = () => {
+    setCollectionPoint(true)
+    setProgress(progress + 1)
+  }
+  const handleTransferDetails = () => {
+    setTransferDetails(true)
+    setProgress(progress + 1)
+  }
+  const handlePaymentMethod = () => {
+    setPaymentMethod(true)
+    setProgress(progress + 1)
+  }
+  const handleReviewPayment = () => {
+    setReviewPayment(true);
+     setProgress(progress + 1)  
+  }
 
   return (
     <div className="support-message">
@@ -20,7 +39,7 @@ const SupportMessage = ({
         <p>
           Have a problem? Contact <span>Customer Support Team</span>
         </p>
-        {addedBen &&  !reviewPayment &&
+        {addedBen && !reviewPayment &&
           <div className="action-btns">
             <Button
               className="green med m-right-15"
@@ -31,13 +50,13 @@ const SupportMessage = ({
               className="sea-green-hollow med"
               onClick={() => {
                 !collectionPoint
-                  && !transferDetails ? setTransferDetails(true)
+                  && !transferDetails ? handleTransferDetails()
                   :
-                   !paymentMethod 
-                  && !collectionPoint ? setCollectionPoint(true)                
-                  :  !reviewPayment
-                  && !paymentMethod ? setPaymentMethod(true)
-                  : setReviewPayment(true);
+                  !paymentMethod
+                    && !collectionPoint ? handleCollectionPoint()
+                    : !reviewPayment
+                      && !paymentMethod ? handlePaymentMethod()
+                      : handleReviewPayment()
               }}
               text="Continue"
             />
