@@ -1,16 +1,16 @@
 import React from 'react'
 
-const PaymentOptions = ({checkbox,text,methodOptionIcon}) => {
+const PaymentOptions = ({checkbox,text,methodOptionIcon,Click,index,clickedIndex}) => {
   return (
-    <div className='payment-option'>
+    <button onClick={Click}  className='payment-option'>
         <div className='checkbox-wrap'>
-            <img src={checkbox} alt="checkbox err"/>
+        <div className={index === clickedIndex ? "filledBox" : "emptyBox"}></div>
             {text}
         </div>
         <div className='checkbox-wrap'>
             <img src={methodOptionIcon} alt="creditCardIcon err"/>
         </div>
-    </div>
+    </button>
   )
 }
 
