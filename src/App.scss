@@ -133,7 +133,8 @@ body {
       background: #060d0c;
       border: 1px solid #72faec;
     }
-    .accordion-button{
+
+    .accordion-button {
       background: #000;
     }
   }
@@ -270,25 +271,49 @@ body {
 
   }
 
-  .beneficiary-content{
-    tr{
+  .beneficiary-content {
+    tr {
       background: transparent;
       border-bottom: 1px solid #707070;
     }
-    h2{
+
+    h2 {
       color: #72FAEC;
     }
   }
-  .collection-card-container{
+
+  .collection-card-container {
     background: transparent;
   }
-  .credit-card-wrapper{
-    .payment-option{
+
+  .credit-card-wrapper {
+    .payment-option {
       background: transparent;
     }
   }
-  .credit-option{
+
+  .credit-option {
     background: transparent;
+  }
+
+  .beneficiary-form {
+    background: transparent !important;
+  }
+
+  .payment-body-right {
+    background: transparent !important;
+  }
+
+  .review-payment {
+    background: transparent !important;
+  }
+
+  .review-payment-body {
+    background: transparent !important;
+  }
+
+  .MainContentBodyWrap {
+    background: transparent !important;
   }
 
   // DARK MODE 
@@ -299,13 +324,16 @@ body {
   .MainContent {
     padding-bottom: 0;
   }
-  .payment-option{
+
+  .payment-option {
     padding: 8px !important;
   }
-  .credit-option{
+
+  .credit-option {
     width: 100% !important;
   }
-  .credit-card-button button{
+
+  .credit-card-button button {
     padding: 13px !important;
   }
 
@@ -514,39 +542,47 @@ body {
                 border-radius: 0;
                 padding: 8px 10px 16px;
                 display: flex;
-    flex-direction: column;
+                flex-direction: column;
               }
-              td{
+
+              td {
                 width: 100%;
               }
-              .name-location{
+
+              .name-location {
                 display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
               }
-              img{
+
+              img {
                 border-radius: 50%;
                 max-width: 15px;
               }
-              .short-name{
+
+              .short-name {
                 padding: 4px !important;
               }
-              h1{
+
+              h1 {
                 font-size: 13px;
               }
+
               .bank-card-wrap {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-            }
-            h4{
-              font-size: 12px;
-            }
-            h5{
-              font-size: 10px;
-            }
+              }
+
+              h4 {
+                font-size: 12px;
+              }
+
+              h5 {
+                font-size: 10px;
+              }
             }
           }
         }
@@ -1099,6 +1135,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        padding: 0;
 
         button {
           margin: 0;
@@ -1333,7 +1370,7 @@ body {
       }
     }
   }
-  
+
 
 }
 
@@ -1344,6 +1381,11 @@ body {
   @media (max-width: 990px) {
     *:not(input):not(.inner-content *) {
       text-align: center;
+    }
+
+    .green {
+      border: 1px solid #27BDAD !important;
+      color: #27BDAD !important;
     }
 
     .headerMain .navbarWrap,
