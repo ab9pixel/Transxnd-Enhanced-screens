@@ -43,13 +43,14 @@ body {
   box-sizing: border-box;
   font-family: Poppins;
 }
-
+.App.dark-mode{
+    background: #000;
+}
 .dark-mode {
   * {
     color: #fff;
     box-shadow: none !important;
   }
-
   .navWrap {
     color: #fff;
   }
@@ -324,7 +325,16 @@ body {
   .MainContent {
     padding-bottom: 0;
   }
-
+  .dark-mode.MainContent input{
+    font-size: 12px;
+  }
+   .credit-card-fileds input{
+    max-width: 49% !important;
+   }
+    .ContentHeaderText h3{
+    font-size: 17px !important;
+    margin-right: 5px;
+   }
   .payment-option {
     padding: 8px !important;
   }
@@ -332,7 +342,11 @@ body {
   .credit-option {
     width: 100% !important;
   }
-
+  .search-filter .advancedFilters img{
+    width:  auto;
+    height: 13px;
+    margin-right: 7px;
+  }
   .credit-card-button button {
     padding: 13px !important;
   }
@@ -811,8 +825,8 @@ body {
               }
 
               .amount-charges {
-                height: 170px;
-                overflow: hidden;
+                // height: 170px;
+                // overflow: hidden;
 
                 .transaction-steps {
                   margin-left: 11px;
@@ -820,7 +834,7 @@ body {
               }
 
               &>.review-country-send {
-                display: none;
+                // display: none;
               }
             }
           }
@@ -1450,9 +1464,6 @@ body {
     }
 
     .ContentHeaderText {
-      .hammad{
-
-      }
       p {
         display: none;
       }
