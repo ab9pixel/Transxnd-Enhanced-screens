@@ -15,6 +15,7 @@ const cardIcon = "../images/search.svg";
 const transxndIcon = "../images/transxnd.svg";
 const spinnerImage = "../images/spinner-image.svg";
 const warningAlert = "../images/warning.svg";
+const masterCard = "../images/masterCard.png";
 
 const PaymentMethod = () => {
   const [saveCard, setSaveCard] = useState(false);
@@ -22,12 +23,25 @@ const PaymentMethod = () => {
   const flag = `../images/${countryFlag}.png`;
   const darkMode = useSelector((state) => state.themeActions.darkMode);
   const dispatch = useDispatch();
+  const [clickedIndex, setClickedIndex] = useState("");
+  const [creditCard, setCreditCard] = useState(false);
+  const [creditCardFlage, setCreditCardFlage] = useState(false);
+  const [transxndCard, setTransxndCard] = useState(1);
 
   const changeFlagHandler = (e) => {
     setCountyFlag(e.target.value);
   };
-  const addCreditCard = () => {};
-  const chooseCounty = () => {};
+  const addCreditCard = () => { };
+  const chooseCounty = () => { };
+
+  const handleCheckButton = (ind) => {
+    setClickedIndex(ind)
+  }
+
+  const handleCreditCard = () => {
+    setCreditCard(!creditCard)
+    setCreditCardFlage(true)
+  }
 
   return (
     <div className={`payment-method ${darkMode ? "dark-mode" : ""} `}>
@@ -37,172 +51,94 @@ const PaymentMethod = () => {
       </div>
       <div className="payment-body">
         <div className="payment-body-left">
-          <PaymentOptions
-            checkbox={checkbox}
-            text="Credit/Debit Card"
-            methodOptionIcon={creditCardIcon}
-          />
-          <PaymentOptions
-            checkbox={checkbox}
-            text="Tranxnd Wallet"
-            methodOptionIcon={transxndIcon}
-          />
-          <PaymentOptions
-            checkbox={checkbox}
-            text="Bank Account"
-            methodOptionIcon={bankIcon}
-          />
+          {
+            [{ text: "Credit/Debit Card", icon: creditCardIcon }, { text: "Tranxnd Wallet", icon: transxndIcon }, { text: "Bank Account", icon: bankIcon }].map((item, ind) => {
+              return (
+                <PaymentOptions
+                  text={item.text}
+                  methodOptionIcon={item.icon}
+                  index={ind} Click={() => handleCheckButton(ind)} clickedIndex={clickedIndex}
+                />
+              )
+            })
+          }
+
         </div>
         <div className="payment-body-right">
-          {/* <div className="credit-card-display">
-            <h5>Credit/Debit Card</h5>
-            <CreditDebitCardDetails
-              checkbox={checkbox}
-              cardNumber="9360"
-              expiryDate="Expiry Date"
-              userName="Salman Altaf"
-              cardIcon={cardIcon}
-            />
-            <GreenFullButton
-              onClick={addCreditCard}
-              style={{
-                boxShadow:
-                  "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px",
-              }}
-            >
-              {" "}
-              Add a new credit/debit card
-            </GreenFullButton>
-          </div> */}
+          {
+            clickedIndex == 0 ?
 
-          {/* <div className="credit-card-form">
-            <h5>Credit/Debit Card</h5>
-            <div className="card-number-field">
-              <input type="text" name="cardNumber" placeholder="Card Number" />
-            </div>
-            <div className="expiry-cvv">
-              <input type="text" name="expiryDate" placeholder="Expiry Date" />
-              <input type="text" name="cvvNumber" placeholder="CVV" />
-            </div>
-            <div className="card-cardholder-field">
-              <input
-                type="text"
-                name="cardHolderName"
-                placeholder="Cardholder Name"
-              />
-            </div>
-            <div className="country-zipcode">
-              <div class="select-wrapper">
-                <img src={flag} alt="countryFlag Err" />
-                <select value={countryFlag} onClick={changeFlagHandler}>
-                  <option value="usd">Country</option>
-                  <option value="usd">USA</option>
-                  <option value="pkr">PAK</option>
-                  <option value="uk">UK</option>
-                </select>
-              </div>
-              <input type="text" name="zipCode" placeholder="ZIP Code" />
-            </div>
-            <div className="radio-input">
-              <span className="radio-mark">
-                {" "}
-                {saveCard > 1 ? (
-                  <RadioMark active={true} />
-                ) : saveCard === 1 ? (
-                  <RadioMark active={false} />
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 15 15"
-                  >
-                    <g
-                      id="Group_4808"
-                      data-name="Group 4808"
-                      transform="translate(0.089 0.063)"
-                    >
-                      <g
-                        id="Ellipse_1034"
-                        data-name="Ellipse 1034"
-                        transform="translate(-0.088 -0.063)"
-                        fill="rgba(114,250,236,0.05)"
-                        stroke="#72faec"
-                        stroke-width="2"
-                      >
-                        <circle cx="7.5" cy="7.5" r="7.5" stroke="none" />
-                        <circle cx="7.5" cy="7.5" r="6.5" fill="none" />
-                      </g>
-                    </g>
-                  </svg>
-                )}
-              </span>
-              <span>Save card information for future payments</span>
-            </div>
-          </div> */}
+              creditCardFlage ?
+                <div className='credit-form'>
+                  <div className='credit-form-header'>
+                    <p>Credit/Debit Card</p>
+                  </div>
+                  <div className='beneficiary-input-fields'>
 
-          {/* <div className="spinner">
-            <div className="spinner-header">
-              <h5>Tranxnd Wallet</h5>
-            </div>
-            <div className="spinner-image">
-              <img src={spinnerImage} alt="loadingErr" />
-            </div>
-            <span>Please wait while we process your information</span>
-          </div> */}
+                    <input type="text" placeholder="Card Number" name="name" />
+                    <div className="credit-card-fileds">
+                      <input type="text" placeholder="Expiry Date" name="name" />
 
-          {/* <div className="tranxnd-wallet">
-            <div className="wallet-header">
-              <h5>Tranxnd Wallet</h5>
-            </div>
-            <WalletAmount
-              text="Current Balance"
-              amount="XOF 104,535.53"
-              marginBottom="42px"
-              color="#27BDAD"
-            />
-            <WalletAmount
-              text="Transaction Amount"
-              amount="XOF 4,500.00"
-              marginBottom="230px"
-              color="#27BDAD"
-            />
-          </div> */}
+                      <input type="text" placeholder="CVV" name="name" />
 
-          <div className="wallet-response">
-            <h5>Tranxnd Wallet</h5>
-            <div className="wallet-resonse-img">
-              <img src={warningAlert} alt="warningAlert" />
-            </div>
-            <p className="warning-message">Insufficient Wallet allowance:</p>
-            <p className="response-para">
-              The source wallet maximum balance will not be enough to pay for
-              this transaction even if you transfer funds into it.
-            </p>
-            <p className="response-para">
-              Please select a different payment method or reduce the transaction
-              amount to continue with the current source wallet.
-            </p>
-            <div className="response-balance-amount">
-              <WalletAmount
-                text="Current Balance"
-                amount="XOF 104,535.53"
-                marginBottom="23px"
-                color="#FA7272"
-                fontSize="22px"
-              />
-              <WalletAmount
-                text="Transaction Amount"
-                amount="XOF 4,500.00"
-                marginBottom="23px"
-                color="#27BDAD"
-                fontSize="22px"
-              />
-            </div>
-            <GreenFullButton style={{ width: "90%", margin: "0 auto" }}>
-              Fund your transxnd wallet
-            </GreenFullButton>
-          </div>
+                    </div>
+                    <input type="text" placeholder="Cardholder Name" name="name" />
+                    <div className="credit-card-fileds">
+                      <input type="text" placeholder="Country" name="name" />
+
+                      <input type="text" placeholder="ZIP COde" name="name" />
+
+                    </div>
+                    <button className='credit-option' onClick={handleCreditCard}>
+                      <div className='checkbox-wrap'>
+                        <div className={creditCard ? "filledBox" : "emptyBox"}></div>
+                        <p >
+                          Save card information for future payments
+                        </p>
+                      </div>
+
+                    </button>
+
+                  </div>
+                </div>
+                :
+                <div className="wallet-response">
+                  <h5>Credit/Debit Card</h5>
+                  <div className="credit-card-wrapper">
+                    <button className='payment-option' onClick={handleCreditCard}>
+                      <div className='checkbox-wrap'>
+                        <div className={creditCard ? "filledBox" : "emptyBox"}></div>
+                        <div className="credit-cart-content-wrapper">
+                          <p className="card-details-span">
+                            XXXX-XXXX-XXXX-9360
+                          </p>
+                          <div className="credit-cart-span-wrapper">
+                            <div className="credit-cart-span">
+                              <span className="credit-card-span">Expiry Date</span>
+                              <span className="credit-card-span">Salman Altaf</span>
+                            </div>
+                            <div className='credit-card-img'>
+                              <img src={masterCard} alt="creditCardIcon err" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </button>
+
+                    <div className="credit-card-button">
+                      <GreenFullButton style={{ width: "90%", margin: "0 auto" }}>
+                        Add a new credit/debit card
+                      </GreenFullButton>
+                    </div>
+
+                  </div>
+                </div>
+              :
+              clickedIndex == 1 ?
+                transxndCardSwtich(transxndCard, setTransxndCard)
+                : null
+          }
         </div>
       </div>
     </div>
@@ -210,3 +146,81 @@ const PaymentMethod = () => {
 };
 
 export default PaymentMethod;
+
+
+const transxndCardSwtich = (transxndCard, setTransxndCard) => {
+  switch (transxndCard) {
+    case 1:
+      return (
+        <div className='credit-form' onClick={() => setTransxndCard(2)}>
+          <div className='credit-form-header'>
+            <p>Transxnd Wallet</p>
+          </div>
+          <div className="wallet-wrapper">
+            <div>
+              <img src={spinnerImage} />
+            </div>
+            <p>Please wait while we process your information</p>
+          </div>
+
+        </div>
+      );
+    case 2:
+      return (
+        <div className='credit-form' onClick={() => setTransxndCard(3)}>
+          <div className='credit-form-header'>
+            <p>Transxnd Wallet</p>
+          </div>
+          <div className="wallet-wrapper">
+            <div className="wallet-content">
+              <p>Current Balance</p>
+              <span>XOF 104,535.53</span>
+            </div>
+            <div className="wallet-content">
+              <p>Transaction Amount</p>
+              <span>XOF 4,500.00</span>
+
+            </div>
+          </div>
+
+        </div>
+      );
+    case 3:
+      return (
+        <div className="wallet-response">
+          <h5>Tranxnd Wallet</h5>
+          <div className="wallet-resonse-img">
+            <img src={warningAlert} alt="warningAlert" />
+          </div>
+          <p className="warning-message">Insufficient Wallet allowance:</p>
+          <p className="response-para">
+            The source wallet maximum balance will not be enough to pay for
+            this transaction even if you transfer funds into it.
+          </p>
+          <p className="response-para">
+            Please select a different payment method or reduce the transaction
+            amount to continue with the current source wallet.
+          </p>
+          <div className="response-balance-amount">
+            <WalletAmount
+              text="Current Balance"
+              amount="XOF 104,535.53"
+              marginBottom="23px"
+              color="#FA7272"
+              fontSize="22px"
+            />
+            <WalletAmount
+              text="Transaction Amount"
+              amount="XOF 4,500.00"
+              marginBottom="23px"
+              color="#27BDAD"
+              fontSize="22px"
+            />
+          </div>
+          <GreenFullButton style={{ width: "90%", margin: "0 auto" }}>
+            Fund your transxnd wallet
+          </GreenFullButton>
+        </div>
+      );
+  }
+}

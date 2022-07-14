@@ -2,7 +2,9 @@ import React from "react";
 import "./styles.scss";
 import Button from "../SimpleButton";
 const SupportMessage = ({
-  buttonLink,
+  progress,
+  setProgress,
+  addedBen,
   transferDetails,
   reviewPayment,
   setReviewPayment,
@@ -12,7 +14,24 @@ const SupportMessage = ({
   paymentMethod,
   setPaymentMethod,
 }) => {
-  const backScreenHandler = () => {};
+  const backScreenHandler = () => { };
+
+  const handleCollectionPoint = () => {
+    setCollectionPoint(true)
+    setProgress(progress + 1)
+  }
+  const handleTransferDetails = () => {
+    setTransferDetails(true)
+    setProgress(progress + 1)
+  }
+  const handlePaymentMethod = () => {
+    setPaymentMethod(true)
+    setProgress(progress + 1)
+  }
+  const handleReviewPayment = () => {
+    setReviewPayment(true);
+     setProgress(progress + 1)  
+  }
 
   return (
     <div className="support-message">
@@ -20,7 +39,7 @@ const SupportMessage = ({
         <p>
           Have a problem? Contact <span>Customer Support Team</span>
         </p>
-        {buttonLink ? (
+        {addedBen && !reviewPayment &&
           <div className="action-btns">
             <Button
               className="green med m-right-15"
@@ -30,18 +49,19 @@ const SupportMessage = ({
             <Button
               className="sea-green-hollow med"
               onClick={() => {
-                collectionPoint
-                  ? setTransferDetails(true)
-                  : paymentMethod
-                  ? setCollectionPoint(true)
-                  : reviewPayment
-                  ? setPaymentMethod(true)
-                  : setReviewPayment(true);
+                !collectionPoint
+                  && !transferDetails ? handleTransferDetails()
+                  :
+                  !paymentMethod
+                    && !collectionPoint ? handleCollectionPoint()
+                    : !reviewPayment
+                      && !paymentMethod ? handlePaymentMethod()
+                      : handleReviewPayment()
               }}
               text="Continue"
             />
           </div>
-        ) : null}
+        }
       </div>
     </div>
   );

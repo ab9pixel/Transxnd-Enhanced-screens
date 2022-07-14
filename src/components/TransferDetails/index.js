@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import InnerContentHeader from "../InnerContentHeader";
 import "./styles.scss";
+import CheckButton from '../CheckButton/CheckButton'
 const infoCircle = "../images/info-circle.svg";
 const upDownArrows = "../images/upDownArrows.svg";
 const circle = "../images/circle.svg";
+
+
+
 
 const TransferDetails = () => {
   const [radioActive, setRadioActive] = useState(null);
@@ -18,6 +22,8 @@ const TransferDetails = () => {
   const [fromCurrency, setFromCurrency] = useState(null);
   const [toCurrency, setToCurrency] = useState(null);
   const [convertedCurr, setConvertedCurr] = useState(false);
+  const [clickedIndex, setClickedIndex] = useState("");
+
 
   const currencyFromFlag = `../images/${currencyFromName}.png`;
   const currencyToFlag = `../images/${currencyToName}.png`;
@@ -32,6 +38,9 @@ const TransferDetails = () => {
   const currenctConvert = () => {
     setConvertedCurr(true);
   };
+  const handleCheckButton = (ind) => {
+    setClickedIndex(ind)
+  }
 
   return (
     <div className="transfer-details">
@@ -52,7 +61,16 @@ const TransferDetails = () => {
             <img src={infoCircle} alt="info circle err" />
           </div>
           <div className="transaction-type-form">
-            <div className="transactionType">
+          <div className="transaction-type-form-check-button">
+          {
+        ["Cash Collection","Mobile Transfer","Utility Payment"].map((val, ind) =>{
+          return(
+            <CheckButton value={val} index={ind} Click={() => handleCheckButton(ind)} clickedIndex={clickedIndex}/>
+          )
+        })
+      }
+          </div>
+            {/* <div className="transactionType">
                 <div className="SmallInput">
                   <div className="SmallInputWrap">
                     <input
@@ -86,7 +104,7 @@ const TransferDetails = () => {
                     <p>Mobile Transfer</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
           </div>
         </div>
         <div className="transaction-right">

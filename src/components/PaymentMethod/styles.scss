@@ -12,6 +12,7 @@
 }
 .payment-body-right{
     width: 57%;
+    min-height: 512px;
     padding: 33px 27px 31px 18px;
     border: 1px solid rgba(39, 189, 173, 0.3);
     background-color: #E8F9F7;
@@ -38,12 +39,33 @@
     font-size: 16px;
     font-family: 'Poppins';
     font-weight: 500;
+    width: 100%;
 }
 .payment-option:hover{
     border: 1px solid #27BDAD;
     transition: all 0.5s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
+.credit-option{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    background-color: #E8F9F7;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    width: 100%;
+}
+// .credit-option:hover{
+//     border: 1px solid #27BDAD;
+//     transition: all 0.5s;
+//     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+// }
 .payment-method{
     padding: 26px 23px 44px 33px;
 }
@@ -51,6 +73,10 @@
     width: 18px;
     height: 18px;
     margin-right: 18px;
+}
+.checkbox-wrap{
+   display: flex;
+   align-items: center;
 }
 .card-details-wrap{
     max-width: 100%;
@@ -73,6 +99,11 @@
 .card-details span{
     font-size: 18px;
     font-weight: 600;
+}
+.card-details-span{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
 }
 .card-details p{
     margin: 0;
@@ -177,6 +208,11 @@
     font-family: inherit;
     font-weight: 600;
 }
+.credit-card-span{
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 400;
+}
 .wallet-amount span{
     font-size: 30px;
     font-family: inherit;
@@ -186,12 +222,9 @@
 .tranxnd-wallet h5 {
     margin-bottom: 38px;
 }
-// .wallet-response{
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     align-items: center;
-// }
+.wallet-response{
+   min-height: 512px;
+}
 .wallet-resonse-img{
     display: flex;
     align-items: center;
@@ -223,31 +256,69 @@
     justify-content: space-around;
     align-items: center;
 }
-.card-image-number-wrapper {
+.credit-card-wrapper {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
 }
-.expiry-name {
-    font-size: 15px;
-    font-weight: 300;
-    margin-bottom: 7px;
+.credit-cart-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.receipent-name {
-    font-size: 16px;
-    font-weight: 500;
-}
-.card-content-wrapper {
+.credit-cart-span-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    
+}
+.credit-cart-span {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: start;
+}
+.credit-card-img img{
+        width: 35px;
+        height: 30px;
+    
+}
+.credit-form-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 29px;
+}
+.credit-card-fileds{
+    display: flex;
+    justify-content: space-between;
+}
+.credit-card-fileds input{
+   max-width: 40%;
+   margin: 11px 0;
+}
+.credit-option  p{
+    margin: 0;
+    font-size: 12px;
+}
+.wallet-wrapper {
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
-.card-image img {
-    max-width: 53px;
+.wallet-wrapper img {
+    width: 100%;
     height: auto;
+    margin-bottom: 26px;
 }
-.payment-img img {
-    max-width: 30px;
-    height: auto;
+.wallet-content span {
+    font-size: 30px;
+    color: #27BDAD;
+    font-weight: 600;
+    /* margin-bottom: 42px; */
+}
+.wallet-content {
+    margin-bottom: 42px;
 }

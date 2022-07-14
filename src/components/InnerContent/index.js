@@ -24,7 +24,7 @@ const InnerContent = ({
   const [otp, setOtp] = useState(false);
 
   if (ben) {
-    setAddedBenData("transaction");
+    setAddedBenData(true);
   }
   return (
     <div className={`inner-content ${darkMode ? "dark-mode" : ""} `}>
@@ -47,19 +47,15 @@ const InnerContent = ({
             setBen(val);
           }}
         />
-      ) : !collectionPoint ? (
+      ) : ben && !transferDetails ? (
         <AddBeneficiary
           data={data}
-          addBenData={addBenData}
-          setAddBenData={(val) => {
-            setAddBenData(val);
-          }}
         />
-      ) : !transferDetails ? (
+      ) : transferDetails && !collectionPoint ? (
         <TransferDetails />
-      ) : !paymentMethod ? (
+      ) : collectionPoint && !paymentMethod ? (
         <CollectionPoint />
-      ) : !reviewPayment ? (
+      ) : paymentMethod && !reviewPayment ? (
         <PaymentMethod />
       ) : !otp ? (
         <ReviewPayment

@@ -37,10 +37,11 @@ const AddBeneficiary = ({ data, setAddBen }) => {
         <div className="beneficiary-content">
           {data ? (
             <table>
-              {data.map((user) => {
+              <tbody>
+              {data.map((user, id) => {
                 return (
-                  <tr>
-                    <td className="name-location-table-wrap">
+                  <tr key={id}>
+                    <td  className="name-location-table-wrap">
                       <img src="../images/checkbox.png" />
                       <div className="name-location-wrap">
                         <div className="short-name">
@@ -77,6 +78,7 @@ const AddBeneficiary = ({ data, setAddBen }) => {
                   </tr>
                 );
               })}
+              </tbody>
             </table>
           ) : (
             <>
